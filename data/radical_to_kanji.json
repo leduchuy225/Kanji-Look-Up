@@ -1,0 +1,2382 @@
+[
+  {
+    "radical": "川",
+    "radical_name": "River",
+    "kanji": "川 (River), 州 (State, Province, County), 流 (Stream), 訓 (Instruction), 順 (Order, Sequence), 荒 (Wild), 酬 (Repay), 硫 (Sulfur, Sulpher)"
+  },
+  {
+    "radical": "木",
+    "radical_name": "Tree",
+    "kanji": "木 (Tree, Wood), 休 (Rest), 村 (Village), 林 (Forest, Woods), 札 (Bill, Label, Note), 校 (School), 森 (Forest, Woods), 楽 (Comfort, Ease, Pleasure), 相 (Mutual), 葉 (Leaf, Leaves), 集 (Collect, Gather), 横 (Side), 親 (Parent), 根 (Root), 深 (Deep), 植 (Plant), 新 (New), 想 (Concept), 様 (Formal Name Title, Formal Name Ender, Manner), 橋 (Bridge), 標 (Signpost), 殺 (Kill), 材 (Lumber, Timber), 松 (Pine, Pine Tree), 格 (Status), 築 (Construct, Build), 箱 (Box), 保 (Preserve, Guarantee), 栄 (Prosperity, Flourish), 梅 (Ume, Japanese Plum), 枚 (Flat Objects Counter, Flat Object, Counter For Flat Objects), 禁 (Prohibition), 歴 (Continuation), 困 (Distressed, Troubled), 機 (Machine), 械 (Contraption), 査 (Inspect, Investigate, Inspection, Investigation), 権 (Rights), 検 (Examine), 条 (Clause), 案 (Plan), 策 (Plan), 株 (Stocks, Shares), 構 (Set Up, Care), 模 (Imitation), 刺 (Stab), 極 (Extreme), 杯 (Cup Of Liquid, Counter For Cups), 板 (Board), 枕 (Pillow), 棒 (Pole, Rod, Wooden Pole), 菜 (Vegetable), 探 (Look For, Search For), 採 (Gather), 桜 (Sakura, Cherry Tree), 雑 (Random, Miscellaneous), 机 (Desk), 染 (Dye), 操 (Manipulate, Chastity), 枝 (Branch), 杉 (Cedar), 核 (Nucleus), 棋 (Chess Piece), 枠 (Frame), 柱 (Pillar), 樹 (Wood), 床 (Floor), 析 (Analysis), 枢 (Hinge), 柄 (Pattern), 摩 (Chafe), 柔 (Gentle), 桃 (Peach), 梨 (Pear), 棚 (Shelf), 暦 (Calendar), 磨 (Polish), 魔 (Devil), 棟 (Pillar), 椅 (Chair), 架 (Shelf), 柳 (Willow), 霜 (Frost), 彩 (Coloring, Colouring), 麻 (Hemp), 礎 (Foundation), 概 (Approximation), 謀 (Conspire), 桑 (Mulberry), 鬱 (Gloom), 枯 (Wither), 襟 (Collar), 欄 (Column, Space), 呆 (Shock), 杏 (Apricot), 栞 (Bookmark), 朴 (Simple, Crude), 栃 (Horse Chestnut), 栓 (Cork, Plug), 蝶 (Butterfly), 柴 (Brushwood, Firewood), 槽 (Tank, Vat), 楓 (Maple), 朽 (Rot, Decay), 媒 (Mediator), 椎 (Oak, Oak Tree), 傑 (Greatness, Excellence), 漆 (Lacquer, Varnish), 閑 (Leisure), 梓 (Wood Block), 桟 (Jetty, Pier), 某 (Certain, One, That Person)"
+  },
+  {
+    "radical": "入",
+    "radical_name": "Enter",
+    "kanji": "入 (Enter), 込 (Crowded)"
+  },
+  {
+    "radical": "工",
+    "radical_name": "Construction",
+    "kanji": "工 (Construction, Industry), 左 (Left), 空 (Sky), 功 (Achievement, Accomplishment), 式 (Ritual, Ceremony, Equation), 試 (Try, Attempt), 差 (Distinction), 攻 (Aggression, Attack, Offence, Offense), 江 (Inlet, Bay), 尋 (Inquire), 紅 (Deep Red, Crimson), 項 (Paragraph), 貢 (Tribute), 佐 (Help), 虹 (Rainbow), 巧 (Adept), 惰 (Lazy)"
+  },
+  {
+    "radical": "https://www.wanikani.com/radicals/leaf",
+    "radical_name": "Leaf",
+    "kanji": "万 (Ten Thousand), 百 (Hundred), 画 (Drawing, Painting), 夏 (Summer), 再 (Again), 乏 (Scarce), 演 (Perform, Performance)"
+  },
+  {
+    "radical": "力",
+    "radical_name": "Power",
+    "kanji": "力 (Power, Strength), 男 (Man), 助 (Help), 勝 (Win), 努 (Toil), 労 (Labor, Labour), 功 (Achievement, Accomplishment), 働 (Work, Labor, Labour), 勉 (Exertion), 動 (Move), 協 (Cooperation), 加 (Add), 務 (Task), 勢 (Force), 賀 (Congratulations), 効 (Effective), 励 (Encourage), 幼 (Infancy, Child), 筋 (Muscle, Tendon), 勤 (Work), 募 (Recruit), 勧 (Recommend), 架 (Shelf), 脅 (Threaten), 脇 (Armpit), 劣 (Inferiority), 勘 (Intuition), 勲 (Merit), 嘉 (Esteem, Praise), 劾 (Censure)"
+  },
+  {
+    "radical": "勹",
+    "radical_name": "Prison",
+    "kanji": "号 (Number), 角 (Angle, Corner), 負 (Lose), 争 (Conflict), 々 (Repeater, Repetition, Reduplication, Iteration Mark), 急 (Hurry), 危 (Dangerous), 胸 (Chest), 渇 (Thirst), 換 (Exchange), 旬 (In Season, Time Of Month, Season), 掲 (Display), 菊 (Chrysanthemum), 陶 (Pottery), 喚 (Scream, Yell), 陥 (Cave In), 衡 (Equilibrium), 喝 (Scold), 濁 (Muddy, Impure), 朽 (Rot, Decay), 殉 (Martyr). 久 (Long Time)"
+  },
+  {
+    "radical": "口",
+    "radical_name": "Mouth",
+    "kanji": "口 (Mouth), 右 (Right), 四 (Four), 兄 (Older Brother, Big Brother, Elder Brother), 台 (Machine), 号 (Number), 申 (Say Humbly, Say, Humbly Say), 名 (Name, Famous), 回 (Times, Revolve), 図 (Diagram), 谷 (Valley), 曲 (Music, Bend), 京 (Capital), 向 (Yonder, Facing), 国 (Country), 知 (Know), 由 (Reason), 民 (Peoples, People, Nation), 高 (Tall, Expensive, High), 船 (Boat, Ship), 君 (Buddy), 局 (Bureau, Department), 事 (Action, Matter, Thing), 和 (Peace, Japanese Style), 乗 (Ride), 客 (Guest), 語 (Language), 鳴 (Chirp), 別 (Separate), 命 (Fate), 味 (Flavor, Taste, Flavour), 員 (Member), 問 (Problem), 橋 (Bridge), 賞 (Prize), 囲 (Surround), 固 (Hard), 園 (Garden, Park), 喜 (Rejoice, Delighted, Pleased, Happy), 保 (Preserve, Guarantee), 塩 (Salt), 因 (Cause), 常 (Normal, Ordinary), 告 (Announce), 喫 (Consume), 加 (Add), 若 (Young), 団 (Group), 善 (Morally Good, Good), 困 (Distressed, Troubled), 害 (Damage, Injury, Harm), 個 (Individual), 吸 (Suck, Inhale), 域 (Region, Regional Boundary, Boundary), 賀 (Congratulations), 割 (Divide), 呼 (Call), 含 (Include), 鉛 (Lead), 招 (Beckon), 極 (Extreme), 程 (Extent), 豪 (Luxurious), 尋 (Inquire), 嘆 (Sigh), 恩 (Kindness), 捨 (Throw Away), 否 (No), 糖 (Sugar), 吐 (Throw Up, Spit), 聖 (Holy), 沿 (Run Alongside), 舎 (Cottage), 噌 (Boisterous), 圏 (Range), 唱 (Chant), 吹 (Blow), 哲 (Philosophy), 喪 (Mourning), 叱 (Scold), 叫 (Shout), 呪 (Curse), 菌 (Bacteria), 吾 (I, Me), 猿 (Monkey), 架 (Shelf), 哀 (Pathetic), 唇 (Lips), 如 (Likeness), 掌 (Manipulate), 咲 (Blossom), 悟 (Comprehension), 唯 (Solely), 唐 (China, Sudden), 鰐 (Alligator), 諮 (Consult), 后 (Empress), 喚 (Scream, Yell), 亮 (Clear), 噴 (Erupt), 唆 (Instigate), 剰 (Surplus), 啓 (Enlighten), 拐 (Kidnap), 呈 (Present, Display), 痴 (Stupid), 呆 (Shock), 哺 (Nurse, Suckle), 杏 (Apricot), 轄 (Control), 嘉 (Esteem, Praise), 智 (Wisdom), 喝 (Scold), 哉 (Question Mark, ?), 嘱 (Request, Entrust), 絹 (Silk), 吟 (Recital), 姻 (Marry, Matrimony), 唄 (Shamisen Song, Song), 矯 (Correct, Straighten), 囚 (Criminal) 換 (Exchange), 堂 (Hall, Public Chamber)"
+  },
+  {
+    "radical": "ハ",
+    "radical_name": "Fins",
+    "kanji": "八 (Eight), 六 (Six), 公 (Public), 分 (Part, Minute, Separate, Understand), 谷 (Valley), 東 (East), 船 (Boat, Ship), 具 (Tool), 業 (Business), 共 (Together), 港 (Harbor, Harbour, Port), 選 (Choose), 養 (Foster), 真 (Reality), 典 (Rule), 兵 (Soldier), 挙 (Raise), 演 (Perform, Performance), 鉛 (Lead), 益 (Benefit), 浜 (Beach), 巣 (Nest), 興 (Interest), 異 (Differ), 沿 (Run Alongside), 誉 (Honor), 戴 (Receive), 傍 (Nearby, Side)"
+  },
+  {
+    "radical": "https://www.wanikani.com/radicals/stick",
+    "radical_name": "Stick",
+    "kanji": "引 (Pull), 声 (Voice), 弟 (Younger Brother, Little Brother), 存 (Suppose), 在 (Exist), 候 (Climate, Candidate), 児 (Child), 修 (Discipline), 旧 (Former), 陥 (Cave In), 粛 (Solemn), 悠 (Leisure), 奉 (Dedicate), 俸 (Salary), 弔 (Condolence, Condolences)"
+  },
+  {
+    "radical": "亠",
+    "radical_name": "Lid",
+    "kanji": "六 (Six), 円 (Yen, Round, Circle), 市 (City), 交 (Mix), 京 (Capital), 夜 (Night, Evening), 姉 (Older Sister, Big Sister, Elder Sister), 校 (School), 高 (Tall, Expensive, High), 球 (Sphere, Ball), 卒 (Graduate), 幸 (Happiness), 率 (Percent, Percentage), 航 (Navigation), 豪 (Luxurious), 裏 (Backside), 抗 (Confront), 褒 (Praise), 哀 (Pathetic), 壇 (Podium), 衰 (Decline), 亮 (Clear), 擁 (Embrace), 傍 (Nearby, Side), 凛 (Cold), 坑 (Pit, Hole)"
+  },
+  {
+    "radical": "亅",
+    "radical_name": "Barb",
+    "kanji": "了 (Finish, Complete, End), 争 (Conflict), 慶 (Congratulate)"
+  },
+  {
+    "radical": "大",
+    "radical_name": "Big",
+    "kanji": "大 (Big, Large), 太 (Fat), 央 (Central, Center, Centre), 美 (Beauty, Beautiful), 器 (Container, Vessel), 参 (Participate), 因 (Cause), 類 (Type, Category, Kind), 喫 (Consume), 臭 (Stinking, Stinky, Smelly), 崎 (Cape), 突 (Stab, Thrust), 奇 (Odd, Strange), 綺 (Beautiful), 恩 (Kindness), 奈 (Nara), 換 (Exchange), 戻 (Return), 契 (Pledge), 奥 (Interior), 奪 (Rob), 俺 (I, Me), 涙 (Teardrop), 誇 (Pride), 爽 (Refreshing), 奨 (Encourage), 奮 (Stirred Up), 喚 (Scream, Yell), 惨 (Disaster), 衡 (Equilibrium), 奔 (Run, Bustle), 遷 (Transition), 姻 (Marry, Matrimony)"
+  },
+  {
+    "radical": "日",
+    "radical_name": "Sun",
+    "kanji": "日 (Sun, Day), 早 (Early, Fast, Quick), 百 (Hundred), 草 (Grass, Weed), 音 (Sound), 明 (Bright), 母 (Mother, Mom, Mum), 星 (Star), 時 (Time, O'clock, Hour), 者 (Someone, Somebody), 朝 (Morning), 間 (Interval, Interval Of Time, Time Interval), 最 (Most), 昔 (Long Ago, Long Time Ago), 指 (Finger), 暑 (Hot, Hot Weather), 温 (Warm), 暗 (Dark), 題 (Topic), 映 (Reflect, Reflection), 春 (Spring), 昼 (Noon), 晴 (Clear Up), 昨 (Previous, Yesterday), 晩 (Night, Evening), 曜 (Weekday, Day Of The Week), 書 (Write, Writing), 冒 (Dare), 是 (Absolutely), 昆 (Descendants), 暴 (Violence), 混 (Mix), 得 (Acquire), 厚 (Thick), 提 (Present, Submit), 影 (Shadow), 景 (Scene), 替 (Replace, Exchange), 暇 (Spare Time, Free Time), 昇 (Ascend), 児 (Child), 宴 (Banquet), 渇 (Thirst), 婚 (Marriage), 照 (Illuminate), 撮 (Photograph, Photo), 普 (Normal), 暖 (Warm), 暮 (Livelihood), 旧 (Former), 踏 (Step), 昭 (Shining), 旬 (In Season, Time Of Month, Season), 香 (Fragrance), 掲 (Display), 唱 (Chant), 潜 (Conceal), 暫 (Temporarily), 旨 (Point, Delicious), 暦 (Calendar), 曇 (Cloudy), 湿 (Damp), 帽 (Hat), 隙 (Crevice), 衰 (Decline), 漫 (Manga), 堰 (Dam), 堤 (Embankment), 晶 (Crystal), 脂 (Fat), 陥 (Cave In), 慢 (Ridicule, Laziness), 遭 (Encounter, Meet), 曙 (Dawn), 顕 (Appear, Existing), 昌 (Prosperous, Prosperity), 錯 (Confused, Mixed), 智 (Wisdom), 槽 (Tank, Vat), 喝 (Scold), 譜 (Genealogy, Score), 暁 (Dawn), 曹 (Official), 殉 (Martyr), 潟 (Lagoon)"
+  },
+  {
+    "radical": "九",
+    "radical_name": "Nine",
+    "kanji": "九 (Nine), 丸 (Circle, Circular, Round), 究 (Research), 尻 (Butt), 雑 (Random, Miscellaneous), 染 (Dye), 粋 (Stylish), 酔 (Drunk), 枠 (Frame), 鳩 (Dove, Pigeon), 砕 (Smash), 軌 (Rut)"
+  },
+  {
+    "radical": "一",
+    "radical_name": "Ground",
+    "kanji": "一 (One), 三 (Three), 上 (Above, Up, Over), 下 (Below, Down, Under, Beneath), 正 (Correct), 写 (Copy), 号 (Number), 同 (Same), 来 (Come, Next), 両 (Both), 前 (Front, Before), 室 (Room), 使 (Use), 具 (Tool), 屋 (Roof, Shop, Store), 低 (Low), 便 (Convenience, Convenient), 求 (Request), 昼 (Noon), 係 (Connection), 真 (Reality), 兵 (Soldier), 底 (Bottom), 善 (Morally Good, Good), 妻 (Wife), 挙 (Raise), 岡 (Hill), 域 (Region, Regional Boundary, Boundary), 師 (Teacher, Expert, Master), 環 (Loop), 武 (Military), 与 (Give), 極 (Extreme), 益 (Benefit), 並 (Line Up), 浜 (Beach), 監 (Oversee), 覧 (Look At), 更 (Again), 帯 (Belt), 興 (Interest), 汚 (Dirty), 宣 (Proclaim), 貴 (Valuable), 磁 (Magnet), 互 (Mutual), 抵 (Resist), 還 (Send Back), 誉 (Honor), 垣 (Hedge, Fence), 威 (Majesty), 岳 (Peak), 滅 (Destroy), 滋 (Nourishing), 丘 (Hill), 誇 (Pride), 鰐 (Alligator), 后 (Empress), 瓶 (Bottle), 邸 (Residence), 慈 (Mercy), 恒 (Constant, Always), 遭 (Encounter, Meet), 憂 (Grief), 賓 (Vip, Guest), 槽 (Tank, Vat), 朽 (Rot, Decay), 曹 (Official), 寡 (Widow, Minority), 輪 (Wheel, Ring, Loop), 論 (Theory), 倫 (Ethics)"
+  },
+  {
+    "radical": "丶",
+    "radical_name": "Drop",
+    "kanji": "丸 (Circle, Circular, Round), 玉 (Ball), 太 (Fat), 氷 (Ice), 州 (State, Province, County), 国 (Country), 母 (Mother, Mom, Mum), 向 (Yonder, Facing), 夜 (Night, Evening), 以 (By Means Of, By The Means Of, By Way Of, By The Way Of), 泳 (Swim), 良 (Good), 々 (Repeater, Repetition, Reduplication, Iteration Mark), 求 (Request), 術 (Art), 認 (Recognize, Recognise), 師 (Teacher, Expert, Master), 述 (Mention), 訴 (Sue), 添 (Append), 似 (Resemble), 永 (Eternity), 宝 (Treasure), 丼 (Rice Bowl), 奥 (Interior), 阜 (Mound), 瓶 (Bottle), 帥 (Commander), 酬 (Repay), 之 (This), 凡 (Mediocre), 恭 (Respect), 縛 (Bind, Restrain), 碑 (Tombstone), 帆 (Sail), 詠 (Compose, Recite), 卑 (Lowly, Base), 蔑 (Scorn, Neglect), 慕 (Yearn For, Adore)"
+  },
+  {
+    "radical": "人",
+    "radical_name": "Person",
+    "kanji": "人 (Person), 内 (Inside, Within), 以 (By Means Of, By The Means Of, By Way Of, By The Way Of), 決 (Decide, Decision), 卒 (Graduate), 座 (Sit, Seat), 機 (Machine), 傘 (Umbrella), 快 (Pleasant), 幾 (How Many, How Much), 似 (Resemble), 脊 (Stature, Height), 囚 (Criminal)"
+  },
+  {
+    "radical": "ト",
+    "radical_name": "Toe",
+    "kanji": "上 (Above, Up, Over), 下 (Below, Down, Under, Beneath), 外 (Outside), 掛 (Hang), 偵 (Spy), 卓 (Table), 貞 (Chastity), 朴 (Simple, Crude), 悼 (Grieve, Mourn), 赴 (Proceed, Move On)"
+  },
+  {
+    "radical": "二",
+    "radical_name": "Two",
+    "kanji": "二 (Two), 三 (Three), 冬 (Winter), 終 (End, Finish), 仁 (Humanity), 霊 (Ghost), 奉 (Dedicate), 脊 (Stature, Height), 那 (What), 俸 (Salary)"
+  },
+  {
+    "radical": "丿",
+    "radical_name": "Slide",
+    "kanji": "才 (Genius), 午 (Noon), 少 (Few, A Little), 皮 (Skin), 先 (Previous, Ahead, Past, Former), 弟 (Younger Brother, Little Brother), 歩 (Walk), 失 (Fault), 必 (Certain), 君 (Buddy), 身 (Somebody, Someone, Body), 着 (Wear, Arrive), 風 (Wind, Style), 告 (Announce), 宅 (House, Home), 差 (Distinction), 株 (Stocks, Shares), 昇 (Ascend), 託 (Consign), 邦 (Home Country), 茂 (Luxuriant), 威 (Majesty), 滅 (Destroy), 朱 (Vermillion), 歳 (Years Old), 伊 (Italy), 珠 (Pearl), 殊 (Especially), 鋳 (Cast, Casting), 蔑 (Scorn, Neglect), 升 (Grid, Measure), 久 (Long Time)"
+  },
+  {
+    "radical": "女",
+    "radical_name": "Woman",
+    "kanji": "女 (Woman), 安 (Relax, Cheap), 妹 (Younger Sister, Little Sister), 姉 (Older Sister, Big Sister, Elder Sister), 数 (Count, Number, Amount), 始 (Begin, Start), 要 (Need), 好 (Like), 努 (Toil), 妥 (Gentle), 妨 (Obstruct, Impede), 嫌 (Dislike), 妻 (Wife), 委 (Committee), 姿 (Figure, Shape, Form), 腰 (Waist), 接 (Adjoin), 怒 (Angry, Anger), 婦 (Wife), 妙 (Strange), 娘 (Daughter), 宴 (Banquet), 婚 (Marriage), 桜 (Sakura, Cherry Tree), 奴 (Dude), 姓 (Surname, Family Name), 妊 (Pregnant), 娠 (Pregnant), 威 (Majesty), 娯 (Recreation), 姫 (Princess), 嬢 (Miss), 嫁 (Bride), 如 (Likeness), 婆 (Old Woman), 妃 (Princess, Queen), 堰 (Dam), 媛 (Princess, Beautiful Woman), 媒 (Mediator), 姻 (Marry, Matrimony), 婿 (Groom), 妄 (Reckless)"
+  },
+  {
+    "radical": "七",
+    "radical_name": "Seven",
+    "kanji": "七 (Seven), 切 (Cut), 宅 (House, Home), 託 (Consign), 叱 (Scold), 窃 (Steal)"
+  },
+  {
+    "radical": "https://www.wanikani.com/radicals/gun",
+    "radical_name": "Gun",
+    "kanji": "年 (Year), 毎 (Every), 海 (Sea, Ocean), 旅 (Trip, Travel), 族 (Tribe, Family), 塩 (Salt), 梅 (Ume, Japanese Plum), 施 (Carry Out), 監 (Oversee), 乾 (Dry), 遊 (Play), 旗 (Flag), 覧 (Look At), 飾 (Decorate), 傷 (Wound), 臨 (Look To), 称 (Title), 御 (Honorable), 弥 (Increasing), 旋 (Rotation, Revolution)"
+  },
+  {
+    "radical": "十",
+    "radical_name": "Cross",
+    "kanji": "十 (Ten), 才 (Genius), 申 (Say Humbly, Say, Humbly Say), 早 (Early, Fast, Quick), 草 (Grass, Weed), 東 (East), 直 (Fix, Direct), 南 (South), 由 (Reason), 朝 (Morning), 事 (Action, Matter, Thing), 卒 (Graduate), 協 (Cooperation), 計 (Measure, Measurement), 専 (Specialty), 率 (Percent, Percentage), 裁 (Judge), 準 (Standard), 載 (Publish), 針 (Needle), 博 (Exhibition, Gambling), 傘 (Umbrella), 壊 (Break), 索 (Search), 懐 (Nostalgia), 徳 (Virtue), 粋 (Stylish), 汁 (Soup), 酔 (Drunk), 聴 (Listen), 恵 (Favor), 阜 (Mound), 枠 (Frame), 敷 (Spread), 樹 (Wood), 喪 (Mourning), 砕 (Smash), 迅 (Swift), 墳 (Tomb), 噴 (Erupt), 隼 (Falcon), 繊 (Fiber, Slender), 戴 (Receive), 碑 (Tombstone), 賊 (Robber), 奔 (Run, Bustle), 憤 (Resent), 卑 (Lowly, Base), 華 (Showy)"
+  },
+  {
+    "radical": "山",
+    "radical_name": "Mountain",
+    "kanji": "山 (Mountain), 出 (Exit), 両 (Both), 岸 (Coast, Shore), 島 (Island), 岩 (Boulder), 岡 (Hill), 崎 (Cape), 徴 (Indication, Sign), 端 (Edge), 微 (Delicate), 催 (Sponsor), 帯 (Belt), 密 (Secrecy), 崩 (Crumble), 岐 (Branch Off), 仙 (Hermit), 炭 (Charcoal), 岳 (Peak), 懲 (Chastise), 嵐 (Storm), 幽 (Secluded), 崖 (Cliff), 峰 (Summit), 峡 (Ravine), 瑞 (Congratulations), 峠 (Ridge), 崇 (Worship, Revere), 岬 (Cape)"
+  },
+  {
+    "radical": "刀",
+    "radical_name": "Sword",
+    "kanji": "刀 (Sword, Katana), 万 (Ten Thousand), 分 (Part, Minute, Separate, Understand), 切 (Cut), 辺 (Area), 成 (Become), 初 (First), 別 (Separate), 留 (Detain), 喫 (Consume), 解 (Untie, Solve), 認 (Recognize, Recognise), 招 (Beckon), 券 (Ticket), 貿 (Trade), 契 (Pledge), 蟹 (Crab), 拐 (Kidnap), 那 (What), 瑠 (Lapis Lazuli), 窃 (Steal), 寡 (Widow, Minority), 潔 (Pure)"
+  },
+  {
+    "radical": "土",
+    "radical_name": "Dirt",
+    "kanji": "土 (Dirt, Soil, Earth, Ground), 去 (Past), 先 (Previous, Ahead, Past, Former), 社 (Company), 地 (Earth, Ground), 室 (Room), 場 (Location, Place), 屋 (Roof, Shop, Store), 基 (Foundation), 坂 (Slope), 塩 (Salt), 告 (Announce), 座 (Sit, Seat), 煙 (Smoke), 圧 (Pressure), 在 (Exist), 増 (Increase), 坊 (Monk), 域 (Region, Regional Boundary, Boundary), 贅 (Luxury), 城 (Castle), 型 (Model, Type), 境 (Boundary), 掛 (Hang), 壊 (Break), 街 (Street), 均 (Equal), 墓 (Grave), 捨 (Throw Away), 吐 (Throw Up, Spit), 舎 (Cottage), 塁 (Base, Baseball Base), 壁 (Wall), 埋 (Bury), 埼 (Cape), 堀 (Ditch), 墟 (Ruins), 堅 (Solid), 垣 (Hedge, Fence), 封 (Seal, Seal In, Closing), 塔 (Tower), 塊 (Lump), 塾 (Cram School), 墨 (Black Ink, Ink), 猿 (Monkey), 庄 (Manor), 粧 (Cosmetics), 塀 (Fence), 墜 (Crash), 崖 (Cliff), 培 (Cultivate), 塗 (Paint), 壇 (Podium), 陛 (Highness), 堰 (Dam), 堤 (Embankment), 墳 (Tomb), 涯 (Horizon), 塚 (Mound), 膨 (Swell), 壌 (Soil, Earth), 傲 (Proud), 佳 (Excellent, Skilled), 坪 (Two Mat Area), 堕 (Degenerate), 哉 (Question Mark, ?), 堪 (Endure), 坑 (Pit, Hole) 堂 (Hall, Public Chamber)"
+  },
+  {
+    "radical": "牛",
+    "radical_name": "Cow",
+    "kanji": "牛 (Cow), 年 (Year), 物 (Thing), 特 (Special), 件 (Matter, Affair), 解 (Untie, Solve), 降 (Descend), 犠 (Sacrifice), 牧 (Pasture), 蟹 (Crab), 牲 (Offering)"
+  },
+  {
+    "radical": "千",
+    "radical_name": "Thousand",
+    "kanji": "千 (Thousand), 挿 (Insert)"
+  },
+  {
+    "radical": "小",
+    "radical_name": "Small",
+    "kanji": "小 (Small, Little), 少 (Few, A Little), 京 (Capital), 歩 (Walk), 県 (Prefecture), 督 (Coach), 添 (Append), 称 (Title), 隙 (Crevice), 弥 (Increasing), 寂 (Lonely), 恭 (Respect), 淑 (Graceful), 叔 (Uncle, Aunt), 慕 (Yearn For, Adore)"
+  },
+  {
+    "radical": "メ",
+    "radical_name": "Treasure",
+    "kanji": "気 (Energy, Spirit), 図 (Diagram), 便 (Convenience, Convenient), 殺 (Kill), 希 (Wish), 区 (District, Ward), 更 (Again), 爽 (Refreshing), 殴 (Assault), 刈 (Prune)"
+  },
+  {
+    "radical": "ナ",
+    "radical_name": "Narwhal",
+    "kanji": "右 (Right), 左 (Left), 友 (Friend), 有 (Have), 希 (Wish), 存 (Suppose), 布 (Cloth), 若 (Young), 在 (Exist), 雄 (Male, Brave), 怖 (Scary), 佐 (Help), 惰 (Lazy)"
+  },
+  {
+    "radical": "丁",
+    "radical_name": "Street",
+    "kanji": "丁 (Street, Ward), 打 (Hit), 町 (Town), 予 (Beforehand), 庁 (Agency, Government Office), 貯 (Savings), 寧 (Rather), 灯 (Lamp), 訂 (Revise), 頂 (Summit, Humbly)"
+  },
+  {
+    "radical": "儿",
+    "radical_name": "Legs",
+    "kanji": "四 (Four), 兄 (Older Brother, Big Brother, Elder Brother), 先 (Previous, Ahead, Past, Former), 売 (Sell), 空 (Sky), 商 (Merchandise), 児 (Child), 換 (Exchange), 虎 (Tiger), 克 (Overcome), 匹 (Small Animal, Small Animal Counter), 喚 (Scream, Yell), 亮 (Clear), 粛 (Solemn)"
+  },
+  {
+    "radical": "冂",
+    "radical_name": "Head",
+    "kanji": "円 (Yen, Round, Circle), 内 (Inside, Within), 央 (Central, Center, Centre), 向 (Yonder, Facing), 両 (Both), 南 (South), 岡 (Hill), 策 (Plan), 刺 (Stab), 奥 (Interior)"
+  },
+  {
+    "radical": "又",
+    "radical_name": "Stool",
+    "kanji": "又 (Again), 友 (Friend), 受 (Accept, Receive), 服 (Clothes, Clothing), 度 (Degrees, Occurrence), 最 (Most), 努 (Toil), 反 (Anti), 取 (Take), 報 (News, Report), 寝 (Lie Down, Lay Down, Sleep), 収 (Obtain), 護 (Defend), 渡 (Transit), 捜 (Search), 暇 (Spare Time, Free Time), 怒 (Angry, Anger), 極 (Extreme), 督 (Coach), 緊 (Tense), 騒 (Boisterous), 撮 (Photograph, Photo), 奴 (Dude), 獲 (Seize), 侵 (Invade), 双 (Pair), 堅 (Solid), 趣 (Gist), 賢 (Clever), 穫 (Harvest), 浸 (Immersed), 桑 (Mulberry), 漫 (Manga), 隻 (Ship Counter), 慢 (Ridicule, Laziness), 叙 (Describe), 寂 (Lonely), 淑 (Graceful), 叔 (Uncle, Aunt)"
+  },
+  {
+    "radical": "子",
+    "radical_name": "Child",
+    "kanji": "子 (Child, Kid), 字 (Letter, Character, Symbol), 学 (Study, Learn, Learning), 好 (Like), 季 (Seasons), 存 (Suppose), 厚 (Thick), 乳 (Milk), 猛 (Fierce), 遊 (Play), 浮 (Float), 孫 (Grandchild), 承 (Consent), 遜 (Humble), 孔 (Cavity, Hole), 孤 (Orphan, Alone)"
+  },
+  {
+    "radical": "夕",
+    "radical_name": "Evening",
+    "kanji": "夕 (Evening), 外 (Outside), 名 (Name, Famous), 多 (Many, Much, Lots Of), 夢 (Dream), 腕 (Arm), 移 (Shift)"
+  },
+  {
+    "radical": "弓",
+    "radical_name": "Bow",
+    "kanji": "引 (Pull), 弟 (Younger Brother, Little Brother), 弱 (Weak), 強 (Strong, Strength), 弓 (Bow), 張 (Stretch), 湾 (Gulf), 弾 (Bullet), 弧 (Arc), 弥 (Increasing), 窮 (Destitute), 弦 (Chord, Bowstring), 弔 (Condolence, Condolences)"
+  },
+  {
+    "radical": "尸",
+    "radical_name": "Flag",
+    "kanji": "声 (Voice), 局 (Bureau, Department), 屋 (Roof, Shop, Store), 履 (Boots), 尻 (Butt), 尾 (Tail), 届 (Deliver), 層 (Layer), 展 (Expand), 属 (Belong), 居 (Alive), 屈 (Yield), 漏 (Leak), 泥 (Mud), 遅 (Slow), 堀 (Ditch), 殿 (Milord, Lord), 掘 (Dig), 刷 (Printing), 慰 (Consolation), 塀 (Fence), 尼 (Nun), 据 (Install), 尿 (Urine, Pee), 尉 (Military Officer, Military Rank), 嘱 (Request, Entrust)"
+  },
+  {
+    "radical": "彡",
+    "radical_name": "Hair",
+    "kanji": "形 (Shape, Appearance, Form), 顔 (Face), 参 (Participate), 影 (Shadow), 修 (Discipline), 衆 (Populace), 診 (Diagnose), 彫 (Carve), 杉 (Cedar), 珍 (Rare), 髪 (Hair), 彩 (Coloring, Colouring), 彰 (Patent), 膨 (Swell), 須 (Necessary), 惨 (Disaster)"
+  },
+  {
+    "radical": "五",
+    "radical_name": "Five",
+    "kanji": "五 (Five), 語 (Language), 吾 (I, Me), 悟 (Comprehension)"
+  },
+  {
+    "radical": "天",
+    "radical_name": "Heaven",
+    "kanji": "天 (Heaven), 送 (Send), 橋 (Bridge), 笑 (Laugh), 関 (Related, Connected), 添 (Append), 奏 (Play Music), 咲 (Blossom), 葵 (Hollyhock), 矯 (Correct, Straighten)"
+  },
+  {
+    "radical": "手",
+    "radical_name": "Hand",
+    "kanji": "手 (Hand), 挙 (Raise), 看 (Watch Over), 撃 (Attack), 拳 (Fist), 摩 (Chafe), 掌 (Manipulate)"
+  },
+  {
+    "radical": "文",
+    "radical_name": "Writing",
+    "kanji": "文 (Writing, Sentence), 対 (Versus, Opposite), 斐 (Patterned), 蚊 (Mosquito), 紋 (Family Crest)"
+  },
+  {
+    "radical": "月",
+    "radical_name": "Moon",
+    "kanji": "月 (Moon, Month), 有 (Have), 明 (Bright), 前 (Front, Before), 朝 (Morning), 服 (Clothes, Clothing), 勝 (Win), 育 (Nurture, Raise), 消 (Extinguish), 期 (Period Of Time, Time Period), 然 (Nature), 望 (Hope), 能 (Ability), 骨 (Bone), 胸 (Chest), 脳 (Brain), 脱 (Undress), 藤 (Wisteria), 肩 (Shoulder), 腕 (Arm), 腰 (Waist), 肥 (Obese), 豚 (Pork, Pig), 胃 (Stomach), 腹 (Belly, Abdomen, Stomach), 背 (Back, Height), 散 (Scatter), 脈 (Vein), 筋 (Muscle, Tendon), 肺 (Lung), 臓 (Internal Organs), 湖 (Lake), 崩 (Crumble), 削 (Whittle Down), 徹 (Penetrate), 撤 (Withdrawal), 肝 (Liver), 朗 (Bright), 潮 (Tide), 棚 (Shelf), 肌 (Skin), 脚 (Leg, Foot), 胴 (Torso), 脅 (Threaten), 脇 (Armpit), 肯 (Agreement, Consent), 脂 (Fat), 肪 (Obese, Fat), 覇 (Leadership), 膨 (Swell), 惰 (Lazy), 胞 (Cell, Placenta), 騰 (Inflation), 胡 (Barbarian), 脊 (Stature, Height), 腸 (Intestines, Guts), 膜 (Membrane), 胎 (Womb, Uterus), 肖 (Resemblance), 絹 (Silk), 胆 (Guts), 婿 (Groom)"
+  },
+  {
+    "radical": "止",
+    "radical_name": "Stop",
+    "kanji": "正 (Correct), 止 (Stop), 歩 (Walk), 歯 (Tooth, Teeth), 歴 (Continuation), 企 (Plan), 武 (Military), 渋 (Bitter), 祉 (Welfare), 歳 (Years Old), 紫 (Purple), 肯 (Agreement, Consent), 卸 (Wholesale), 柴 (Brushwood, Firewood), 雌 (Female)"
+  },
+  {
+    "radical": "水",
+    "radical_name": "Water",
+    "kanji": "水 (Water), 氷 (Ice), 泳 (Swim), 線 (Line), 球 (Sphere, Ball), 泉 (Spring, Fountain), 様 (Formal Name Title, Formal Name Ender, Manner), 緑 (Green), 求 (Request), 暴 (Violence), 藤 (Wisteria), 逮 (Apprehend), 康 (Health), 録 (Record), 永 (Eternity), 隷 (Slave), 承 (Consent), 踏 (Step), 泰 (Peace), 尿 (Urine, Pee), 漆 (Lacquer, Varnish), 詠 (Compose, Recite)"
+  },
+  {
+    "radical": "火",
+    "radical_name": "Fire",
+    "kanji": "火 (Fire), 談 (Discuss), 秋 (Autumn, Fall), 焼 (Bake, Cook, Burn), 煙 (Smoke), 災 (Disaster), 燃 (Burn), 灰 (Ashes), 炎 (Flame, Big Fire), 爆 (Explode), 炭 (Charcoal), 畑 (Field), 滅 (Destroy), 炉 (Furnace), 炊 (Cook), 灯 (Lamp), 淡 (Faint), 燥 (Dry Up), 煩 (Annoy, Annoying)"
+  },
+  {
+    "radical": "犬",
+    "radical_name": "Dog",
+    "kanji": "犬 (Dog), 然 (Nature), 状 (Condition), 獣 (Beast, Animal), 就 (Settle In), 獄 (Prison), 献 (Offer), 黙 (Shut Up), 伏 (Bow, Lay)"
+  },
+  {
+    "radical": "王",
+    "radical_name": "King",
+    "kanji": "王 (King), 玉 (Ball), 全 (All, Whole), 国 (Country), 理 (Reason), 美 (Beauty, Beautiful), 庭 (Garden), 球 (Sphere, Ball), 着 (Wear, Arrive), 望 (Hope), 任 (Duty), 現 (Present Time, Present), 環 (Loop), 徴 (Indication, Sign), 程 (Extent), 宝 (Treasure), 皇 (Emperor), 賃 (Rent), 聖 (Holy), 妊 (Pregnant), 珍 (Rare), 懲 (Chastise), 琴 (Harp), 狂 (Lunatic, Crazy), 班 (Squad), 潤 (Watered), 珠 (Pearl), 廷 (Courts), 艇 (Rowboat), 呈 (Present, Display), 栓 (Cork, Plug), 瑛 (Crystal), 瑠 (Lapis Lazuli), 瑞 (Congratulations), 璃 (Glassy)"
+  },
+  {
+    "radical": "中",
+    "radical_name": "Middle",
+    "kanji": "中 (Middle, In, Inside, Center), 仲 (Relationship), 忠 (Loyalty), 貴 (Valuable), 沖 (Open Sea)"
+  },
+  {
+    "radical": "本",
+    "radical_name": "Book",
+    "kanji": "本 (Book, Origin, Real, Main), 体 (Body), 鉢 (Bowl)"
+  },
+  {
+    "radical": "田",
+    "radical_name": "Rice Paddy",
+    "kanji": "田 (Rice Paddy, Rice Field, Field), 男 (Man), 町 (Town), 東 (East), 画 (Drawing, Painting), 思 (Think, Thought), 番 (Number In A Series, Turn, Ordinal Number), 電 (Electricity), 界 (World), 便 (Convenience, Convenient), 猫 (Cat), 留 (Detain), 専 (Specialty), 細 (Thin), 鼻 (Nose), 獣 (Beast, Animal), 胃 (Stomach), 略 (Abbreviation, Abbreviate), 更 (Again), 異 (Differ), 幅 (Width), 塁 (Base, Baseball Base), 恵 (Favor), 描 (Draw), 敷 (Spread), 畑 (Field), 翼 (Wing), 俺 (I, Me), 雷 (Thunder), 畳 (Tatami Mat), 畜 (Livestock), 蓄 (Amass), 奮 (Stirred Up), 苗 (Seedling, Sapling), 戴 (Receive), 累 (Accumulate), 碑 (Tombstone), 衡 (Equilibrium), 瑠 (Lapis Lazuli), 卑 (Lowly, Base), 畔 (Shore), 演 (Perform, Performance), 華 (Showy)"
+  },
+  {
+    "radical": "白",
+    "radical_name": "White",
+    "kanji": "白 (White), 楽 (Comfort, Ease, Pleasure), 習 (Learn), 線 (Line), 階 (Floor, Story, Storey), 泉 (Spring, Fountain), 皆 (All, Everyone, Everything, Everybody), 的 (Target, Al, ~Al, Like, ~Like), 激 (Fierce, Violent), 迫 (Urge, Compel, Coerce), 皇 (Emperor), 泊 (Overnight), 綿 (Cotton), 伯 (Chief), 錦 (Brocade), 拍 (Beat), 舶 (Ship)"
+  },
+  {
+    "radical": "目",
+    "radical_name": "Eye",
+    "kanji": "目 (Eye), 直 (Fix, Direct), 夏 (Summer), 具 (Tool), 相 (Mutual), 県 (Prefecture), 算 (Calculate, Calculation), 着 (Wear, Arrive), 想 (Concept), 箱 (Box), 冒 (Dare), 省 (Conserve), 看 (Watch Over), 眠 (Sleep), 睡 (Drowsy), 督 (Coach), 眼 (Eyeball), 眺 (Stare), 瞳 (Pupil), 瞬 (Blink), 帽 (Hat), 瞭 (Clear), 霜 (Frost), 盲 (Blind), 睦 (Friendly)"
+  },
+  {
+    "radical": "石",
+    "radical_name": "Stone",
+    "kanji": "石 (Stone), 研 (Sharpen), 岩 (Boulder), 確 (Certain), 砂 (Sand), 磁 (Magnet), 破 (Tear), 砲 (Cannon), 磨 (Polish), 硬 (Stiff), 碁 (Go), 砕 (Smash), 拓 (Cultivation), 礎 (Foundation), 碑 (Tombstone), 硫 (Sulfur, Sulpher), 礁 (Reef)"
+  },
+  {
+    "radical": "立",
+    "radical_name": "Stand",
+    "kanji": "立 (Stand), 音 (Sound), 親 (Parent), 顔 (Face), 位 (Rank), 競 (Compete), 章 (Chapter), 商 (Merchandise), 童 (Juvenile), 新 (New), 暗 (Dark), 鏡 (Mirror), 泣 (Cry), 産 (Give Birth, Birth), 境 (Boundary), 障 (Hinder), 接 (Adjoin), 締 (Tighten), 端 (Edge), 翌 (The Following, Following, Next), 笠 (Conical Hat), 粒 (Grains), 鐘 (Bell), 瞳 (Pupil), 帝 (Sovereign), 颯 (Quick, Sudden), 靖 (Peaceful), 憧 (Long For, Yearn)"
+  },
+  {
+    "radical": "ム",
+    "radical_name": "Private",
+    "kanji": "公 (Public), 台 (Machine), 広 (Wide), 去 (Past), 室 (Room), 強 (Strong, Strength), 屋 (Roof, Shop, Store), 参 (Participate), 能 (Ability), 私 (I, Private), 仏 (Buddha), 弁 (Dialect, Speech), 留 (Detain), 雄 (Male, Brave), 窓 (Window), 拡 (Extend), 払 (Pay), 貿 (Trade), 惨 (Disaster), 瑠 (Lapis Lazuli)"
+  },
+  {
+    "radical": "方",
+    "radical_name": "Direction",
+    "kanji": "方 (Direction, Way), 放 (Release), 旅 (Trip, Travel), 族 (Tribe, Family), 妨 (Obstruct, Impede), 防 (Prevent, Prevention), 坊 (Monk), 贅 (Luxury), 施 (Carry Out), 激 (Fierce, Violent), 訪 (Visit), 遊 (Play), 旗 (Flag), 房 (Cluster), 敷 (Spread), 肪 (Obese, Fat), 芳 (Perfume), 傲 (Proud), 傍 (Nearby, Side), 旋 (Rotation, Revolution), 紡 (Spinning, Spin)"
+  },
+  {
+    "radical": "毛",
+    "radical_name": "Fur",
+    "kanji": "毛 (Fur, Hair), 尾 (Tail)"
+  },
+  {
+    "radical": "矢",
+    "radical_name": "Arrow",
+    "kanji": "矢 (Arrow), 知 (Know), 医 (Medicine), 族 (Tribe, Family), 短 (Short), 疑 (Doubt), 権 (Rights), 観 (View), 候 (Climate, Candidate), 歓 (Delight), 勧 (Recommend), 疾 (Rapid), 痴 (Stupid), 智 (Wisdom), 矯 (Correct, Straighten)"
+  },
+  {
+    "radical": "古",
+    "radical_name": "Old",
+    "kanji": "古 (Old), 苦 (Suffering), 固 (Hard), 個 (Individual), 居 (Alive), 故 (Circumstance, Reason), 湖 (Lake), 克 (Overcome), 枯 (Wither), 据 (Install), 胡 (Barbarian)"
+  },
+  {
+    "radical": "幺",
+    "radical_name": "Poop",
+    "kanji": "後 (Behind, After, Back, Rear), 幻 (Illusion), 機 (Machine), 率 (Percent, Percentage), 響 (Echo, Reverberation, Resound), 幼 (Infancy, Child), 幾 (How Many, How Much), 磁 (Magnet), 郷 (Hometown), 滋 (Nourishing), 幽 (Secluded), 慈 (Mercy), 擁 (Embrace)"
+  },
+  {
+    "radical": "生",
+    "radical_name": "Life",
+    "kanji": "麦 (Wheat), 星 (Star), 表 (Express), 生 (Life), 性 (Gender, Nature), 毒 (Poison), 害 (Damage, Injury, Harm), 産 (Give Birth, Birth), 制 (Control), 素 (Element), 責 (Blame), 憲 (Constitution), 姓 (Surname, Family Name), 隆 (Prosperity), 俵 (Sack), 牲 (Offering), 轄 (Control), 漬 (Pickle, Soak), 割 (Divide), 潔 (Pure), 喫 (Consume), 契 (Pledge)"
+  },
+  {
+    "radical": "戸",
+    "radical_name": "Door",
+    "kanji": "戸 (Door), 所 (Place), 肩 (Shoulder), 戻 (Return), 房 (Cluster), 雇 (Employ), 炉 (Furnace), 涙 (Teardrop), 扇 (Folding Fan), 扉 (Front Door), 啓 (Enlighten)"
+  },
+  {
+    "radical": "父",
+    "radical_name": "Father",
+    "kanji": "父 (Father, Dad), 交 (Mix), 校 (School)"
+  },
+  {
+    "radical": "巾",
+    "radical_name": "Towel",
+    "kanji": "市 (City), 姉 (Older Sister, Big Sister, Elder Sister), 希 (Wish), 帰 (Return, Return Home), 席 (Seat), 常 (Normal, Ordinary), 布 (Cloth), 制 (Control), 師 (Teacher, Expert, Master), 締 (Tighten), 婦 (Wife), 怖 (Scary), 飾 (Decorate), 掃 (Sweep), 帯 (Belt), 幕 (Curtain), 幅 (Width), 刷 (Printing), 帝 (Sovereign), 綿 (Cotton), 帽 (Hat), 幣 (Cash), 帳 (Notebook), 巾 (Towel), 錦 (Brocade), 帥 (Commander), 帆 (Sail)"
+  },
+  {
+    "radical": "用",
+    "radical_name": "Task",
+    "kanji": "用 (Task, Use), 角 (Angle, Corner), 通 (Pass Through), 備 (Provide, Equip), 再 (Again), 痛 (Pain), 踊 (Dance), 猟 (Hunting), 庸 (Common)"
+  },
+  {
+    "radical": "https://www.wanikani.com/radicals/triceratops",
+    "radical_name": "Triceratops",
+    "kanji": "半 (Half), 光 (Sunlight, Light), 当 (Right, Success, Correct), 消 (Extinguish), 削 (Whittle Down), 鎖 (Chain), 尚 (Furthermore, Esteem), 肖 (Resemblance)"
+  },
+  {
+    "radical": "扌",
+    "radical_name": "Fingers",
+    "kanji": "北 (North), 打 (Hit), 投 (Throw), 持 (Hold), 拾 (Pick Up), 指 (Finger), 折 (Fold, Bend), 技 (Skill), 批 (Criticism), 寝 (Lie Down, Lay Down, Sleep), 提 (Present, Submit), 援 (Aid, Assist), 状 (Condition), 担 (Carry, Bear), 抜 (Extract), 捕 (Catch), 捜 (Search), 掛 (Hang), 授 (Instruct), 振 (Shake, Wave), 接 (Adjoin), 招 (Beckon), 押 (Push), 撮 (Photograph, Photo), 掃 (Sweep), 探 (Look For, Search For), 採 (Gather), 捨 (Throw Away), 拡 (Extend), 操 (Manipulate, Chastity), 拝 (Worship), 推 (Infer), 揮 (Brandish), 損 (Loss), 払 (Pay), 換 (Exchange), 摘 (Pluck), 抗 (Confront), 抵 (Resist), 抱 (Hug), 掲 (Display), 扱 (Handle), 抑 (Suppress), 択 (Select), 描 (Draw), 控 (Abstain), 拒 (Refusal), 排 (Reject), 携 (Portable), 撤 (Withdrawal), 措 (Set Aside), 拠 (Based On), 哲 (Philosophy), 括 (Fasten), 挑 (Challenge), 掘 (Dig), 揚 (Hoist), 握 (Grip), 揺 (Shake), 擦 (Grate), 撲 (Slap), 挿 (Insert), 抽 (Pluck), 誓 (Vow), 拓 (Cultivation), 拘 (Arrest), 把 (Bundle, Grasp), 搬 (Transport), 挟 (Between), 擁 (Embrace), 披 (Expose), 据 (Install), 搭 (Board, Embark), 拐 (Kidnap), 抹 (Erase), 拍 (Beat), 摂 (In Addition), 搾 (Squeeze), 扶 (Aid), 拙 (Clumsy, Unskillful), 擬 (Imitate), 逝 (Die), 拷 (Torture)"
+  },
+  {
+    "radical": "夂",
+    "radical_name": "Winter",
+    "kanji": "冬 (Winter), 麦 (Wheat), 夜 (Night, Evening), 後 (Behind, After, Back, Rear), 夏 (Summer), 教 (Teach), 数 (Count, Number, Amount), 客 (Guest), 終 (End, Finish), 放 (Release), 整 (Arrange, Organize, Organise), 変 (Change, Strange), 政 (Politics, Government), 敗 (Failure, Fail), 愛 (Love), 警 (Warn, Admonish), 枚 (Flat Objects Counter, Flat Object, Counter For Flat Objects), 改 (Renew), 敵 (Enemy), 務 (Task), 条 (Clause), 優 (Superior, Gentle), 贅 (Luxury), 故 (Circumstance, Reason), 激 (Fierce, Violent), 徴 (Indication, Sign), 処 (Deal With), 修 (Discipline), 微 (Delicate), 攻 (Aggression, Attack, Offence, Offense), 驚 (Surprised), 救 (Rescue), 散 (Scatter), 厳 (Strict), 敬 (Respect), 降 (Descend), 致 (Do), 隆 (Prosperity), 敏 (Alert), 敷 (Spread), 繁 (Overgrown), 徹 (Penetrate), 撤 (Withdrawal), 拠 (Based On), 牧 (Pasture), 懲 (Chastise), 啓 (Enlighten), 傲 (Proud), 悠 (Leisure), 憂 (Grief), 敢 (Daring), 赦 (Pardon), 慶 (Congratulate)"
+  },
+  {
+    "radical": "干",
+    "radical_name": "Dry",
+    "kanji": "午 (Noon), 半 (Half), 平 (Flat, Peace), 岸 (Coast, Shore), 干 (Dry, Dry Out), 宇 (Outer Space), 幹 (Tree Trunk), 汗 (Sweat), 棒 (Pole, Rod, Wooden Pole), 芋 (Potato), 拝 (Worship), 刊 (Edition), 肝 (Liver), 軒 (House Counter), 栞 (Bookmark)"
+  },
+  {
+    "radical": "广",
+    "radical_name": "Mullet",
+    "kanji": "広 (Wide), 店 (Shop, Store), 庭 (Garden), 府 (Government), 底 (Bottom), 座 (Sit, Seat), 応 (Respond), 庁 (Agency, Government Office), 康 (Health), 庫 (Storage, Warehouse), 廊 (Corridor), 序 (Preface), 拡 (Extend), 糖 (Sugar), 薦 (Recommend), 腐 (Rot), 廃 (Obsolete), 鹿 (Deer), 床 (Floor), 摩 (Chafe), 磨 (Polish), 魔 (Devil), 庄 (Manor), 粧 (Cosmetics), 麻 (Hemp), 唐 (China, Sudden), 庸 (Common), 慶 (Congratulate), 廉 (Bargain)"
+  },
+  {
+    "radical": "匕",
+    "radical_name": "Spoon",
+    "kanji": "北 (North), 花 (Flower), 化 (Change), 死 (Death), 老 (Elderly), 指 (Finger), 疑 (Doubt), 能 (Ability), 渇 (Thirst), 泥 (Mud), 掲 (Display), 葬 (Burial), 旨 (Point, Delicious), 頃 (Approximate), 蛇 (Snake), 紫 (Purple), 尼 (Nun), 脂 (Fat), 柴 (Brushwood, Firewood), 喝 (Scold), 雌 (Female)"
+  },
+  {
+    "radical": "元",
+    "radical_name": "Origin",
+    "kanji": "元 (Origin), 院 (Institution), 完 (Perfect), 頑 (Stubborn), 冠 (Crown, Cap)"
+  },
+  {
+    "radical": "https://www.wanikani.com/radicals/hat",
+    "radical_name": "Hat",
+    "kanji": "谷 (Valley), 全 (All, Whole), 茶 (Tea), 余 (Surplus, Excess), 企 (Plan), 幹 (Tree Trunk), 傘 (Umbrella), 診 (Diagnose), 捨 (Throw Away), 舎 (Cottage), 珍 (Rare), 栓 (Cork, Plug), 漆 (Lacquer, Varnish), 輪 (Wheel, Ring, Loop), 論 (Theory), 倫 (Ethics)"
+  },
+  {
+    "radical": "心",
+    "radical_name": "Heart",
+    "kanji": "心 (Heart), 思 (Think, Thought), 必 (Certain), 意 (Idea), 息 (Breath), 悪 (Bad, Evil), 悲 (Sad), 想 (Concept), 感 (Feeling), 念 (Thought), 急 (Hurry), 愛 (Love), 恋 (Romance), 忘 (Forget), 総 (Whole), 認 (Recognize, Recognise), 応 (Respond), 態 (Appearance), 優 (Superior, Gentle), 隠 (Hide), 惑 (Misguided), 怒 (Angry, Anger), 憲 (Constitution), 恐 (Fear), 徳 (Virtue), 志 (Intention), 恩 (Kindness), 誌 (Magazine), 窓 (Window), 忠 (Loyalty), 恥 (Shame), 患 (Afflicted), 聴 (Listen), 恵 (Favor), 懸 (Suspend), 慰 (Consolation), 懇 (Courteous), 懲 (Chastise), 忍 (Endure), 穏 (Calm), 寧 (Rather), 憩 (Rest), 芯 (Wick), 慈 (Mercy), 聡 (Wise), 怠 (Lazy, Neglect), 愚 (Foolish), 悠 (Leisure), 憂 (Grief), 癒 (Healing, Cure), 忌 (Mourning), 慶 (Congratulate)"
+  },
+  {
+    "radical": "赤",
+    "radical_name": "Red",
+    "kanji": "赤 (Red), 変 (Change, Strange), 恋 (Romance), 湾 (Gulf), 跡 (Traces), 赦 (Pardon), 蛮 (Barbarian)"
+  },
+  {
+    "radical": "車",
+    "radical_name": "Car",
+    "kanji": "車 (Car), 転 (Revolve), 軽 (Lightweight, Light, Light Weight), 運 (Carry, Luck), 輪 (Wheel, Ring, Loop), 軍 (Army), 連 (Take Along), 輸 (Transport), 載 (Publish), 輩 (Comrade), 較 (Contrast), 郵 (Mail), 睡 (Drowsy), 庫 (Storage, Warehouse), 撃 (Attack), 垂 (Dangle, Drip), 揮 (Brandish), 陣 (Army Base), 暫 (Temporarily), 軸 (Axis), 範 (Example), 斬 (Slice), 輝 (Radiance), 軌 (Rut), 軒 (House Counter), 軟 (Soft), 蓮 (Lotus), 輔 (Help), 轄 (Control), 漣 (Ripples), 漸 (Gradually, Steadily)"
+  },
+  {
+    "radical": "貝",
+    "radical_name": "Shellfish",
+    "kanji": "貝 (Shellfish, Shell, Clam), 買 (Buy), 負 (Lose), 員 (Member), 賞 (Prize), 側 (Side), 敗 (Failure, Fail), 財 (Wealth), 資 (Resources), 責 (Blame), 費 (Expense, Cost), 賀 (Congratulations), 則 (Rule), 贅 (Luxury), 質 (Quality), 販 (Sell), 慣 (Accustomed), 貯 (Savings), 貸 (Lend), 貧 (Poor), 購 (Subscription), 貨 (Freight), 偵 (Spy), 賛 (Agree), 賃 (Rent), 貴 (Valuable), 測 (Measure), 貿 (Trade), 賄 (Bribe), 賂 (Bribe), 贈 (Presents), 貢 (Tribute), 賭 (Gamble), 貼 (Paste), 賢 (Clever), 墳 (Tomb), 貞 (Chastity), 貫 (Pierce, Sushi Counter), 賠 (Compensation, Compensate), 鎖 (Chain), 噴 (Erupt), 賓 (Vip, Guest), 賊 (Robber), 漬 (Pickle, Soak), 憤 (Resent), 唄 (Shamisen Song, Song)"
+  },
+  {
+    "radical": "足",
+    "radical_name": "Foot",
+    "kanji": "足 (Foot, Leg, Sufficient), 路 (Road), 促 (Urge), 踏 (Step), 跳 (Hop), 跡 (Traces), 躍 (Leap), 距 (Distance), 露 (Expose, Dew), 踊 (Dance), 践 (Practice, Trample)"
+  },
+  {
+    "radical": "不",
+    "radical_name": "Not",
+    "kanji": "不 (Not), 杯 (Cup Of Liquid, Counter For Cups), 否 (No)"
+  },
+  {
+    "radical": "士",
+    "radical_name": "Samurai",
+    "kanji": "仕 (Doing, Do), 声 (Voice), 売 (Sell), 士 (Samurai), 志 (Intention), 誌 (Magazine), 装 (Attire), 隷 (Slave), 壮 (Robust), 荘 (Villa), 穀 (Grain), 款 (Article), 殻 (Husk, Shell)"
+  },
+  {
+    "radical": "米",
+    "radical_name": "Rice",
+    "kanji": "米 (Rice, America), 来 (Come, Next), 数 (Count, Number, Amount), 歯 (Tooth, Teeth), 料 (Fee, Material), 類 (Type, Category, Kind), 断 (Cut Off), 迷 (Astray), 精 (Spirit), 粉 (Powder), 糖 (Sugar), 粋 (Stylish), 継 (Inherit), 奥 (Interior), 隣 (Neighbor), 謎 (Riddle), 粒 (Grains), 菊 (Chrysanthemum), 粘 (Sticky), 粧 (Cosmetics), 糧 (Provisions), 粛 (Solemn), 粗 (Coarse, Rough)"
+  },
+  {
+    "radical": "見",
+    "radical_name": "See",
+    "kanji": "見 (See), 親 (Parent), 鏡 (Mirror), 覚 (Memorize, Awake, Memorise), 観 (View), 規 (Standard), 現 (Present Time, Present), 視 (Look At), 境 (Boundary), 覧 (Look At), 寛 (Tolerance)"
+  },
+  {
+    "radical": "巴",
+    "radical_name": "Bed",
+    "kanji": "肥 (Obese), 把 (Bundle, Grasp)"
+  },
+  {
+    "radical": "气",
+    "radical_name": "Energy",
+    "kanji": "気 (Energy, Spirit), 汽 (Steam)"
+  },
+  {
+    "radical": "兀",
+    "radical_name": "Pi",
+    "kanji": "光 (Sunlight, Light), 深 (Deep), 微 (Delicate), 探 (Look For, Search For)"
+  },
+  {
+    "radical": "厂",
+    "radical_name": "Cliff",
+    "kanji": "顔 (Face), 岸 (Coast, Shore), 反 (Anti), 危 (Dangerous), 歴 (Continuation), 圧 (Pressure), 産 (Give Birth, Birth), 厚 (Thick), 派 (Sect), 備 (Provide, Equip), 励 (Encourage), 脈 (Vein), 厳 (Strict), 灰 (Ashes), 厄 (Unlucky), 炭 (Charcoal), 暦 (Calendar), 崖 (Cliff), 迅 (Swift), 盾 (Shield), 后 (Empress), 涯 (Horizon), 栃 (Horse Chestnut), 循 (Circulation, Sequential)"
+  },
+  {
+    "radical": "寸",
+    "radical_name": "Measurement",
+    "kanji": "村 (Village), 付 (Attach), 対 (Versus, Opposite), 謝 (Apologize, Apologise), 守 (Protect), 専 (Specialty), 団 (Group), 導 (Lead), 討 (Chastise), 尋 (Inquire), 尊 (Revered), 射 (Shoot), 寿 (Lifespan), 将 (Commander), 闘 (Struggle), 奪 (Rob), 樹 (Wood), 酎 (Sake), 封 (Seal, Seal In, Closing), 慰 (Consolation), 寸 (Measurement), 辱 (Humiliate), 耐 (Resistant), 冠 (Crown, Cap), 尉 (Military Officer, Military Rank), 鋳 (Cast, Casting)"
+  },
+  {
+    "radical": "ｲ",
+    "radical_name": "Leader",
+    "kanji": "他 (Other), 代 (Substitute, Replace, Period, Age), 休 (Rest), 花 (Flower), 仕 (Doing, Do), 何 (What), 体 (Body), 作 (Make), 化 (Change), 夜 (Night, Evening), 付 (Attach), 住 (Dwelling, Reside, Dwell), 使 (Use), 仮 (Temporary), 仲 (Relationship), 伝 (Transmit, Tell), 位 (Rank), 低 (Low), 便 (Convenience, Convenient), 働 (Work, Labor, Labour), 倍 (Double, Times, Multiply), 宿 (Lodge), 億 (Hundred Million), 像 (Statue, Image), 例 (Example), 信 (Believe, Trust), 仏 (Buddha), 係 (Connection), 荷 (Luggage), 保 (Preserve, Guarantee), 側 (Side), 借 (Borrow), 僧 (Priest, Monk), 閥 (Clique, Clan), 個 (Individual), 倒 (Overthrow, Collapse), 件 (Matter, Affair), 任 (Duty), 価 (Value), 値 (Value), 停 (Halt), 備 (Provide, Equip), 優 (Superior, Gentle), 俳 (Haiku), 供 (Servant, Companion), 候 (Climate, Candidate), 健 (Healthy), 修 (Discipline), 催 (Sponsor), 促 (Urge), 僚 (Colleague), 似 (Resemble), 偵 (Spy), 傷 (Wound), 賃 (Rent), 縮 (Shrink), 伸 (Stretch), 債 (Debt), 伎 (Deed), 依 (Reliant, Dependant), 償 (Reparation), 伴 (Accompany), 併 (Join), 仙 (Hermit), 俊 (Genius), 伺 (Pay Respects), 儀 (Ceremony), 仁 (Humanity), 侵 (Invade), 偽 (Fake), 侍 (Samurai), 俺 (I, Me), 僕 (I, Me), 俵 (Sack), 伊 (Italy), 佐 (Help), 俗 (Vulgar), 仰 (Look Up To), 伯 (Chief), 偶 (Accidentally), 偉 (Greatness), 倫 (Ethics), 偏 (Biased), 傲 (Proud), 悠 (Leisure), 伏 (Bow, Lay), 佳 (Excellent, Skilled), 傍 (Nearby, Side), 伐 (Fell, Attack), 俸 (Salary), 傑 (Greatness, Excellence), 侮 (Despise), 倹 (Thrifty, Frugal, Thrift)"
+  },
+  {
+    "radical": "冖",
+    "radical_name": "Forehead",
+    "kanji": "写 (Copy), 売 (Sell), 受 (Accept, Receive), 運 (Carry, Luck), 骨 (Bone), 帰 (Return, Return Home), 軍 (Army), 冗 (Superfluous, Unnecessary, Uselessness), 愛 (Love), 確 (Certain), 夢 (Dream), 寝 (Lie Down, Lay Down, Sleep), 優 (Superior, Gentle), 婦 (Wife), 索 (Search), 豪 (Luxurious), 掃 (Sweep), 帯 (Belt), 揮 (Brandish), 侵 (Invade), 瞬 (Blink), 畳 (Tatami Mat), 輝 (Radiance), 浸 (Immersed), 亮 (Clear), 塚 (Mound), 蒙 (Darkness), 冠 (Crown, Cap), 憂 (Grief), 傍 (Nearby, Side), 穀 (Grain), 殻 (Husk, Shell)"
+  },
+  {
+    "radical": "https://www.wanikani.com/radicals/beggar",
+    "radical_name": "Beggar",
+    "kanji": "写 (Copy), 考 (Think, Consider), 与 (Give), 極 (Extreme), 汚 (Dirty), 誇 (Pride), 巧 (Adept), 鰐 (Alligator), 拷 (Torture)"
+  },
+  {
+    "radical": "也",
+    "radical_name": "Alligator",
+    "kanji": "他 (Other), 池 (Pond), 地 (Earth, Ground), 施 (Carry Out), 也 (Considerably)"
+  },
+  {
+    "radical": "宀",
+    "radical_name": "Roof",
+    "kanji": "字 (Letter, Character, Symbol), 空 (Sky), 安 (Relax, Cheap), 室 (Room), 家 (House, Home), 定 (Determine), 実 (Truth, Reality), 客 (Guest), 院 (Institution), 寒 (Cold), 宿 (Lodge), 館 (Public Building), 完 (Perfect), 守 (Protect), 官 (Government), 察 (Guess), 容 (Form, Appearance, Shape, Figure), 宇 (Outer Space), 宙 (Mid Air), 害 (Damage, Injury, Harm), 審 (Judge), 寝 (Lie Down, Lay Down, Sleep), 宮 (Shinto Shrine, Shrine, Palace), 割 (Divide), 演 (Perform, Performance), 宅 (House, Home), 腕 (Arm), 管 (Pipe), 貯 (Savings), 憲 (Constitution), 寄 (Approach), 宗 (Religion), 宴 (Banquet), 富 (Rich), 密 (Secrecy), 宝 (Treasure), 宣 (Proclaim), 縮 (Shrink), 宜 (Best Regards), 蜜 (Honey), 擦 (Grate), 寮 (Dormitory), 寧 (Rather), 蛇 (Snake), 鶴 (Crane), 淀 (Eddy), 寛 (Tolerance), 賓 (Vip, Guest), 宰 (Manager), 寂 (Lonely), 轄 (Control), 錠 (Lock), 菅 (Sedge), 崇 (Worship, Revere), 寡 (Widow, Minority)"
+  },
+  {
+    "radical": "弋",
+    "radical_name": "Ceremony",
+    "kanji": "代 (Substitute, Replace, Period, Age), 式 (Ritual, Ceremony, Equation), 試 (Try, Attempt), 武 (Military)"
+  },
+  {
+    "radical": "支",
+    "radical_name": "Branch",
+    "kanji": "皮 (Skin), 支 (Support, Branch), 技 (Skill), 枝 (Branch), 伎 (Deed), 岐 (Branch Off), 鼓 (Beat)"
+  },
+  {
+    "radical": "世",
+    "radical_name": "World",
+    "kanji": "世 (Generation, World, Society), 葉 (Leaf, Leaves), 蝶 (Butterfly)"
+  },
+  {
+    "radical": "皿",
+    "radical_name": "Plate",
+    "kanji": "皿 (Plate, Dish), 温 (Warm), 塩 (Salt), 益 (Benefit), 監 (Oversee), 猛 (Fierce), 盗 (Steal), 盛 (Pile, Heaps), 盟 (Alliance), 盤 (Tray), 盆 (Lantern Festival)"
+  },
+  {
+    "radical": "ネ",
+    "radical_name": "Spirit",
+    "kanji": "礼 (Thanks), 社 (Company), 初 (First), 神 (God), 福 (Luck, Fortune), 祈 (Pray, Prayer), 禅 (Zen, Zen Buddhism), 被 (Incur), 裕 (Abundant, Plentiful), 祝 (Celebrate), 視 (Look At), 補 (Supplement), 祖 (Ancestor), 複 (Duplicate), 祉 (Welfare), 裸 (Naked), 襟 (Collar), 祥 (Auspicious), 禍 (Evil, Misfortune)"
+  },
+  {
+    "radical": "https://www.wanikani.com/radicals/horns",
+    "radical_name": "Horns",
+    "kanji": "平 (Flat, Peace), 弟 (Younger Brother, Little Brother), 前 (Front, Before), 美 (Beauty, Beautiful), 送 (Send), 勝 (Win), 着 (Wear, Arrive), 関 (Related, Connected), 善 (Morally Good, Good), 岡 (Hill), 藤 (Wisteria), 狭 (Narrow), 巻 (Scroll), 従 (Obey, Accompany, Follow), 隊 (Squad), 券 (Ticket), 益 (Benefit), 並 (Line Up), 尊 (Revered), 縦 (Vertical), 磁 (Magnet), 併 (Join), 拳 (Fist), 滋 (Nourishing), 塀 (Fence), 墜 (Crash), 咲 (Blossom), 遂 (Accomplish), 挟 (Between), 瓶 (Bottle), 慈 (Mercy), 猶 (Still), 峡 (Ravine)"
+  },
+  {
+    "radical": "https://www.wanikani.com/radicals/spikes",
+    "radical_name": "Spikes",
+    "kanji": "業 (Business), 虚 (Void), 並 (Line Up), 霊 (Ghost), 湿 (Damp), 繊 (Fiber, Slender), 顕 (Appear, Existing), 戯 (Play)"
+  },
+  {
+    "radical": "竹",
+    "radical_name": "Bamboo",
+    "kanji": "竹 (Bamboo), 答 (Answer, Response, Reply), 算 (Calculate, Calculation), 第 (Ordinal Number Prefix, Ordinal Prefix, Number), 築 (Construct, Build), 箱 (Box), 笑 (Laugh), 等 (Equal), 節 (Season), 笛 (Flute), 策 (Plan), 管 (Pipe), 筆 (Writing Brush), 符 (Token), 簡 (Simplicity), 筋 (Muscle, Tendon), 範 (Example), 籍 (Enroll), 筒 (Cylinder), 笠 (Conical Hat), 箸 (Chopsticks), 簿 (Record Book), 篤 (Deliberate)"
+  },
+  {
+    "radical": "糸",
+    "radical_name": "Thread",
+    "kanji": "糸 (Thread), 紙 (Paper), 組 (Group, Association, Team), 絵 (Drawing, Painting), 終 (End, Finish), 線 (Line), 級 (Rank, Grade, Level), 緑 (Green), 練 (Practice), 約 (Promise), 紀 (Account, Narrative), 係 (Connection), 細 (Thin), 結 (Bind, Tie), 続 (Continue), 絡 (Entangle, Coil Around, Entwine), 経 (Passage Of Time, Pass Through, Manage), 総 (Whole), 素 (Element), 統 (Unite), 絞 (Strangle), 織 (Weave), 締 (Tighten), 給 (Salary), 絶 (Extinction, Die Out), 緊 (Tense), 索 (Search), 編 (Knit), 綺 (Beautiful), 績 (Exploits), 納 (Supply), 縮 (Shrink), 純 (Pure), 縦 (Vertical), 紅 (Deep Red, Crimson), 紹 (Introduce), 縄 (Rope), 継 (Inherit), 維 (Maintain), 繰 (Spin), 緒 (Together), 緩 (Loose), 繁 (Overgrown), 紛 (Distract), 糾 (Twist), 綱 (Cable), 網 (Netting), 縁 (Edge), 綿 (Cotton), 紫 (Purple), 綾 (Design), 緯 (Latitude), 繊 (Fiber, Slender), 緋 (Scarlet), 紋 (Family Crest), 累 (Accumulate), 縫 (Sew), 縛 (Bind, Restrain), 紳 (Gentleman), 紺 (Navy, Dark Blue), 羅 (Spread Out, Arrange), 絹 (Silk), 紡 (Spinning, Spin), 潔 (Pure)"
+  },
+  {
+    "radical": "耳",
+    "radical_name": "Ear",
+    "kanji": "耳 (Ear), 聞 (Hear), 最 (Most), 取 (Take), 職 (Employment), 撮 (Photograph, Photo), 聖 (Holy), 恥 (Shame), 聴 (Listen), 趣 (Gist), 聡 (Wise), 摂 (In Addition)"
+  },
+  {
+    "radical": "艹",
+    "radical_name": "Flowers",
+    "kanji": "花 (Flower), 草 (Grass, Weed), 茶 (Tea), 苦 (Suffering), 落 (Fall), 葉 (Leaf, Leaves), 芸 (Acting, Art), 英 (England, English), 猫 (Cat), 荷 (Luggage), 薬 (Medicine, Drug, Drugs), 若 (Young), 夢 (Dream), 藤 (Wisteria), 護 (Defend), 備 (Provide, Equip), 満 (Full), 菓 (Cake), 華 (Showy), 菜 (Vegetable), 著 (Author), 蒸 (Steam), 芋 (Potato), 薦 (Recommend), 諾 (Agreement), 葬 (Burial), 描 (Draw), 獲 (Seize), 茂 (Luxuriant), 薄 (Dilute), 芝 (Lawn), 荒 (Wild), 芽 (Sprout), 塔 (Tower), 菌 (Bacteria), 菊 (Chrysanthemum), 芯 (Wick), 蓄 (Amass), 穫 (Harvest), 墳 (Tomb), 苗 (Seedling, Sapling), 蓮 (Lotus), 茨 (Briar, Thorn), 噴 (Erupt), 芳 (Perfume), 寛 (Tolerance), 搭 (Board, Embark), 蒙 (Darkness), 葵 (Hollyhock), 莉 (Jasmine), 荘 (Villa), 茎 (Stem), 茜 (Red Dye), 瑛 (Crystal), 蒼 (Pale, Blue), 萌 (Sprout), 藩 (Fiefdom), 憤 (Resent), 菅 (Sedge), 蔑 (Scorn, Neglect), 匿 (Hide), 藍 (Indigo), 藻 (Seaweed)"
+  },
+  {
+    "radical": "乚",
+    "radical_name": "Umbrella",
+    "kanji": "礼 (Thanks), 札 (Bill, Label, Note), 電 (Electricity), 乱 (Riot), 乳 (Milk), 俺 (I, Me), 孔 (Cavity, Hole)"
+  },
+  {
+    "radical": "主",
+    "radical_name": "Master",
+    "kanji": "主 (Master), 住 (Dwelling, Reside, Dwell), 注 (Pour), 往 (Depart), 駐 (Resident), 柱 (Pillar)"
+  },
+  {
+    "radical": "虫",
+    "radical_name": "Insect",
+    "kanji": "虫 (Insect, Bug), 強 (Strong, Strength), 風 (Wind, Style), 触 (Touch), 独 (Alone), 騒 (Boisterous), 融 (Dissolve), 遣 (Dispatch), 蛍 (Firefly), 蜂 (Bee), 蜜 (Honey), 虹 (Rainbow), 蚊 (Mosquito), 蛇 (Snake), 蟹 (Crab), 蝶 (Butterfly), 濁 (Muddy, Impure), 蛮 (Barbarian)"
+  },
+  {
+    "radical": "乍",
+    "radical_name": "Key",
+    "kanji": "作 (Make), 昨 (Previous, Yesterday), 酢 (Vinegar), 詐 (Lie), 搾 (Squeeze)"
+  },
+  {
+    "radical": "氵",
+    "radical_name": "Tsunami",
+    "kanji": "池 (Pond), 活 (Lively), 海 (Sea, Ocean), 決 (Decide, Decision), 泳 (Swim), 酒 (Alcohol), 落 (Fall), 漢 (Chinese, China), 波 (Wave), 注 (Pour), 洋 (Western Style, Ocean), 流 (Stream), 消 (Extinguish), 深 (Deep), 温 (Warm), 港 (Harbor, Harbour, Port), 湯 (Hot Water), 法 (Method, Law), 泣 (Cry), 浅 (Shallow), 治 (Cure, Heal, Reign, Rule), 浴 (Bathe), 渉 (Ford), 汽 (Steam), 洗 (Wash), 減 (Decrease), 混 (Mix), 済 (Come To An End), 派 (Sect), 演 (Perform, Performance), 準 (Standard), 沢 (Swamp), 況 (Condition), 渡 (Transit), 満 (Full), 激 (Fierce, Violent), 河 (River), 汗 (Sweat), 濃 (Thick), 清 (Pure), 潔 (Pure), 浜 (Beach), 江 (Inlet, Bay), 添 (Append), 渇 (Thirst), 浮 (Float), 漏 (Leak), 泥 (Mud), 液 (Fluid, Liquid), 汚 (Dirty), 染 (Dye), 漠 (Desert, Vague), 沿 (Run Alongside), 源 (Origin), 測 (Measure), 滞 (Stagnate), 汁 (Soup), 湖 (Lake), 油 (Oil), 沖 (Open Sea), 津 (Haven), 漁 (Fishing), 湾 (Gulf), 渋 (Bitter), 薄 (Dilute), 瀬 (Rapids, Shallows), 潜 (Conceal), 泊 (Overnight), 滑 (Slippery), 潟 (Lagoon), 潮 (Tide), 沈 (Sink), 沼 (Bog), 滅 (Destroy), 滋 (Nourishing), 涙 (Teardrop), 澄 (Lucidity), 湿 (Damp), 溝 (Gutter), 滝 (Waterfall), 涼 (Cool), 泡 (Bubbles), 滴 (Drip), 溶 (Melt), 塗 (Paint), 浸 (Immersed), 淡 (Faint), 潤 (Watered), 簿 (Record Book), 漫 (Manga), 漂 (Drift), 淀 (Eddy), 洞 (Cave), 涯 (Horizon), 沸 (Boil), 濯 (Wash), 渦 (Whirlpool), 浦 (Bay), 没 (Die), 浄 (Cleanse, Purify), 洪 (Flood), 漬 (Pickle, Soak), 濁 (Muddy, Impure), 藩 (Fiefdom), 淑 (Graceful), 漣 (Ripples), 漆 (Lacquer, Varnish), 浪 (Wander), 汰 (Select), 沙 (Sand), 渓 (Valley), 湧 (Well, Boil), 泌 (Secrete), 漸 (Gradually, Steadily), 藻 (Seaweed), 潔 (Pure)"
+  },
+  {
+    "radical": "耂",
+    "radical_name": "Coffin",
+    "kanji": "考 (Think, Consider), 者 (Someone, Somebody), 老 (Elderly), 拷 (Torture)"
+  },
+  {
+    "radical": "ヨ",
+    "radical_name": "Wolverine",
+    "kanji": "当 (Right, Success, Correct), 雪 (Snow), 君 (Buddy), 争 (Conflict), 緑 (Green), 帰 (Return, Return Home), 曜 (Weekday, Day Of The Week), 急 (Hurry), 寝 (Lie Down, Lay Down, Sleep), 隠 (Hide), 録 (Record), 婦 (Wife), 尋 (Inquire), 掃 (Sweep), 躍 (Leap), 侵 (Invade), 縁 (Edge), 穏 (Calm), 伊 (Italy), 浸 (Immersed), 濯 (Wash), 虐 (Oppress), 粛 (Solemn)"
+  },
+  {
+    "radical": "廾",
+    "radical_name": "Twenty",
+    "kanji": "曲 (Music, Bend), 算 (Calculate, Calculation), 弁 (Dialect, Speech), 鼻 (Nose), 械 (Contraption), 昇 (Ascend), 葬 (Burial), 戒 (Commandment), 弊 (Evil), 奔 (Run, Bustle), 升 (Grid, Measure)"
+  },
+  {
+    "radical": "毋",
+    "radical_name": "Window",
+    "kanji": "毎 (Every), 海 (Sea, Ocean), 毒 (Poison), 梅 (Ume, Japanese Plum), 貫 (Pierce, Sushi Counter), 慣 (Accustomed)"
+  },
+  {
+    "radical": "肉",
+    "radical_name": "Meat",
+    "kanji": "肉 (Meat), 腐 (Rot)"
+  },
+  {
+    "radical": "自",
+    "radical_name": "Self",
+    "kanji": "自 (Self), 身 (Somebody, Someone, Body), 息 (Breath), 鼻 (Nose), 臭 (Stinking, Stinky, Smelly), 憩 (Rest), 憂 (Grief)"
+  },
+  {
+    "radical": "冋",
+    "radical_name": "Mustache",
+    "kanji": "同 (Same), 高 (Tall, Expensive, High), 商 (Merchandise), 橋 (Bridge), 骨 (Bone), 過 (Surpass), 鍋 (Pot), 渦 (Whirlpool), 尚 (Furthermore, Esteem), 禍 (Evil, Misfortune), 矯 (Correct, Straighten)"
+  },
+  {
+    "radical": "行",
+    "radical_name": "Go",
+    "kanji": "行 (Go), 術 (Art), 街 (Street), 衛 (Defense), 衝 (Collide), 衡 (Equilibrium)"
+  },
+  {
+    "radical": "西",
+    "radical_name": "West",
+    "kanji": "西 (West), 茜 (Red Dye)"
+  },
+  {
+    "radical": "可",
+    "radical_name": "Lip Ring",
+    "kanji": "何 (What), 歌 (Song, Sing), 荷 (Luggage), 可 (Possible), 崎 (Cape), 河 (River), 奇 (Odd, Strange), 綺 (Beautiful), 阿 (Flatter)"
+  },
+  {
+    "radical": "斤",
+    "radical_name": "Axe",
+    "kanji": "近 (Near, Close), 所 (Place), 新 (New), 折 (Fold, Bend), 兵 (Soldier), 祈 (Pray, Prayer), 断 (Cut Off), 質 (Quality), 訴 (Sue), 浜 (Beach), 哲 (Philosophy), 暫 (Temporarily), 析 (Analysis), 岳 (Peak), 丘 (Hill), 斬 (Slice), 誓 (Vow), 匠 (Artisan), 逝 (Die), 漸 (Gradually, Steadily)"
+  },
+  {
+    "radical": "金",
+    "radical_name": "Gold",
+    "kanji": "金 (Gold), 鉄 (Iron), 銀 (Silver), 鏡 (Mirror), 鉛 (Lead), 針 (Needle), 録 (Record), 鑑 (Model), 銭 (Coin), 鍋 (Pot), 銅 (Copper), 鈴 (Buzzer), 銃 (Gun), 鋼 (Steel), 鋭 (Sharp), 鉱 (Mineral), 釣 (Fishing), 鐘 (Bell), 鈍 (Dull), 鍵 (Key), 鍛 (Forge), 錬 (Tempering), 鉢 (Bowl), 銘 (Inscription), 鎖 (Chain), 錦 (Brocade), 鎌 (Sickle, Scythe), 鎮 (Tranquilize), 錯 (Confused, Mixed), 錠 (Lock), 鋳 (Cast, Casting)"
+  },
+  {
+    "radical": "青",
+    "radical_name": "Blue",
+    "kanji": "青 (Blue), 情 (Feeling, Emotion), 晴 (Clear Up), 静 (Quiet), 清 (Pure), 精 (Spirit), 請 (Request), 靖 (Peaceful)"
+  },
+  {
+    "radical": "冫",
+    "radical_name": "Ice",
+    "kanji": "図 (Diagram), 次 (Next), 弱 (Weak), 楽 (Comfort, Ease, Pleasure), 寒 (Cold), 冷 (Cool, Cold), 凍 (Frozen), 尽 (Exhaust), 准 (Semi), 凝 (Congeal, Freeze, Absorbed In), 凛 (Cold), 凌 (Endure)"
+  },
+  {
+    "radical": "走",
+    "radical_name": "Run",
+    "kanji": "走 (Run), 起 (Wake Up), 徒 (Junior, Follower), 越 (Go Beyond), 超 (Ultra, Super), 趣 (Gist), 赴 (Proceed, Move On)"
+  },
+  {
+    "radical": "里",
+    "radical_name": "Village",
+    "kanji": "里 (Home Village, Home Town, Hometown), 理 (Reason), 童 (Juvenile), 野 (Field), 量 (Quantity, Amount), 裏 (Backside), 埋 (Bury), 鐘 (Bell), 瞳 (Pupil), 黙 (Shut Up), 糧 (Provisions), 鯉 (Carp, Koi), 憧 (Long For, Yearn)"
+  },
+  {
+    "radical": "https://www.wanikani.com/radicals/kick",
+    "radical_name": "Kick",
+    "kanji": "表 (Express), 展 (Expand), 裏 (Backside), 猿 (Monkey), 俵 (Sack), 哀 (Pathetic), 衰 (Decline)"
+  },
+  {
+    "radical": "https://www.wanikani.com/radicals/viking",
+    "radical_name": "Viking",
+    "kanji": "学 (Study, Learn, Learning), 労 (Labor, Labour), 賞 (Prize), 堂 (Hall, Public Chamber), 栄 (Prosperity, Flourish), 常 (Normal, Ordinary), 覚 (Memorize, Awake, Memorise), 営 (Manage), 党 (Group), 蛍 (Firefly), 掌 (Manipulate)"
+  },
+  {
+    "radical": "会",
+    "radical_name": "Meet",
+    "kanji": "会 (Meet), 絵 (Drawing, Painting)"
+  },
+  {
+    "radical": "言",
+    "radical_name": "Say",
+    "kanji": "言 (Say), 記 (Write Down, Record), 話 (Talk, Speak), 談 (Discuss), 語 (Language), 読 (Read), 調 (Investigate, Tone), 詩 (Poem), 課 (Section), 謝 (Apologize, Apologise), 計 (Measure, Measurement), 信 (Believe, Trust), 証 (Evidence, Proof), 識 (Discerning, Discriminating, Know), 警 (Warn, Admonish), 説 (Theory), 訓 (Instruction), 試 (Try, Attempt), 許 (Permit, Allow), 詞 (Part Of Speech, Speech Particle, Particle Of Speech, Grammar Particle), 議 (Deliberation, Discussion), 論 (Theory), 設 (Establish), 評 (Evaluate), 認 (Recognize, Recognise), 罰 (Penalty, Punishment), 誕 (Birth), 護 (Defend), 訴 (Sue), 訟 (Lawsuit), 討 (Chastise), 誘 (Invite), 訪 (Visit), 請 (Request), 診 (Diagnose), 詰 (Stuffed), 詳 (Detailed), 訳 (Translation, Reason), 誌 (Magazine), 諸 (Various), 誤 (Mistake), 講 (Lecture), 獄 (Prison), 諾 (Agreement), 託 (Consign), 譲 (Defer), 謙 (Modesty), 誉 (Honor), 誠 (Sincerity), 誰 (Who), 謎 (Riddle), 誇 (Pride), 詐 (Lie), 誓 (Vow), 謀 (Conspire), 訂 (Revise), 諮 (Consult), 諭 (Admonish), 諒 (Comprehend, Reality), 謡 (Noh Chanting, Noh Chant), 該 (The Above, That Specifically), 譜 (Genealogy, Score), 詠 (Compose, Recite), 謹 (Humble, Discreet)"
+  },
+  {
+    "radical": "开",
+    "radical_name": "Lantern",
+    "kanji": "形 (Shape, Appearance, Form), 研 (Sharpen), 発 (Departure), 開 (Open, Opened), 型 (Model, Type), 刑 (Punish), 併 (Join), 塀 (Fence), 瓶 (Bottle)"
+  },
+  {
+    "radical": "雨",
+    "radical_name": "Rain",
+    "kanji": "雨 (Rain), 雪 (Snow), 雲 (Cloud), 電 (Electricity), 雰 (Atmosphere), 震 (Earthquake, Quake, Shake), 漏 (Leak), 需 (Demand), 露 (Expose, Dew), 雷 (Thunder), 曇 (Cloudy), 霊 (Ghost), 零 (Zero, Spill), 霧 (Fog), 霜 (Frost)"
+  },
+  {
+    "radical": "色",
+    "radical_name": "Color",
+    "kanji": "色 (Color, Colour), 絶 (Extinction, Die Out)"
+  },
+  {
+    "radical": "⻌",
+    "radical_name": "Treadmill",
+    "kanji": "近 (Near, Close), 辺 (Area), 通 (Pass Through), 週 (Week), 道 (Road, Street, Path, Way), 送 (Send), 速 (Fast), 進 (Advance), 運 (Carry, Luck), 追 (Follow, Chase), 返 (Return), 選 (Choose), 遠 (Far), 達 (Attain, Plural), 連 (Take Along), 過 (Surpass), 違 (Different), 述 (Mention), 逮 (Apprehend), 造 (Create), 退 (Retreat, Reject), 迷 (Astray), 迫 (Urge, Compel, Coerce), 途 (Route), 逆 (Reverse), 遊 (Play), 適 (Suitable), 迎 (Welcome), 込 (Crowded), 遅 (Slow), 遺 (Leave Behind), 遣 (Dispatch), 避 (Dodge, Avoid), 逃 (Escape), 還 (Send Back), 巡 (Patrol), 透 (Transparent), 遜 (Humble), 謎 (Riddle), 迅 (Swift), 遂 (Accomplish), 蓮 (Lotus), 遇 (Treatment), 遭 (Encounter, Meet), 随 (All), 逸 (Deviate, Elude), 髄 (Marrow, Bone Marrow), 遼 (Distant), 縫 (Sew), 遥 (Far Off, Far Away), 遍 (Universal), 遮 (Intercept), 迭 (Alternate), 漣 (Ripples), 遷 (Transition), 逝 (Die)"
+  },
+  {
+    "radical": "羽",
+    "radical_name": "Feathers",
+    "kanji": "羽 (Feather, Feathers, Wing, Wings), 習 (Learn), 翌 (The Following, Following, Next), 翼 (Wing), 翔 (Fly), 扇 (Folding Fan), 翻 (Flip)"
+  },
+  {
+    "radical": "羊",
+    "radical_name": "Sheep",
+    "kanji": "羊 (Sheep), 南 (South), 業 (Business), 洋 (Western Style, Ocean), 様 (Formal Name Title, Formal Name Ender, Manner), 養 (Foster), 善 (Morally Good, Good), 差 (Distinction), 鮮 (Fresh), 詳 (Detailed), 遅 (Slow), 群 (Flock), 翔 (Fly), 祥 (Auspicious)"
+  },
+  {
+    "radical": "長",
+    "radical_name": "Long",
+    "kanji": "長 (Long, Leader), 張 (Stretch), 髪 (Hair), 帳 (Notebook)"
+  },
+  {
+    "radical": "血",
+    "radical_name": "Blood",
+    "kanji": "血 (Blood), 衆 (Populace)"
+  },
+  {
+    "radical": "食",
+    "radical_name": "Eat",
+    "kanji": "食 (Eat, Meal), 飲 (Drink), 館 (Public Building), 飯 (Meal, Food), 飾 (Decorate), 飼 (Domesticate), 飢 (Starve), 餓 (Starve), 飽 (Bored, Sated)"
+  },
+  {
+    "radical": "彳",
+    "radical_name": "Loiter",
+    "kanji": "後 (Behind, After, Back, Rear), 役 (Service, Duty), 待 (Wait), 履 (Boots), 徒 (Junior, Follower), 得 (Acquire), 律 (Law), 復 (Restore), 往 (Depart), 従 (Obey, Accompany, Follow), 徴 (Indication, Sign), 微 (Delicate), 径 (Diameter), 徳 (Virtue), 縦 (Vertical), 彼 (He), 御 (Honorable), 徹 (Penetrate), 懲 (Chastise), 覆 (Capsize, Cover), 征 (Subjugate), 徐 (Gently, Gentle), 循 (Circulation, Sequential)"
+  },
+  {
+    "radical": "マ",
+    "radical_name": "Mama",
+    "kanji": "通 (Pass Through), 予 (Beforehand), 疑 (Doubt), 勇 (Courage, Bravery, Valor, Valour), 痛 (Pain), 踊 (Dance)"
+  },
+  {
+    "radical": "犭",
+    "radical_name": "Animal",
+    "kanji": "猫 (Cat), 犯 (Crime), 狭 (Narrow), 独 (Alone), 猛 (Fierce), 獄 (Prison), 狙 (Aim), 獲 (Seize), 狩 (Hunt), 狂 (Lunatic, Crazy), 猿 (Monkey), 猟 (Hunting), 猶 (Still), 狐 (Fox)"
+  },
+  {
+    "radical": "占",
+    "radical_name": "Fortune",
+    "kanji": "店 (Shop, Store), 点 (Point, Decimal, Decimal Point), 占 (Fortune, Occupy), 粘 (Sticky), 貼 (Paste)"
+  },
+  {
+    "radical": "欠",
+    "radical_name": "Lack",
+    "kanji": "次 (Next), 欠 (Lack), 飲 (Drink), 歌 (Song, Sing), 欧 (Europe), 欲 (Want), 歓 (Delight), 吹 (Blow), 欺 (Deceit), 炊 (Cook), 軟 (Soft), 款 (Article)"
+  },
+  {
+    "radical": "L",
+    "radical_name": "Lion",
+    "kanji": "直 (Fix, Direct), 以 (By Means Of, By The Means Of, By Way Of, By The Way Of), 県 (Prefecture), 断 (Cut Off), 似 (Resemble), 継 (Inherit)"
+  },
+  {
+    "radical": "刂",
+    "radical_name": "Knife",
+    "kanji": "前 (Front, Before), 別 (Separate), 利 (Profit, Benefit, Advantage), 例 (Example), 帰 (Return, Return Home), 列 (Row), 側 (Side), 倒 (Overthrow, Collapse), 判 (Judge), 制 (Control), 罰 (Penalty, Punishment), 副 (Vice, Side), 割 (Divide), 則 (Rule), 型 (Model, Type), 創 (Create), 刺 (Stab), 烈 (Violent, Intense), 劇 (Drama), 刻 (Carve), 測 (Measure), 剣 (Sword), 刑 (Punish), 削 (Whittle Down), 刊 (Edition), 剤 (Dose), 到 (Arrival), 裂 (Split, Tear), 刷 (Printing), 梨 (Pear), 班 (Squad), 刈 (Prune), 剛 (Sturdy), 剰 (Surplus), 莉 (Jasmine), 剖 (Divide), 痢 (Diarrhea)"
+  },
+  {
+    "radical": "亡",
+    "radical_name": "Death",
+    "kanji": "亡 (Deceased, Death), 望 (Hope), 忘 (Forget), 忙 (Busy), 荒 (Wild), 盲 (Blind), 妄 (Reckless)"
+  },
+  {
+    "radical": "首",
+    "radical_name": "Neck",
+    "kanji": "首 (Neck), 道 (Road, Street, Path, Way)"
+  },
+  {
+    "radical": "灬",
+    "radical_name": "Boil",
+    "kanji": "点 (Point, Decimal, Decimal Point), 然 (Nature), 熱 (Heat, Fever), 烈 (Violent, Intense), 照 (Illuminate), 熟 (Ripen), 熊 (Bear), 焦 (Char), 黙 (Shut Up), 煮 (Boil), 勲 (Merit), 庶 (All, Bastard), 遮 (Intercept), 礁 (Reef)"
+  },
+  {
+    "radical": "凵",
+    "radical_name": "Box",
+    "kanji": "画 (Drawing, Painting), 歯 (Tooth, Teeth)"
+  },
+  {
+    "radical": "斗",
+    "radical_name": "Ladle",
+    "kanji": "科 (Science), 料 (Fee, Material), 斗 (Ladle, Big Dipper), 斜 (Diagonal)"
+  },
+  {
+    "radical": "ホ",
+    "radical_name": "Angel",
+    "kanji": "茶 (Tea), 術 (Art), 述 (Mention)"
+  },
+  {
+    "radical": "歹",
+    "radical_name": "Yakuza",
+    "kanji": "死 (Death), 例 (Example), 残 (Remainder), 列 (Row), 烈 (Violent, Intense), 葬 (Burial), 殖 (Multiply), 裂 (Split, Tear), 殊 (Especially), 殉 (Martyr)"
+  },
+  {
+    "radical": "未",
+    "radical_name": "Jet",
+    "kanji": "妹 (Younger Sister, Little Sister), 未 (Not Yet), 末 (End), 味 (Flavor, Taste, Flavour), 株 (Stocks, Shares), 魅 (Alluring), 朱 (Vermillion), 珠 (Pearl), 殊 (Especially), 抹 (Erase)"
+  },
+  {
+    "radical": "禾",
+    "radical_name": "Grain",
+    "kanji": "科 (Science), 和 (Peace, Japanese Style), 乗 (Ride), 利 (Profit, Benefit, Advantage), 秒 (Second), 季 (Seasons), 私 (I, Private), 秋 (Autumn, Fall), 種 (Kind, Type), 委 (Committee), 税 (Tax), 秀 (Excel), 誘 (Invite), 稚 (Immature), 移 (Shift), 程 (Extent), 積 (Accumulate), 秘 (Secret), 香 (Fragrance), 称 (Title), 稲 (Rice Plant), 透 (Transparent), 梨 (Pear), 菌 (Bacteria), 稼 (Earnings), 穏 (Calm), 租 (Tariff), 穂 (Head Of Plant, Ear Of Plant), 穫 (Harvest), 秩 (Order, Regularity), 稿 (Draft), 剰 (Surplus), 莉 (Jasmine), 穀 (Grain), 痢 (Diarrhea)"
+  },
+  {
+    "radical": "矛",
+    "radical_name": "Spear",
+    "kanji": "務 (Task), 柔 (Gentle), 矛 (Halberd)"
+  },
+  {
+    "radical": "氏",
+    "radical_name": "Clan",
+    "kanji": "氏 (Family Name, Last Name, Surname), 民 (Peoples, People, Nation), 紙 (Paper), 低 (Low), 底 (Bottom), 婚 (Marriage), 抵 (Resist), 邸 (Residence)"
+  },
+  {
+    "radical": "周",
+    "radical_name": "Circumference",
+    "kanji": "週 (Week), 調 (Investigate, Tone), 周 (Circumference), 彫 (Carve)"
+  },
+  {
+    "radical": "卩",
+    "radical_name": "Stamp",
+    "kanji": "服 (Clothes, Clothing), 報 (News, Report), 節 (Season), 印 (Seal, Mark), 却 (Contrary), 御 (Honorable), 即 (Instant), 脚 (Leg, Foot), 柳 (Willow), 卸 (Wholesale)"
+  },
+  {
+    "radical": "己",
+    "radical_name": "Oneself",
+    "kanji": "記 (Write Down, Record), 起 (Wake Up), 配 (Distribute), 港 (Harbor, Harbour, Port), 選 (Choose), 紀 (Account, Narrative), 改 (Renew), 巻 (Scroll), 己 (Oneself), 妃 (Princess, Queen), 忌 (Mourning), 遷 (Transition)"
+  },
+  {
+    "radical": "鳥",
+    "radical_name": "Bird",
+    "kanji": "鳥 (Bird), 鳴 (Chirp), 島 (Island), 薦 (Recommend), 鳩 (Dove, Pigeon), 鶴 (Crane), 烏 (Crow), 鶏 (Chicken)"
+  },
+  {
+    "radical": "黒",
+    "radical_name": "Black",
+    "kanji": "黒 (Black), 墨 (Black Ink, Ink)"
+  },
+  {
+    "radical": "豕",
+    "radical_name": "Pig",
+    "kanji": "家 (House, Home), 豚 (Pork, Pig), 隊 (Squad), 豪 (Luxurious), 劇 (Drama), 縁 (Edge), 墜 (Crash), 遂 (Accomplish), 塚 (Mound), 蒙 (Darkness)"
+  },
+  {
+    "radical": "勿",
+    "radical_name": "Wing",
+    "kanji": "物 (Thing), 潟 (Lagoon)"
+  },
+  {
+    "radical": "夫",
+    "radical_name": "Husband",
+    "kanji": "失 (Fault), 夫 (Husband), 規 (Standard), 狭 (Narrow), 替 (Replace, Exchange), 賛 (Agree), 潜 (Conceal), 挟 (Between), 峡 (Ravine), 扶 (Aid), 鶏 (Chicken), 渓 (Valley)"
+  },
+  {
+    "radical": "几",
+    "radical_name": "Table",
+    "kanji": "風 (Wind, Style), 冗 (Superfluous, Unnecessary, Uselessness), 処 (Deal With), 航 (Navigation), 机 (Desk), 抗 (Confront), 拠 (Based On), 肌 (Skin), 飢 (Starve), 凡 (Mediocre), 殻 (Husk, Shell), 帆 (Sail), 坑 (Pit, Hole)"
+  },
+  {
+    "radical": "門",
+    "radical_name": "Gate",
+    "kanji": "間 (Interval, Interval Of Time, Time Interval), 開 (Open, Opened), 聞 (Hear), 問 (Problem), 門 (Gates, Gate), 関 (Related, Connected), 閥 (Clique, Clan), 閣 (The Cabinet, Cabinet), 閉 (Closed, Close, Closure), 闘 (Struggle), 闇 (Darkness), 潤 (Watered), 欄 (Column, Space), 閲 (Inspection), 閑 (Leisure)"
+  },
+  {
+    "radical": "且",
+    "radical_name": "Top Hat",
+    "kanji": "組 (Group, Association, Team), 助 (Help), 査 (Inspect, Investigate, Inspection, Investigation), 祖 (Ancestor), 狙 (Aim), 宜 (Best Regards), 租 (Tariff), 阻 (Thwart), 畳 (Tatami Mat), 且 (Also), 粗 (Coarse, Rough)"
+  },
+  {
+    "radical": "魚",
+    "radical_name": "Fish",
+    "kanji": "魚 (Fish), 鮮 (Fresh), 漁 (Fishing), 鰐 (Alligator), 鯉 (Carp, Koi), 鯨 (Whale)"
+  },
+  {
+    "radical": "孝",
+    "radical_name": "Teacher",
+    "kanji": "教 (Teach), 孝 (Filial Piety), 酵 (Ferment)"
+  },
+  {
+    "radical": "黄",
+    "radical_name": "Yellow",
+    "kanji": "黄 (Yellow), 横 (Side)"
+  },
+  {
+    "radical": "舟",
+    "radical_name": "Boat",
+    "kanji": "船 (Boat, Ship), 航 (Navigation), 般 (Generally), 盤 (Tray), 艦 (Warship), 舟 (Boat), 搬 (Transport), 丹 (Rust Colored, Red), 艇 (Rowboat), 舶 (Ship)"
+  },
+  {
+    "radical": "罒",
+    "radical_name": "Net",
+    "kanji": "買 (Buy), 署 (Government Office, Political Office, Office), 夢 (Dream), 罪 (Guilt), 罰 (Penalty, Punishment), 置 (Put), 環 (Loop), 憲 (Constitution), 壊 (Break), 懐 (Nostalgia), 徳 (Virtue), 聴 (Listen), 還 (Send Back), 寧 (Rather), 漫 (Manga), 慢 (Ridicule, Laziness), 曙 (Dawn), 羅 (Spread Out, Arrange), 濁 (Muddy, Impure), 蔑 (Scorn, Neglect), 罷 (Quit, Leave)"
+  },
+  {
+    "radical": "ユ",
+    "radical_name": "Hook",
+    "kanji": "決 (Decide, Decision), 候 (Climate, Candidate), 快 (Pleasant)"
+  },
+  {
+    "radical": "巳",
+    "radical_name": "Snake",
+    "kanji": "危 (Dangerous), 犯 (Crime), 腕 (Arm), 厄 (Unlucky), 範 (Example)"
+  },
+  {
+    "radical": "云",
+    "radical_name": "Cloud",
+    "kanji": "雲 (Cloud), 転 (Revolve), 伝 (Transmit, Tell), 芸 (Acting, Art), 魂 (Soul, Spirit), 曇 (Cloudy), 陰 (Shade)"
+  },
+  {
+    "radical": "殳",
+    "radical_name": "Weapon",
+    "kanji": "役 (Service, Duty), 投 (Throw), 殺 (Kill), 設 (Establish), 段 (Steps, Stairs), 撃 (Attack), 般 (Generally), 盤 (Tray), 殿 (Milord, Lord), 鍛 (Forge), 殴 (Assault), 搬 (Transport), 疫 (Epidemic), 没 (Die), 穀 (Grain), 殻 (Husk, Shell)"
+  },
+  {
+    "radical": "比",
+    "radical_name": "Compare",
+    "kanji": "階 (Floor, Story, Storey), 皆 (All, Everyone, Everything, Everybody), 昆 (Descendants), 混 (Mix), 比 (Compare), 批 (Criticism), 鹿 (Deer), 陛 (Highness)"
+  },
+  {
+    "radical": "合",
+    "radical_name": "Suit",
+    "kanji": "答 (Answer, Response, Reply), 拾 (Pick Up), 合 (Suit, Fit, Join), 給 (Salary), 塔 (Tower), 搭 (Board, Embark)"
+  },
+  {
+    "radical": "釆",
+    "radical_name": "Sickle",
+    "kanji": "番 (Number In A Series, Turn, Ordinal Number), 釈 (Explanation)"
+  },
+  {
+    "radical": "馬",
+    "radical_name": "Horse",
+    "kanji": "馬 (Horse), 駅 (Station, Train Station), 験 (Test), 騒 (Boisterous), 驚 (Surprised), 駐 (Resident), 駆 (Gallop), 騎 (Horse), 駒 (Chess Piece), 駄 (Burdensome), 騰 (Inflation), 駿 (Speed), 篤 (Deliberate)"
+  },
+  {
+    "radical": "穴",
+    "radical_name": "Hole",
+    "kanji": "究 (Research), 穴 (Hole, Cave), 突 (Stab, Thrust), 窓 (Window), 窮 (Destitute), 窒 (Suffocate), 搾 (Squeeze), 窃 (Steal)"
+  },
+  {
+    "radical": "舌",
+    "radical_name": "Tongue",
+    "kanji": "話 (Talk, Speak), 辞 (Quit), 舌 (Tongue), 乱 (Riot), 括 (Fasten), 憩 (Rest), 活 (Lively)"
+  },
+  {
+    "radical": "易",
+    "radical_name": "Easy",
+    "kanji": "場 (Location, Place), 陽 (Sunshine, Sunlight), 湯 (Hot Water), 易 (Easy), 傷 (Wound), 揚 (Hoist), 腸 (Intestines, Guts)"
+  },
+  {
+    "radical": "匚",
+    "radical_name": "Cage",
+    "kanji": "医 (Medicine), 区 (District, Ward), 暇 (Spare Time, Free Time), 匹 (Small Animal, Small Animal Counter), 殴 (Assault), 堰 (Dam), 匠 (Artisan), 匿 (Hide)"
+  },
+  {
+    "radical": "https://www.wanikani.com/radicals/cape",
+    "radical_name": "Cape",
+    "kanji": "局 (Bureau, Department), 司 (Director), 幻 (Illusion)"
+  },
+  {
+    "radical": "https://www.wanikani.com/radicals/hills",
+    "radical_name": "Hills",
+    "kanji": "乏 (Scarce), 芝 (Lawn), 之 (This)"
+  },
+  {
+    "radical": "癶",
+    "radical_name": "Tent",
+    "kanji": "発 (Departure), 祭 (Festival), 登 (Climb), 澄 (Lucidity), 葵 (Hollyhock)"
+  },
+  {
+    "radical": "https://www.wanikani.com/radicals/spring",
+    "radical_name": "Spring",
+    "kanji": "実 (Truth, Reality), 勝 (Win), 寒 (Cold), 春 (Spring), 藤 (Wisteria), 巻 (Scroll), 券 (Ticket), 棒 (Pole, Rod, Wooden Pole), 寿 (Lifespan), 奏 (Play Music), 拳 (Fist), 泰 (Peace), 騰 (Inflation), 奉 (Dedicate), 俸 (Salary)"
+  },
+  {
+    "radical": "https://www.wanikani.com/radicals/yurt",
+    "radical_name": "Yurt",
+    "kanji": "度 (Degrees, Occurrence), 席 (Seat), 渡 (Transit), 庶 (All, Bastard), 遮 (Intercept)"
+  },
+  {
+    "radical": "反",
+    "radical_name": "Anti",
+    "kanji": "仮 (Temporary), 返 (Return), 坂 (Slope), 飯 (Meal, Food), 阪 (Heights, Slope), 販 (Sell), 板 (Board), 版 (Edition)"
+  },
+  {
+    "radical": "台",
+    "radical_name": "Machine",
+    "kanji": "始 (Begin, Start), 治 (Cure, Heal, Reign, Rule), 胎 (Womb, Uterus), 怠 (Lazy, Neglect)"
+  },
+  {
+    "radical": "覀",
+    "radical_name": "Helicopter",
+    "kanji": "要 (Need), 標 (Signpost), 煙 (Smoke), 価 (Value), 腰 (Waist), 票 (Ballot), 鹿 (Deer), 覆 (Capsize, Cover), 漂 (Drift), 覇 (Leadership), 遷 (Transition), 慶 (Congratulate)"
+  },
+  {
+    "radical": "疋",
+    "radical_name": "Coat Rack",
+    "kanji": "定 (Determine), 題 (Topic), 疑 (Doubt), 礎 (Foundation), 疎 (Neglect, Sparse), 旋 (Rotation, Revolution), 錠 (Lock), 婿 (Groom), 堤 (Embankment), 提 (Present, Submit), 淀 (Eddy), 是 (Absolutely), 従 (Obey, Accompany, Follow), 縦 (Vertical)"
+  },
+  {
+    "radical": "阝",
+    "radical_name": "Building",
+    "kanji": "部 (Part, Department, Club), 院 (Institution), 都 (Metropolis), 陽 (Sunshine, Sunlight), 階 (Floor, Story, Storey), 険 (Risky, Steep), 阪 (Heights, Slope), 防 (Prevent, Prevention), 際 (Occasion), 限 (Limit), 響 (Echo, Reverberation, Resound), 隠 (Hide), 障 (Hinder), 郵 (Mail), 郎 (Guy), 隊 (Squad), 除 (Exclude), 陸 (Land), 降 (Descend), 陣 (Army Base), 邦 (Home Country), 隆 (Prosperity), 隣 (Neighbor), 陰 (Shade), 阻 (Thwart), 墜 (Crash), 隙 (Crevice), 陶 (Pottery), 隔 (Isolate), 陛 (Highness), 邪 (Wicked), 郊 (Suburbs), 隅 (Corner), 邸 (Residence), 郡 (County, District), 陥 (Cave In), 陳 (Exhibit), 随 (All), 阿 (Flatter), 郭 (Enclosure), 那 (What), 陵 (Mausoleum, Tomb), 堕 (Degenerate), 陪 (Accompany)"
+  },
+  {
+    "radical": "https://www.wanikani.com/radicals/Cleat",
+    "radical_name": "Cleat",
+    "kanji": "受 (Accept, Receive), 妥 (Gentle), 愛 (Love), 乳 (Milk), 隠 (Hide), 浮 (Float), 菜 (Vegetable), 採 (Gather), 将 (Commander), 稲 (Rice Plant), 穏 (Calm), 瞬 (Blink), 彩 (Coloring, Colouring), 鶏 (Chicken), 渓 (Valley)"
+  },
+  {
+    "radical": "https://www.wanikani.com/radicals/pope",
+    "radical_name": "Pope",
+    "kanji": "真 (Reality), 盾 (Shield), 循 (Circulation, Sequential)"
+  },
+  {
+    "radical": "重",
+    "radical_name": "Heavy",
+    "kanji": "重 (Heavy), 働 (Work, Labor, Labour), 動 (Move), 種 (Kind, Type), 衝 (Collide), 勲 (Merit)"
+  },
+  {
+    "radical": "聿",
+    "radical_name": "Brush",
+    "kanji": "事 (Action, Matter, Thing), 建 (Build), 書 (Write, Writing), 妻 (Wife), 律 (Law), 逮 (Apprehend), 筆 (Writing Brush), 健 (Healthy), 康 (Health), 糖 (Sugar), 隷 (Slave), 津 (Haven), 鍵 (Key), 唐 (China, Sudden), 庸 (Common)"
+  },
+  {
+    "radical": "辛",
+    "radical_name": "Spicy",
+    "kanji": "幸 (Happiness), 辞 (Quit), 辛 (Spicy), 宰 (Manager), 梓 (Wood Block)"
+  },
+  {
+    "radical": "咅",
+    "radical_name": "Clown",
+    "kanji": "部 (Part, Department, Club), 倍 (Double, Times, Multiply), 培 (Cultivate), 賠 (Compensation, Compensate), 陪 (Accompany), 剖 (Divide)"
+  },
+  {
+    "radical": "介",
+    "radical_name": "Hut",
+    "kanji": "界 (World), 介 (Jammed In)"
+  },
+  {
+    "radical": "史",
+    "radical_name": "History",
+    "kanji": "使 (Use), 史 (History)"
+  },
+  {
+    "radical": "隹",
+    "radical_name": "Turkey",
+    "kanji": "進 (Advance), 集 (Collect, Gather), 曜 (Weekday, Day Of The Week), 難 (Difficult), 確 (Certain), 権 (Rights), 観 (View), 護 (Defend), 準 (Standard), 稚 (Immature), 催 (Sponsor), 雄 (Male, Brave), 離 (Detach), 雑 (Random, Miscellaneous), 推 (Infer), 歓 (Delight), 維 (Maintain), 雇 (Employ), 勧 (Recommend), 奪 (Rob), 躍 (Leap), 携 (Portable), 獲 (Seize), 雅 (Elegant), 焦 (Char), 誰 (Who), 穫 (Harvest), 鶴 (Crane), 唯 (Solely), 奮 (Stirred Up), 濯 (Wash), 隻 (Ship Counter), 擁 (Embrace), 隼 (Falcon), 准 (Semi), 羅 (Spread Out, Arrange), 椎 (Oak, Oak Tree), 雌 (Female), 礁 (Reef)"
+  },
+  {
+    "radical": "各",
+    "radical_name": "Kiss",
+    "kanji": "落 (Fall), 路 (Road), 格 (Status), 絡 (Entangle, Coil Around, Entwine), 各 (Each), 閣 (The Cabinet, Cabinet), 略 (Abbreviation, Abbreviate), 賂 (Bribe), 露 (Expose, Dew), 酪 (Dairy)"
+  },
+  {
+    "radical": "豆",
+    "radical_name": "Beans",
+    "kanji": "頭 (Head), 登 (Climb), 短 (Short), 豊 (Plentiful), 豆 (Beans), 闘 (Struggle), 樹 (Wood), 澄 (Lucidity), 膨 (Swell)"
+  },
+  {
+    "radical": "酉",
+    "radical_name": "Alcohol",
+    "kanji": "配 (Distribute), 酒 (Alcohol), 酸 (Acid), 尊 (Revered), 酔 (Drunk), 酢 (Vinegar), 醤 (Soy Sauce), 酎 (Sake), 酬 (Repay), 酷 (Cruel, Unjust), 猶 (Still), 醸 (Brew), 酵 (Ferment), 酌 (Serve), 酪 (Dairy), 醜 (Ugly)"
+  },
+  {
+    "radical": "売",
+    "radical_name": "Sell",
+    "kanji": "読 (Read), 続 (Continue)"
+  },
+  {
+    "radical": "曲",
+    "radical_name": "Music",
+    "kanji": "農 (Farming, Agriculture), 典 (Rule), 豊 (Plentiful), 遭 (Encounter, Meet), 槽 (Tank, Vat), 曹 (Official)"
+  },
+  {
+    "radical": "丙",
+    "radical_name": "Dynamite",
+    "kanji": "病 (Sick, Sickness, Ill, Illness), 柄 (Pattern)"
+  },
+  {
+    "radical": "乃",
+    "radical_name": "Stairs",
+    "kanji": "秀 (Excel), 誘 (Invite), 携 (Portable), 透 (Transparent), 乃 (From)"
+  },
+  {
+    "radical": "失",
+    "radical_name": "Fault",
+    "kanji": "鉄 (Iron), 秩 (Order, Regularity), 迭 (Alternate)"
+  },
+  {
+    "radical": "頁",
+    "radical_name": "Geoduck",
+    "kanji": "頭 (Head), 顔 (Face), 題 (Topic), 願 (Request), 頑 (Stubborn), 類 (Type, Category, Kind), 順 (Order, Sequence), 領 (Territory), 額 (Amount, Framed Picture, Forehead), 預 (Deposit), 頼 (Trust), 傾 (Lean), 項 (Paragraph), 顧 (Review), 頻 (Frequent), 瀬 (Rapids, Shallows), 頃 (Approximate), 頂 (Summit, Humbly), 須 (Necessary), 顕 (Appear, Existing), 寡 (Widow, Minority), 煩 (Annoy, Annoying)"
+  },
+  {
+    "radical": "辰",
+    "radical_name": "Landslide",
+    "kanji": "農 (Farming, Agriculture), 震 (Earthquake, Quake, Shake), 振 (Shake, Wave), 娠 (Pregnant), 唇 (Lips), 辱 (Humiliate)"
+  },
+  {
+    "radical": "https://www.wanikani.com/radicals/Chinese",
+    "radical_name": "Chinese",
+    "kanji": "漢 (Chinese, China), 難 (Difficult), 嘆 (Sigh)"
+  },
+  {
+    "radical": "疒",
+    "radical_name": "Sick",
+    "kanji": "病 (Sick, Sickness, Ill, Illness), 痛 (Pain), 症 (Symptom), 療 (Heal), 疲 (Exhausted), 癖 (Habit), 疫 (Epidemic), 疾 (Rapid), 痴 (Stupid), 癒 (Healing, Cure), 痢 (Diarrhea)"
+  },
+  {
+    "radical": "圣",
+    "radical_name": "Tombstone",
+    "kanji": "軽 (Lightweight, Light, Light Weight), 経 (Passage Of Time, Pass Through, Manage), 怪 (Suspicious), 径 (Diameter), 茎 (Stem)"
+  },
+  {
+    "radical": "束",
+    "radical_name": "Bundle",
+    "kanji": "速 (Fast), 整 (Arrange, Organize, Organise), 束 (Bundle), 頼 (Trust), 瀬 (Rapids, Shallows), 疎 (Neglect, Sparse)"
+  },
+  {
+    "radical": "皮",
+    "radical_name": "Skin",
+    "kanji": "波 (Wave), 被 (Incur), 破 (Tear), 彼 (He), 疲 (Exhausted), 披 (Expose)"
+  },
+  {
+    "radical": "単",
+    "radical_name": "Simple",
+    "kanji": "戦 (War, Battle), 単 (Simple), 禅 (Zen, Zen Buddhism), 巣 (Nest), 弾 (Bullet)"
+  },
+  {
+    "radical": "少",
+    "radical_name": "Few",
+    "kanji": "秒 (Second), 省 (Conserve), 妙 (Strange), 砂 (Sand), 劣 (Inferiority), 賓 (Vip, Guest), 沙 (Sand)"
+  },
+  {
+    "radical": "寺",
+    "radical_name": "Temple",
+    "kanji": "時 (Time, O'clock, Hour), 持 (Hold), 待 (Wait), 特 (Special), 詩 (Poem), 寺 (Temple), 等 (Equal), 得 (Acquire), 侍 (Samurai)"
+  },
+  {
+    "radical": "音",
+    "radical_name": "Sound",
+    "kanji": "意 (Idea), 識 (Discerning, Discriminating, Know), 職 (Employment), 響 (Echo, Reverberation, Resound), 織 (Weave), 闇 (Darkness)"
+  },
+  {
+    "radical": "良",
+    "radical_name": "Good",
+    "kanji": "養 (Foster), 響 (Echo, Reverberation, Resound), 郎 (Guy), 娘 (Daughter), 朗 (Bright), 浪 (Wander)"
+  },
+  {
+    "radical": "及",
+    "radical_name": "Escalator",
+    "kanji": "級 (Rank, Grade, Level), 吸 (Suck, Inhale), 及 (Reach), 扱 (Handle)"
+  },
+  {
+    "radical": "兄",
+    "radical_name": "Older Brother",
+    "kanji": "競 (Compete), 祝 (Celebrate), 況 (Condition), 党 (Group), 呪 (Curse)"
+  },
+  {
+    "radical": "https://www.wanikani.com/radicals/blackjack",
+    "radical_name": "Blackjack",
+    "kanji": "共 (Together), 昔 (Long Ago, Long Time Ago), 港 (Harbor, Harbour, Port), 選 (Choose), 展 (Expand), 散 (Scatter), 異 (Differ), 戴 (Receive), 錯 (Confused, Mixed)"
+  },
+  {
+    "radical": "https://www.wanikani.com/radicals/bear",
+    "radical_name": "Bear",
+    "kanji": "追 (Follow, Chase), 館 (Public Building), 官 (Government), 師 (Teacher, Expert, Master), 管 (Pipe), 遣 (Dispatch), 阜 (Mound), 帥 (Commander), 菅 (Sedge)"
+  },
+  {
+    "radical": "戈",
+    "radical_name": "Drunkard",
+    "kanji": "成 (Become), 戦 (War, Battle), 感 (Feeling), 識 (Discerning, Discriminating, Know), 閥 (Clique, Clan), 機 (Machine), 械 (Contraption), 域 (Region, Regional Boundary, Boundary), 職 (Employment), 裁 (Judge), 載 (Publish), 織 (Weave), 惑 (Misguided), 幾 (How Many, How Much), 戒 (Commandment), 茂 (Luxuriant), 威 (Majesty), 滅 (Destroy), 歳 (Years Old), 繊 (Fiber, Slender), 戴 (Receive), 栽 (Planting), 賊 (Robber), 伐 (Fell, Attack), 哉 (Question Mark, ?), 戯 (Play), 蔑 (Scorn, Neglect)"
+  },
+  {
+    "radical": "https://www.wanikani.com/radicals/trash",
+    "radical_name": "Trash",
+    "kanji": "育 (Nurture, Raise), 流 (Stream), 徹 (Penetrate), 撤 (Withdrawal), 棄 (Abandon), 硫 (Sulfur, Sulpher)"
+  },
+  {
+    "radical": "艮",
+    "radical_name": "Root",
+    "kanji": "根 (Root), 銀 (Silver), 限 (Limit), 良 (Good), 節 (Season), 退 (Retreat, Reject), 既 (Previously), 眼 (Eyeball), 懇 (Courteous), 即 (Instant), 恨 (Grudge), 概 (Approximation), 慨 (Sigh)"
+  },
+  {
+    "radical": "令",
+    "radical_name": "Orders",
+    "kanji": "命 (Fate), 令 (Orders), 領 (Territory), 冷 (Cool, Cold), 齢 (Age), 鈴 (Buzzer), 零 (Zero, Spill)"
+  },
+  {
+    "radical": "申",
+    "radical_name": "Humble",
+    "kanji": "神 (God), 捜 (Search), 伸 (Stretch), 挿 (Insert), 紳 (Gentleman)"
+  },
+  {
+    "radical": "亜",
+    "radical_name": "Tie Fighter",
+    "kanji": "悪 (Bad, Evil), 亜 (Asia)"
+  },
+  {
+    "radical": "其",
+    "radical_name": "Crab",
+    "kanji": "期 (Period Of Time, Time Period), 基 (Foundation), 旗 (Flag), 棋 (Chess Piece), 碁 (Go), 欺 (Deceit)"
+  },
+  {
+    "radical": "廴",
+    "radical_name": "Yoga",
+    "kanji": "庭 (Garden), 建 (Build), 誕 (Birth), 健 (Healthy), 延 (Prolong), 鍵 (Key), 廷 (Courts), 艇 (Rowboat)"
+  },
+  {
+    "radical": "示",
+    "radical_name": "Jackhammer",
+    "kanji": "祭 (Festival), 標 (Signpost), 察 (Guess), 禁 (Prohibition), 余 (Surplus, Excess), 示 (Indicate, Show), 票 (Ballot), 宗 (Religion), 隷 (Slave), 奈 (Nara), 斎 (Purification), 慰 (Consolation), 歳 (Years Old), 漂 (Drift), 襟 (Collar), 尉 (Military Officer, Military Rank), 凛 (Cold), 款 (Article), 崇 (Worship, Revere)"
+  },
+  {
+    "radical": "https://www.wanikani.com/radicals/tofu",
+    "radical_name": "Tofu",
+    "kanji": "旅 (Trip, Travel), 派 (Sect), 衆 (Populace), 脈 (Vein)"
+  },
+  {
+    "radical": "者",
+    "radical_name": "Someone",
+    "kanji": "都 (Metropolis), 暑 (Hot, Hot Weather), 署 (Government Office, Political Office, Office), 著 (Author), 諸 (Various), 緒 (Together), 賭 (Gamble), 箸 (Chopsticks), 煮 (Boil), 曙 (Dawn)"
+  },
+  {
+    "radical": "予",
+    "radical_name": "Beforehand",
+    "kanji": "野 (Field), 預 (Deposit), 序 (Preface)"
+  },
+  {
+    "radical": "直",
+    "radical_name": "Fix",
+    "kanji": "殖 (Multiply), 置 (Put), 植 (Plant), 値 (Value)"
+  },
+  {
+    "radical": "免",
+    "radical_name": "Excuse",
+    "kanji": "勉 (Exertion), 晩 (Night, Evening), 象 (Elephant, Phenomenon), 免 (Excuse), 逸 (Deviate, Elude)"
+  },
+  {
+    "radical": "非",
+    "radical_name": "Criminal",
+    "kanji": "悲 (Sad), 非 (Injustice, Negative, Mistake), 罪 (Guilt), 俳 (Haiku), 輩 (Comrade), 斐 (Patterned), 排 (Reject), 扉 (Front Door), 緋 (Scarlet)"
+  },
+  {
+    "radical": "早",
+    "radical_name": "Early",
+    "kanji": "章 (Chapter), 障 (Hinder), 卓 (Table), 悼 (Grieve, Mourn)"
+  },
+  {
+    "radical": "弟",
+    "radical_name": "Younger Brother",
+    "kanji": "第 (Ordinal Number Prefix, Ordinal Prefix, Number)"
+  },
+  {
+    "radical": "百",
+    "radical_name": "Hundred",
+    "kanji": "宿 (Lodge), 優 (Superior, Gentle), 縮 (Shrink)"
+  },
+  {
+    "radical": "冊",
+    "radical_name": "Bookshelf",
+    "kanji": "輪 (Wheel, Ring, Loop), 冊 (Books Counter, Books, Counter For Books, Volumes Counter, Volumes, Counter For Volumes), 論 (Theory), 倫 (Ethics)"
+  },
+  {
+    "radical": "央",
+    "radical_name": "Center",
+    "kanji": "映 (Reflect, Reflection), 英 (England, English), 瑛 (Crystal)"
+  },
+  {
+    "radical": "正",
+    "radical_name": "Correct",
+    "kanji": "整 (Arrange, Organize, Organise), 政 (Politics, Government), 証 (Evidence, Proof), 誕 (Birth), 症 (Symptom), 延 (Prolong), 御 (Honorable), 征 (Subjugate)"
+  },
+  {
+    "radical": "品",
+    "radical_name": "Products",
+    "kanji": "器 (Container, Vessel), 品 (Product, Article, Goods, Products), 操 (Manipulate, Chastity), 臨 (Look To)"
+  },
+  {
+    "radical": "尺",
+    "radical_name": "Shrimp",
+    "kanji": "駅 (Station, Train Station), 昼 (Noon), 沢 (Swamp), 訳 (Translation, Reason), 択 (Select), 尺 (Shaku, Japanese Foot), 尽 (Exhaust), 釈 (Explanation)"
+  },
+  {
+    "radical": "意",
+    "radical_name": "Idea",
+    "kanji": "億 (Hundred Million), 憶 (Recollection)"
+  },
+  {
+    "radical": "東",
+    "radical_name": "East",
+    "kanji": "練 (Practice), 凍 (Frozen), 棟 (Pillar), 錬 (Tempering), 陳 (Exhibit), 欄 (Column, Space)"
+  },
+  {
+    "radical": "丸",
+    "radical_name": "Circle",
+    "kanji": "熱 (Heat, Fever), 勢 (Force), 熟 (Ripen), 執 (Tenacious), 塾 (Cram School)"
+  },
+  {
+    "radical": "果",
+    "radical_name": "Fruit",
+    "kanji": "課 (Section), 果 (Fruit), 菓 (Cake), 裸 (Naked), 棄 (Abandon)"
+  },
+  {
+    "radical": "忄",
+    "radical_name": "Soul",
+    "kanji": "情 (Feeling, Emotion), 性 (Gender, Nature), 忙 (Busy), 慣 (Accustomed), 怪 (Suspicious), 悩 (Worry), 怖 (Scary), 快 (Pleasant), 懐 (Nostalgia), 慎 (Humility), 恨 (Grudge), 憎 (Hate), 憶 (Recollection), 悔 (Regret), 悟 (Comprehension), 恒 (Constant, Always), 慢 (Ridicule, Laziness), 惰 (Lazy), 惨 (Disaster), 惜 (Frugal), 悼 (Grieve, Mourn), 憾 (Remorse, Regret), 愉 (Pleasant), 悦 (Delight, Joy), 慨 (Sigh), 憤 (Resent), 憧 (Long For, Yearn)"
+  },
+  {
+    "radical": "坴",
+    "radical_name": "Womb",
+    "kanji": "熱 (Heat, Fever), 勢 (Force), 陸 (Land), 睦 (Friendly)"
+  },
+  {
+    "radical": "身",
+    "radical_name": "Body",
+    "kanji": "謝 (Apologize, Apologise), 射 (Shoot), 窮 (Destitute)"
+  },
+  {
+    "radical": "原",
+    "radical_name": "Original",
+    "kanji": "願 (Request), 原 (Original, Fundamental, Plain, Field), 源 (Origin)"
+  },
+  {
+    "radical": "https://www.wanikani.com/radicals/creeper",
+    "radical_name": "Creeper",
+    "kanji": "感 (Feeling), 司 (Director), 獣 (Beast, Animal), 惑 (Misguided), 幅 (Width)"
+  },
+  {
+    "radical": "象",
+    "radical_name": "Elephant",
+    "kanji": "像 (Statue, Image), 象 (Elephant, Phenomenon)"
+  },
+  {
+    "radical": "https://www.wanikani.com/radicals/scarecrow",
+    "radical_name": "Scarecrow",
+    "kanji": "富 (Rich), 福 (Luck, Fortune), 副 (Vice, Side)"
+  },
+  {
+    "radical": "井",
+    "radical_name": "Well",
+    "kanji": "囲 (Surround), 丼 (Rice Bowl), 井 (Well), 耕 (Plow)"
+  },
+  {
+    "radical": "分",
+    "radical_name": "Part",
+    "kanji": "雰 (Atmosphere), 貧 (Poor), 粉 (Powder), 紛 (Distract), 盆 (Lantern Festival)"
+  },
+  {
+    "radical": "勺",
+    "radical_name": "Pool",
+    "kanji": "的 (Target, Al, ~Al, Like, ~Like), 約 (Promise), 均 (Equal), 卵 (Egg), 釣 (Fishing), 酌 (Serve)"
+  },
+  {
+    "radical": "https://www.wanikani.com/radicals/bar",
+    "radical_name": "Bar",
+    "kanji": "残 (Remainder), 浅 (Shallow), 銭 (Coin), 践 (Practice, Trample), 桟 (Jetty, Pier)"
+  },
+  {
+    "radical": "今",
+    "radical_name": "Now",
+    "kanji": "今 (Now), 念 (Thought), 含 (Include), 琴 (Harp), 陰 (Shade), 吟 (Recital)"
+  },
+  {
+    "radical": "公",
+    "radical_name": "Public",
+    "kanji": "松 (Pine, Pine Tree), 総 (Whole), 訟 (Lawsuit), 聡 (Wise)"
+  },
+  {
+    "radical": "巩",
+    "radical_name": "Saw",
+    "kanji": "築 (Construct, Build), 恐 (Fear)"
+  },
+  {
+    "radical": "男",
+    "radical_name": "Man",
+    "kanji": "勇 (Courage, Bravery, Valor, Valour), 虜 (Captive)"
+  },
+  {
+    "radical": "句",
+    "radical_name": "Paragraph",
+    "kanji": "句 (Paragraph, Phrase), 駒 (Chess Piece), 拘 (Arrest)"
+  },
+  {
+    "radical": "https://www.wanikani.com/radicals/grass",
+    "radical_name": "Grass",
+    "kanji": "脳 (Brain), 挙 (Raise), 獣 (Beast, Animal), 悩 (Worry), 桜 (Sakura, Cherry Tree), 厳 (Strict), 誉 (Honor), 猟 (Hunting)"
+  },
+  {
+    "radical": "去",
+    "radical_name": "Past",
+    "kanji": "法 (Method, Law), 却 (Contrary), 脚 (Leg, Foot)"
+  },
+  {
+    "radical": "歩",
+    "radical_name": "Walk",
+    "kanji": "渉 (Ford), 頻 (Frequent)"
+  },
+  {
+    "radical": "丈",
+    "radical_name": "Height",
+    "kanji": "丈 (Height, Ten Feet)"
+  },
+  {
+    "radical": "谷",
+    "radical_name": "Valley",
+    "kanji": "浴 (Bathe), 容 (Form, Appearance, Shape, Figure), 裕 (Abundant, Plentiful), 欲 (Want), 俗 (Vulgar)"
+  },
+  {
+    "radical": "付",
+    "radical_name": "Attach",
+    "kanji": "府 (Government), 符 (Token), 腐 (Rot)"
+  },
+  {
+    "radical": "壴",
+    "radical_name": "Drum",
+    "kanji": "喜 (Rejoice, Delighted, Pleased, Happy), 嘉 (Esteem, Praise), 鼓 (Beat)"
+  },
+  {
+    "radical": "https://www.wanikani.com/radicals/squid",
+    "radical_name": "Squid",
+    "kanji": "険 (Risky, Steep), 験 (Test), 検 (Examine), 剣 (Sword), 倹 (Thrifty, Frugal, Thrift)"
+  },
+  {
+    "radical": "面",
+    "radical_name": "Face",
+    "kanji": "面 (Surface, Face)"
+  },
+  {
+    "radical": "https://www.wanikani.com/radicals/zombie",
+    "radical_name": "Zombie",
+    "kanji": "園 (Garden, Park), 遠 (Far), 環 (Loop), 還 (Send Back)"
+  },
+  {
+    "radical": "吉",
+    "radical_name": "Good Luck",
+    "kanji": "結 (Bind, Tie), 詰 (Stuffed), 吉 (Good Luck)"
+  },
+  {
+    "radical": "楽",
+    "radical_name": "Comfort",
+    "kanji": "薬 (Medicine, Drug, Drugs)"
+  },
+  {
+    "radical": "無",
+    "radical_name": "Nothing",
+    "kanji": "無 (Nothing), 舞 (Dance)"
+  },
+  {
+    "radical": "祭",
+    "radical_name": "Festival",
+    "kanji": "擦 (Grate), 察 (Guess), 際 (Occasion)"
+  },
+  {
+    "radical": "虍",
+    "radical_name": "Tiger",
+    "kanji": "虚 (Void), 劇 (Drama), 慮 (Consider), 虎 (Tiger), 墟 (Ruins), 膚 (Skin), 虐 (Oppress), 虜 (Captive), 戯 (Play)"
+  },
+  {
+    "radical": "苟",
+    "radical_name": "Poem",
+    "kanji": "警 (Warn, Admonish), 驚 (Surprised), 敬 (Respect)"
+  },
+  {
+    "radical": "兑",
+    "radical_name": "Guard",
+    "kanji": "説 (Theory), 税 (Tax), 脱 (Undress), 鋭 (Sharp), 悦 (Delight, Joy), 閲 (Inspection)"
+  },
+  {
+    "radical": "午",
+    "radical_name": "Noon",
+    "kanji": "許 (Permit, Allow), 卸 (Wholesale)"
+  },
+  {
+    "radical": "尭",
+    "radical_name": "Gambler",
+    "kanji": "焼 (Bake, Cook, Burn), 暁 (Dawn)"
+  },
+  {
+    "radical": "先",
+    "radical_name": "Previous",
+    "kanji": "洗 (Wash)"
+  },
+  {
+    "radical": "争",
+    "radical_name": "Conflict",
+    "kanji": "静 (Quiet), 浄 (Cleanse, Purify)"
+  },
+  {
+    "radical": "凶",
+    "radical_name": "Treasure Chest",
+    "kanji": "胸 (Chest), 脳 (Brain), 悩 (Worry), 凶 (Villain)"
+  },
+  {
+    "radical": "昔",
+    "radical_name": "Long Ago",
+    "kanji": "借 (Borrow), 措 (Set Aside), 籍 (Enroll), 惜 (Frugal)"
+  },
+  {
+    "radical": "幸",
+    "radical_name": "Happiness",
+    "kanji": "達 (Attain, Plural), 報 (News, Report), 執 (Tenacious)"
+  },
+  {
+    "radical": "曽",
+    "radical_name": "Mask",
+    "kanji": "僧 (Priest, Monk), 増 (Increase), 層 (Layer), 噌 (Boisterous), 贈 (Presents), 憎 (Hate)"
+  },
+  {
+    "radical": "感",
+    "radical_name": "Feeling",
+    "kanji": "減 (Decrease), 憾 (Remorse, Regret)"
+  },
+  {
+    "radical": "司",
+    "radical_name": "Director",
+    "kanji": "詞 (Part Of Speech, Speech Particle, Particle Of Speech, Grammar Particle), 飼 (Domesticate), 伺 (Pay Respects)"
+  },
+  {
+    "radical": "成",
+    "radical_name": "Become",
+    "kanji": "城 (Castle), 越 (Go Beyond), 盛 (Pile, Heaps), 誠 (Sincerity)"
+  },
+  {
+    "radical": "由",
+    "radical_name": "Reason",
+    "kanji": "宙 (Mid Air), 笛 (Flute), 届 (Deliver), 油 (Oil), 軸 (Axis), 抽 (Pluck)"
+  },
+  {
+    "radical": "复",
+    "radical_name": "Black Hole",
+    "kanji": "履 (Boots), 復 (Restore), 腹 (Belly, Abdomen, Stomach), 複 (Duplicate), 覆 (Capsize, Cover)"
+  },
+  {
+    "radical": "市",
+    "radical_name": "City",
+    "kanji": "肺 (Lung)"
+  },
+  {
+    "radical": "才",
+    "radical_name": "Genius",
+    "kanji": "財 (Wealth), 閉 (Closed, Close, Closure)"
+  },
+  {
+    "radical": "共",
+    "radical_name": "Together",
+    "kanji": "暴 (Violence), 供 (Servant, Companion), 殿 (Milord, Lord), 翼 (Wing), 恭 (Respect), 洪 (Flood)"
+  },
+  {
+    "radical": "https://www.wanikani.com/radicals/explosion",
+    "radical_name": "Explosion",
+    "kanji": "率 (Percent, Percentage), 塁 (Base, Baseball Base), 渋 (Bitter), 摂 (In Addition)"
+  },
+  {
+    "radical": "至",
+    "radical_name": "Mole",
+    "kanji": "倒 (Overthrow, Collapse), 致 (Do), 至 (Attain), 到 (Arrival), 窒 (Suffocate)"
+  },
+  {
+    "radical": "兼",
+    "radical_name": "Mona Lisa",
+    "kanji": "嫌 (Dislike), 謙 (Modesty), 兼 (Concurrently), 鎌 (Sickle, Scythe), 廉 (Bargain)"
+  },
+  {
+    "radical": "義",
+    "radical_name": "Righteousness",
+    "kanji": "議 (Deliberation, Discussion), 義 (Righteousness), 犠 (Sacrifice), 儀 (Ceremony)"
+  },
+  {
+    "radical": "巛",
+    "radical_name": "Flood",
+    "kanji": "災 (Disaster), 巡 (Patrol)"
+  },
+  {
+    "radical": "平",
+    "radical_name": "Peace",
+    "kanji": "評 (Evaluate), 呼 (Call), 坪 (Two Mat Area)"
+  },
+  {
+    "radical": "角",
+    "radical_name": "Angle",
+    "kanji": "解 (Untie, Solve), 触 (Touch), 蟹 (Crab)"
+  },
+  {
+    "radical": "斉",
+    "radical_name": "Simultaneous",
+    "kanji": "済 (Come To An End), 剤 (Dose), 斎 (Purification), 斉 (Simultaneous)"
+  },
+  {
+    "radical": "啇",
+    "radical_name": "Mohawk",
+    "kanji": "敵 (Enemy), 適 (Suitable), 摘 (Pluck), 滴 (Drip)"
+  },
+  {
+    "radical": "半",
+    "radical_name": "Half",
+    "kanji": "判 (Judge), 伴 (Accompany), 畔 (Shore)"
+  },
+  {
+    "radical": "次",
+    "radical_name": "Next",
+    "kanji": "資 (Resources), 姿 (Figure, Shape, Form), 盗 (Steal), 諮 (Consult), 茨 (Briar, Thorn)"
+  },
+  {
+    "radical": "番",
+    "radical_name": "Number",
+    "kanji": "審 (Judge), 翻 (Flip), 藩 (Fiefdom)"
+  },
+  {
+    "radical": "爰",
+    "radical_name": "Football",
+    "kanji": "援 (Aid, Assist), 暖 (Warm), 緩 (Loose), 媛 (Princess, Beautiful Woman)"
+  },
+  {
+    "radical": "丬",
+    "radical_name": "Icicle",
+    "kanji": "装 (Attire), 将 (Commander), 壮 (Robust), 荘 (Villa)"
+  },
+  {
+    "radical": "安",
+    "radical_name": "Cheap",
+    "kanji": "案 (Plan)"
+  },
+  {
+    "radical": "能",
+    "radical_name": "Ability",
+    "kanji": "態 (Appearance), 熊 (Bear), 罷 (Quit, Leave)"
+  },
+  {
+    "radical": "呂",
+    "radical_name": "Bathtub",
+    "kanji": "宮 (Shinto Shrine, Shrine, Palace), 営 (Manage), 呂 (Bath)"
+  },
+  {
+    "radical": "弗",
+    "radical_name": "Dollar",
+    "kanji": "費 (Expense, Cost), 沸 (Boil)"
+  },
+  {
+    "radical": "充",
+    "radical_name": "Allocate",
+    "kanji": "統 (Unite), 充 (Allocate), 銃 (Gun)"
+  },
+  {
+    "radical": "亭",
+    "radical_name": "Restaurant",
+    "kanji": "停 (Halt), 亭 (Restaurant)"
+  },
+  {
+    "radical": "革",
+    "radical_name": "Leather",
+    "kanji": "革 (Leather), 靴 (Shoes), 覇 (Leadership)"
+  },
+  {
+    "radical": "丩",
+    "radical_name": "Vines",
+    "kanji": "収 (Obtain), 糾 (Twist), 叫 (Shout)"
+  },
+  {
+    "radical": "鬼",
+    "radical_name": "Demon",
+    "kanji": "鬼 (Demon), 魅 (Alluring), 塊 (Lump), 魂 (Soul, Spirit), 魔 (Devil), 醜 (Ugly)"
+  },
+  {
+    "radical": "衣",
+    "radical_name": "Clothes",
+    "kanji": "裁 (Judge), 製 (Manufacture), 壊 (Break), 懐 (Nostalgia), 装 (Attire), 依 (Reliant, Dependant), 褒 (Praise), 衣 (Clothes), 喪 (Mourning), 袋 (Sack), 裂 (Split, Tear), 襲 (Attack)"
+  },
+  {
+    "radical": "道",
+    "radical_name": "Road",
+    "kanji": "導 (Lead)"
+  },
+  {
+    "radical": "制",
+    "radical_name": "Control",
+    "kanji": "製 (Manufacture)"
+  },
+  {
+    "radical": "https://www.wanikani.com/radicals/death-star",
+    "radical_name": "Death Star",
+    "kanji": "輸 (Transport), 諭 (Admonish), 癒 (Healing, Cure), 愉 (Pleasant)"
+  },
+  {
+    "radical": "韋",
+    "radical_name": "Korea",
+    "kanji": "違 (Different), 韓 (Korea), 衛 (Defense), 偉 (Greatness), 緯 (Latitude)"
+  },
+  {
+    "radical": "客",
+    "radical_name": "Guest",
+    "kanji": "額 (Amount, Framed Picture, Forehead)"
+  },
+  {
+    "radical": "旦",
+    "radical_name": "Dawn",
+    "kanji": "担 (Carry, Bear), 量 (Quantity, Amount), 宣 (Proclaim), 垣 (Hedge, Fence), 壇 (Podium), 恒 (Constant, Always), 糧 (Provisions), 旦 (Dawn), 胆 (Guts)"
+  },
+  {
+    "radical": "然",
+    "radical_name": "Nature",
+    "kanji": "燃 (Burn)"
+  },
+  {
+    "radical": "受",
+    "radical_name": "Accept",
+    "kanji": "授 (Instruct)"
+  },
+  {
+    "radical": "京",
+    "radical_name": "Capital",
+    "kanji": "影 (Shadow), 景 (Scene), 就 (Settle In), 涼 (Cool), 諒 (Comprehend, Reality), 鯨 (Whale)"
+  },
+  {
+    "radical": "莫",
+    "radical_name": "Greenhouse",
+    "kanji": "模 (Imitation), 墓 (Grave), 暮 (Livelihood), 漠 (Desert, Vague), 幕 (Curtain), 募 (Recruit), 膜 (Membrane), 慕 (Yearn For, Adore)"
+  },
+  {
+    "radical": "友",
+    "radical_name": "Friend",
+    "kanji": "抜 (Extract), 髪 (Hair)"
+  },
+  {
+    "radical": "禹",
+    "radical_name": "Mantis",
+    "kanji": "属 (Belong), 嘱 (Request, Entrust)"
+  },
+  {
+    "radical": "甫",
+    "radical_name": "Wedding",
+    "kanji": "補 (Supplement), 捕 (Catch), 浦 (Bay), 輔 (Help), 舗 (Shop, Store), 哺 (Nurse, Suckle)"
+  },
+  {
+    "radical": "両",
+    "radical_name": "Both",
+    "kanji": "満 (Full)"
+  },
+  {
+    "radical": "冓",
+    "radical_name": "Lifeguard",
+    "kanji": "構 (Set Up, Care), 購 (Subscription), 講 (Lecture), 溝 (Gutter)"
+  },
+  {
+    "radical": "交",
+    "radical_name": "Mix",
+    "kanji": "効 (Effective), 絞 (Strangle), 較 (Contrast), 郊 (Suburbs)"
+  },
+  {
+    "radical": "我",
+    "radical_name": "Ego",
+    "kanji": "我 (I, Me), 餓 (Starve)"
+  },
+  {
+    "radical": "告",
+    "radical_name": "Announce",
+    "kanji": "造 (Create), 酷 (Cruel, Unjust)"
+  },
+  {
+    "radical": "倉",
+    "radical_name": "Warehouse",
+    "kanji": "創 (Create), 倉 (Warehouse), 蒼 (Pale, Blue)"
+  },
+  {
+    "radical": "章",
+    "radical_name": "Chapter",
+    "kanji": "彰 (Patent),"
+  },
+  {
+    "radical": "万",
+    "radical_name": "Ten Thousand",
+    "kanji": "励 (Encourage), 瓶 (Bottle), 栃 (Horse Chestnut)"
+  },
+  {
+    "radical": "而",
+    "radical_name": "Rake",
+    "kanji": "端 (Edge), 需 (Demand), 耐 (Resistant), 瑞 (Congratulations)"
+  },
+  {
+    "radical": "余",
+    "radical_name": "Surplus",
+    "kanji": "途 (Route), 除 (Exclude), 塗 (Paint), 斜 (Diagonal), 徐 (Gently, Gentle), 叙 (Describe)"
+  },
+  {
+    "radical": "農",
+    "radical_name": "Farming",
+    "kanji": "濃 (Thick)"
+  },
+  {
+    "radical": "代",
+    "radical_name": "Substitute",
+    "kanji": "貸 (Lend), 袋 (Sack)"
+  },
+  {
+    "radical": "民",
+    "radical_name": "Peoples",
+    "kanji": "眠 (Sleep)"
+  },
+  {
+    "radical": "化",
+    "radical_name": "Change",
+    "kanji": "靴 (Shoes), 貨 (Freight), 傾 (Lean)"
+  },
+  {
+    "radical": "https://www.wanikani.com/radicals/comb",
+    "radical_name": "Comb",
+    "kanji": "段 (Steps, Stairs), 暇 (Spare Time, Free Time), 興 (Interest), 鍛 (Forge), 印 (Seal, Mark)"
+  },
+  {
+    "radical": "出",
+    "radical_name": "Exit",
+    "kanji": "屈 (Yield), 堀 (Ditch), 掘 (Dig), 拙 (Clumsy, Unskillful)"
+  },
+  {
+    "radical": "専",
+    "radical_name": "Specialty",
+    "kanji": "博 (Exhibition, Gambling), 薄 (Dilute), 簿 (Record Book), 縛 (Bind, Restrain)"
+  },
+  {
+    "radical": "屯",
+    "radical_name": "Barracks",
+    "kanji": "逆 (Reverse), 純 (Pure), 鈍 (Dull), 屯 (Barracks)"
+  },
+  {
+    "radical": "巨",
+    "radical_name": "Giant",
+    "kanji": "巨 (Giant), 拒 (Refusal), 距 (Distance)"
+  },
+  {
+    "radical": "麗",
+    "radical_name": "Lovely",
+    "kanji": "麗 (Lovely)"
+  },
+  {
+    "radical": "上",
+    "radical_name": "Above",
+    "kanji": "督 (Coach), 寂 (Lonely), 淑 (Graceful), 峠 (Ridge), 叔 (Uncle, Aunt)"
+  },
+  {
+    "radical": "乙",
+    "radical_name": "Nose",
+    "kanji": "乾 (Dry), 乙 (Latter, B)"
+  },
+  {
+    "radical": "臣",
+    "radical_name": "Servant",
+    "kanji": "監 (Oversee), 臣 (Servant, Retainer), 緊 (Tense), 覧 (Look At), 臨 (Look To), 堅 (Solid), 姫 (Princess), 賢 (Clever)"
+  },
+  {
+    "radical": "https://www.wanikani.com/radicals/morning",
+    "radical_name": "Morning",
+    "kanji": "乾 (Dry), 韓 (Korea), 潮 (Tide), 幹 (Tree Trunk)"
+  },
+  {
+    "radical": "責",
+    "radical_name": "Blame",
+    "kanji": "積 (Accumulate), 績 (Exploits), 債 (Debt)"
+  },
+  {
+    "radical": "尞",
+    "radical_name": "Charcoal",
+    "kanji": "僚 (Colleague), 療 (Heal), 寮 (Dormitory), 瞭 (Clear), 遼 (Distant)"
+  },
+  {
+    "radical": "区",
+    "radical_name": "District",
+    "kanji": "欧 (Europe), 駆 (Gallop), 枢 (Hinge)"
+  },
+  {
+    "radical": "奇",
+    "radical_name": "Odd",
+    "kanji": "寄 (Approach), 埼 (Cape), 椅 (Chair), 騎 (Horse)"
+  },
+  {
+    "radical": "片",
+    "radical_name": "One Sided",
+    "kanji": "版 (Edition), 片 (One Sided)"
+  },
+  {
+    "radical": "北",
+    "radical_name": "North",
+    "kanji": "背 (Back, Height)"
+  },
+  {
+    "radical": "監",
+    "radical_name": "Oversee",
+    "kanji": "鑑 (Model), 艦 (Warship), 藍 (Indigo)"
+  },
+  {
+    "radical": "甲",
+    "radical_name": "Turtle Shell",
+    "kanji": "押 (Push), 甲 (Turtle Shell, A), 岬 (Cape)"
+  },
+  {
+    "radical": "召",
+    "radical_name": "Joker",
+    "kanji": "照 (Illuminate), 紹 (Introduce), 昭 (Shining), 超 (Ultra, Super), 沼 (Bog), 召 (Call, Eat)"
+  },
+  {
+    "radical": "系",
+    "radical_name": "Lineage",
+    "kanji": "系 (Lineage), 孫 (Grandchild), 懸 (Suspend), 遜 (Humble)"
+  },
+  {
+    "radical": "扁",
+    "radical_name": "Library",
+    "kanji": "編 (Knit), 偏 (Biased), 遍 (Universal)"
+  },
+  {
+    "radical": "鬲",
+    "radical_name": "Bully",
+    "kanji": "融 (Dissolve), 隔 (Isolate)"
+  },
+  {
+    "radical": "求",
+    "radical_name": "Request",
+    "kanji": "救 (Rescue)"
+  },
+  {
+    "radical": "郎",
+    "radical_name": "Guy",
+    "kanji": "廊 (Corridor), 郷 (Hometown)"
+  },
+  {
+    "radical": "离",
+    "radical_name": "Rocket",
+    "kanji": "離 (Detach), 璃 (Glassy)"
+  },
+  {
+    "radical": "牙",
+    "radical_name": "Fang",
+    "kanji": "既 (Previously), 牙 (Fang, Tusk), 雅 (Elegant), 芽 (Sprout), 概 (Approximation), 邪 (Wicked), 慨 (Sigh)"
+  },
+  {
+    "radical": "並",
+    "radical_name": "Line Up",
+    "kanji": "普 (Normal), 譜 (Genealogy, Score)"
+  },
+  {
+    "radical": "https://www.wanikani.com/radicals/elf",
+    "radical_name": "Elf",
+    "kanji": "厳 (Strict), 敢 (Daring)"
+  },
+  {
+    "radical": "必",
+    "radical_name": "Certain",
+    "kanji": "密 (Secrecy), 秘 (Secret), 蜜 (Honey), 泌 (Secrete)"
+  },
+  {
+    "radical": "夜",
+    "radical_name": "Night",
+    "kanji": "液 (Fluid, Liquid)"
+  },
+  {
+    "radical": "同",
+    "radical_name": "Same",
+    "kanji": "興 (Interest), 銅 (Copper), 筒 (Cylinder), 胴 (Torso), 洞 (Cave)"
+  },
+  {
+    "radical": "卬",
+    "radical_name": "Cat Pirate",
+    "kanji": "迎 (Welcome), 抑 (Suppress), 仰 (Look Up To)"
+  },
+  {
+    "radical": "夋",
+    "radical_name": "Spider",
+    "kanji": "酸 (Acid), 俊 (Genius), 唆 (Instigate), 駿 (Speed)"
+  },
+  {
+    "radical": "夌",
+    "radical_name": "Frostbite",
+    "kanji": "綾 (Design), 陵 (Mausoleum, Tomb), 凌 (Endure)"
+  },
+  {
+    "radical": "蔵",
+    "radical_name": "Storehouse",
+    "kanji": "蔵 (Storehouse), 臓 (Internal Organs)"
+  },
+  {
+    "radical": "間",
+    "radical_name": "Interval",
+    "kanji": "簡 (Simplicity)"
+  },
+  {
+    "radical": "内",
+    "radical_name": "Inside",
+    "kanji": "納 (Supply)"
+  },
+  {
+    "radical": "享",
+    "radical_name": "Sock",
+    "kanji": "熟 (Ripen), 塾 (Cram School), 郭 (Enclosure), 享 (Receive)"
+  },
+  {
+    "radical": "操",
+    "radical_name": "Syrup",
+    "kanji": "繰 (Spin), 燥 (Dry Up), 藻 (Seaweed)"
+  },
+  {
+    "radical": "呉",
+    "radical_name": "Catapult",
+    "kanji": "誤 (Mistake), 娯 (Recreation), 呉 (Give, Do For)"
+  },
+  {
+    "radical": "員",
+    "radical_name": "Member",
+    "kanji": "損 (Loss)"
+  },
+  {
+    "radical": "堇",
+    "radical_name": "Boot",
+    "kanji": "勤 (Work), 謹 (Humble, Discreet)"
+  },
+  {
+    "radical": "爪",
+    "radical_name": "Claw",
+    "kanji": "爪 (Claw)"
+  },
+  {
+    "radical": "亥",
+    "radical_name": "Slice",
+    "kanji": "刻 (Carve), 核 (Nucleus), 該 (The Above, That Specifically), 劾 (Censure)"
+  },
+  {
+    "radical": "為",
+    "radical_name": "Sake",
+    "kanji": "為 (Sake), 偽 (Fake)"
+  },
+  {
+    "radical": "将",
+    "radical_name": "Commander",
+    "kanji": "醤 (Soy Sauce), 奨 (Encourage)"
+  },
+  {
+    "radical": "帯",
+    "radical_name": "Belt",
+    "kanji": "滞 (Stagnate)"
+  },
+  {
+    "radical": "彑",
+    "radical_name": "Shuriken",
+    "kanji": "互 (Mutual)"
+  },
+  {
+    "radical": "亀",
+    "radical_name": "Turtle",
+    "kanji": "亀 (Turtle), 縄 (Rope)"
+  },
+  {
+    "radical": "明",
+    "radical_name": "Bright",
+    "kanji": "盟 (Alliance), 萌 (Sprout)"
+  },
+  {
+    "radical": "甘",
+    "radical_name": "Sweet",
+    "kanji": "甘 (Sweet), 謀 (Conspire), 紺 (Navy, Dark Blue), 媒 (Mediator), 某 (Certain, One, That Person)"
+  },
+  {
+    "radical": "発",
+    "radical_name": "Departure",
+    "kanji": "廃 (Obsolete)"
+  },
+  {
+    "radical": "貴",
+    "radical_name": "Valuable",
+    "kanji": "遺 (Leave Behind)"
+  },
+  {
+    "radical": "舛",
+    "radical_name": "Dance",
+    "kanji": "舞 (Dance), 隣 (Neighbor), 瞬 (Blink), 傑 (Greatness, Excellence)"
+  },
+  {
+    "radical": "右",
+    "radical_name": "Right",
+    "kanji": "諾 (Agreement), 匿 (Hide)"
+  },
+  {
+    "radical": "南",
+    "radical_name": "South",
+    "kanji": "献 (Offer)"
+  },
+  {
+    "radical": "兆",
+    "radical_name": "Omen",
+    "kanji": "跳 (Hop), 兆 (Omen), 逃 (Escape), 挑 (Challenge), 桃 (Peach), 眺 (Stare)"
+  },
+  {
+    "radical": "串",
+    "radical_name": "Skewer",
+    "kanji": "患 (Afflicted)"
+  },
+  {
+    "radical": "暴",
+    "radical_name": "Violence",
+    "kanji": "爆 (Explode)"
+  },
+  {
+    "radical": "賞",
+    "radical_name": "Prize",
+    "kanji": "償 (Reparation)"
+  },
+  {
+    "radical": "県",
+    "radical_name": "Prefecture",
+    "kanji": "懸 (Suspend)"
+  },
+  {
+    "radical": "空",
+    "radical_name": "Sky",
+    "kanji": "控 (Abstain)"
+  },
+  {
+    "radical": "有",
+    "radical_name": "Have",
+    "kanji": "賄 (Bribe), 随 (All), 髄 (Marrow, Bone Marrow), 堕 (Degenerate)"
+  },
+  {
+    "radical": "歯",
+    "radical_name": "Tooth",
+    "kanji": "齢 (Age)"
+  },
+  {
+    "radical": "思",
+    "radical_name": "Think",
+    "kanji": "慮 (Consider)"
+  },
+  {
+    "radical": "辟",
+    "radical_name": "Hot Pepper",
+    "kanji": "避 (Dodge, Avoid), 壁 (Wall), 癖 (Habit)"
+  },
+  {
+    "radical": "真",
+    "radical_name": "Reality",
+    "kanji": "慎 (Humility), 鎮 (Tranquilize)"
+  },
+  {
+    "radical": "巻",
+    "radical_name": "Scroll",
+    "kanji": "圏 (Range)"
+  },
+  {
+    "radical": "三",
+    "radical_name": "Three",
+    "kanji": "邦 (Home Country), 鋳 (Cast, Casting)"
+  },
+  {
+    "radical": "六",
+    "radical_name": "Six",
+    "kanji": ""
+  },
+  {
+    "radical": "旧",
+    "radical_name": "Former",
+    "kanji": "稲 (Rice Plant)"
+  },
+  {
+    "radical": "君",
+    "radical_name": "Buddy",
+    "kanji": "群 (Flock), 郡 (County, District)"
+  },
+  {
+    "radical": "岡",
+    "radical_name": "Hill",
+    "kanji": "鋼 (Steel), 綱 (Cable), 網 (Netting), 剛 (Sturdy)"
+  },
+  {
+    "radical": "㐮",
+    "radical_name": "Nurse",
+    "kanji": "譲 (Defer), 嬢 (Miss), 壌 (Soil, Earth), 醸 (Brew)"
+  },
+  {
+    "radical": "保",
+    "radical_name": "Preserve",
+    "kanji": "褒 (Praise)"
+  },
+  {
+    "radical": "雇",
+    "radical_name": "Employ",
+    "kanji": "顧 (Review)"
+  },
+  {
+    "radical": "毎",
+    "radical_name": "Every",
+    "kanji": "敏 (Alert), 繁 (Overgrown), 悔 (Regret), 侮 (Despise)"
+  },
+  {
+    "radical": "https://www.wanikani.com/radicals/cactus",
+    "radical_name": "Cactus",
+    "kanji": "墟 (Ruins)"
+  },
+  {
+    "radical": "広",
+    "radical_name": "Wide",
+    "kanji": "鉱 (Mineral)"
+  },
+  {
+    "radical": "夆",
+    "radical_name": "Signpost",
+    "kanji": "蜂 (Bee), 峰 (Summit), 縫 (Sew)"
+  },
+  {
+    "radical": "屋",
+    "radical_name": "Shop",
+    "kanji": "握 (Grip)"
+  },
+  {
+    "radical": "https://www.wanikani.com/radicals/satellite",
+    "radical_name": "Satellite",
+    "kanji": "揺 (Shake), 謡 (Noh Chanting, Noh Chant), 遥 (Far Off, Far Away)"
+  },
+  {
+    "radical": "瓜",
+    "radical_name": "Melon",
+    "kanji": "弧 (Arc), 孤 (Orphan, Alone), 瓜 (Melon), 狐 (Fox)"
+  },
+  {
+    "radical": "骨",
+    "radical_name": "Bone",
+    "kanji": "滑 (Slippery), 髄 (Marrow, Bone Marrow)"
+  },
+  {
+    "radical": "耒",
+    "radical_name": "Plow",
+    "kanji": "籍 (Enroll), 耕 (Plow), 栽 (Planting)"
+  },
+  {
+    "radical": "冘",
+    "radical_name": "Pirate",
+    "kanji": "沈 (Sink), 枕 (Pillow)"
+  },
+  {
+    "radical": "龍",
+    "radical_name": "Imperial",
+    "kanji": "襲 (Attack), 龍 (Imperial, Dragon)"
+  },
+  {
+    "radical": "豸",
+    "radical_name": "Badger",
+    "kanji": "懇 (Courteous)"
+  },
+  {
+    "radical": "業",
+    "radical_name": "Business",
+    "kanji": "撲 (Slap), 僕 (I, Me)"
+  },
+  {
+    "radical": "風",
+    "radical_name": "Wind",
+    "kanji": "嵐 (Storm), 颯 (Quick, Sudden), 楓 (Maple)"
+  },
+  {
+    "radical": "竜",
+    "radical_name": "Dragon",
+    "kanji": "竜 (Dragon), 滝 (Waterfall)"
+  },
+  {
+    "radical": "包",
+    "radical_name": "Wrap",
+    "kanji": "砲 (Cannon), 泡 (Bubbles), 胞 (Cell, Placenta), 飽 (Bored, Sated), 抱 (Hug), 包 (Wrap)"
+  },
+  {
+    "radical": "刃",
+    "radical_name": "Blade",
+    "kanji": "刃 (Blade), 忍 (Endure)"
+  },
+  {
+    "radical": "缶",
+    "radical_name": "Can",
+    "kanji": "缶 (Tin Can, Can), 陶 (Pottery), 鬱 (Gloom)"
+  },
+  {
+    "radical": "家",
+    "radical_name": "House",
+    "kanji": "稼 (Earnings), 嫁 (Bride)"
+  },
+  {
+    "radical": "更",
+    "radical_name": "Again",
+    "kanji": "硬 (Stiff)"
+  },
+  {
+    "radical": "守",
+    "radical_name": "Protect",
+    "kanji": "狩 (Hunt)"
+  },
+  {
+    "radical": "恵",
+    "radical_name": "Favor",
+    "kanji": "穂 (Head Of Plant, Ear Of Plant)"
+  },
+  {
+    "radical": "太",
+    "radical_name": "Fat",
+    "kanji": "駄 (Burdensome), 汰 (Select)"
+  },
+  {
+    "radical": "敝",
+    "radical_name": "Penguin",
+    "kanji": "幣 (Cash), 弊 (Evil)"
+  },
+  {
+    "radical": "務",
+    "radical_name": "Task",
+    "kanji": "霧 (Fog)"
+  },
+  {
+    "radical": "波",
+    "radical_name": "Wave",
+    "kanji": "婆 (Old Woman)"
+  },
+  {
+    "radical": "容",
+    "radical_name": "Form",
+    "kanji": "溶 (Melt)"
+  },
+  {
+    "radical": "光",
+    "radical_name": "Sunlight",
+    "kanji": "輝 (Radiance)"
+  },
+  {
+    "radical": "玄",
+    "radical_name": "Mysterious",
+    "kanji": "畜 (Livestock), 蓄 (Amass), 玄 (Mysterious), 弦 (Chord, Bowstring)"
+  },
+  {
+    "radical": "甚",
+    "radical_name": "Crab Trap",
+    "kanji": "勘 (Intuition), 堪 (Endure), 甚 (Very, Great)"
+  },
+  {
+    "radical": "回",
+    "radical_name": "Times",
+    "kanji": "壇 (Podium), 凛 (Cold)"
+  },
+  {
+    "radical": "禺",
+    "radical_name": "Splinter",
+    "kanji": "偶 (Accidentally), 隅 (Corner), 遇 (Treatment), 愚 (Foolish)"
+  },
+  {
+    "radical": "https://www.wanikani.com/radicals/psychopath",
+    "radical_name": "Psychopath",
+    "kanji": "鬱 (Gloom)"
+  },
+  {
+    "radical": "名",
+    "radical_name": "Name",
+    "kanji": "銘 (Inscription)"
+  },
+  {
+    "radical": "胃",
+    "radical_name": "Stomach",
+    "kanji": "膚 (Skin)"
+  },
+  {
+    "radical": "高",
+    "radical_name": "Tall",
+    "kanji": "稿 (Draft)"
+  },
+  {
+    "radical": "舎",
+    "radical_name": "Cottage",
+    "kanji": "舗 (Shop, Store)"
+  },
+  {
+    "radical": "疑",
+    "radical_name": "Doubt",
+    "kanji": "擬 (Imitate), 凝 (Congeal, Freeze, Absorbed In)"
+  },
+  {
+    "radical": "凹",
+    "radical_name": "Concave",
+    "kanji": "凹 (Concave, Hollow)"
+  },
+  {
+    "radical": "凸",
+    "radical_name": "Convex",
+    "kanji": "凸 (Convex, Uneven)"
+  },
+  {
+    "radical": "下",
+    "radical_name": "Below",
+    "kanji": "峠 (Ridge)"
+  },
+  {
+    "radical": "勇",
+    "radical_name": "Courage",
+    "kanji": "湧 (Well, Boil)"
+  }
+]

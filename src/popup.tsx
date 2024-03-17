@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react";
 import { createRoot } from "react-dom/client";
+import React, { useEffect, useState } from "react";
 
 const Popup = () => {
   const [count, setCount] = useState(0);
@@ -10,6 +10,13 @@ const Popup = () => {
   }, [count]);
 
   useEffect(() => {
+    fetch("kanji_to_radical.process.json")
+      .then((res) => res.text())
+      .then((text) => {
+        console.log(text);
+      })
+      .catch((e) => console.error(e));
+
     chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
       setCurrentURL(tabs[0].url);
     });
