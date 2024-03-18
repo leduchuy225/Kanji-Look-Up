@@ -1,6 +1,6 @@
 import "./components/context_menu";
 import { KanjiTable, Message } from "./config/config";
-import { insertRecords } from "./data/local_database";
+import { clearTable, insertRecords } from "./data/local_database";
 import { MessagePayload } from "./models/interface";
 
 chrome.runtime.onMessage.addListener(
@@ -12,7 +12,16 @@ chrome.runtime.onMessage.addListener(
         break;
       case Message.Insert:
         console.log("Insert to local db");
-        insertRecords(request.payload, { tableName: KanjiTable.name });
+        clearTable({ tableName: KanjiTable.name })?.then(() => {
+          insertRecords(request.payload, { tableName: KanjiTable.name })?.then(
+            () => {
+              chrome.runtime.sendMessage({
+                message: Message.InsertSuccessful,
+                payload: "Insert database successfully",
+              } as MessagePayload);
+            }
+          );
+        });
         break;
       default:
         break;

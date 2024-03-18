@@ -87,30 +87,26 @@ export function getRecord<T>(
   });
 }
 
-// export function getRecord<T>(
-//   key: string,
-//   options: TransactionOptions
-// ): Promise<T | null> | null {
-//   if (!database) {
-//     return null;
-//   }
-//   const get_transaction = database.transaction(
-//     options.name ?? options.tableName,
-//     "readonly"
-//   );
-//   const objectStore = get_transaction.objectStore(options.tableName);
-//   return new Promise((resolve, reject) => {
-//     get_transaction.oncomplete = function () {
-//       console.log("ALL GET TRANSACTIONS COMPLETE.");
-//     };
-//     get_transaction.onerror = function () {
-//       console.log("PROBLEM GETTING RECORDS.");
-//     };
+export function clearTable(options: TransactionOptions) {
+  if (!database) {
+    return null;
+  }
+  const clear_transaction = database.transaction(
+    options.name ?? options.tableName,
+    "readwrite"
+  );
+  const objectStore = clear_transaction.objectStore(options.tableName);
+  return new Promise((resolve, reject) => {
+    clear_transaction.oncomplete = function () {
+      console.log("CLEAR ALL RECORDS COMPLETE.");
+    };
+    clear_transaction.onerror = function () {
+      console.log("PROBLEM CLEARING RECORDS.");
+    };
 
-//     const request = objectStore.get(key);
-//     request.onsuccess = function (event) {
-//       const target = event.target as IDBRequest<T>;
-//       resolve(target.result);
-//     };
-//   });
-// }
+    const request = objectStore.clear();
+    request.onsuccess = function (event) {
+      resolve(true);
+    };
+  });
+}
