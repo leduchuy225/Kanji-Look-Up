@@ -8,7 +8,7 @@ import {
 } from "../utils/text_view_utils";
 
 import "../styles/text_view.css";
-import { getKanjiCharacter } from "../data/external_api";
+import { seachOneFromKanjiApi } from "../data/data_service";
 
 const convertKanjiToKanjiResponse = (data: Kanji): KanjiResponse & Kanji => {
   return { ...data };
@@ -20,10 +20,10 @@ export const TextView = ({ kanji }: { kanji: Kanji }) => {
   );
 
   useEffect(() => {
-    getKanjiCharacter(data.kanji).then((response) => {
+    seachOneFromKanjiApi(kanji.kanji).then((response) => {
       setData({ ...response, ...kanji });
     });
-  }, []);
+  }, [kanji]);
 
   return (
     <>

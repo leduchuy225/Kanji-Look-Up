@@ -1,11 +1,17 @@
 import "./styles/style.css";
 
-import React, { useRef, useState } from "react";
+import { Kanji } from "./models/interface";
 import { createRoot } from "react-dom/client";
+import React, { useRef, useState } from "react";
 import { TextView } from "./components/text_view";
 import { isJapaneseCharacter } from "./utils/utils";
-import { LocalStorage, Message, StatusTimeOut } from "./config/config";
-import { Kanji, MessagePayload } from "./models/interface";
+import {
+  Message,
+  KanjiTable,
+  LocalStorage,
+  StatusTimeOut,
+} from "./config/config";
+import { importDataToLocalDB, seachManyFromKanji } from "./data/data_service";
 
 const Popup = () => {
   const inputRef = useRef<any>(null);
@@ -33,47 +39,23 @@ const Popup = () => {
     }
   };
 
-  const importDataToLocalDB = (data: string) => {
-    chrome.runtime.sendMessage(
-      {
-        payload: JSON.parse(data),
-        message: Message.Insert,
-      } as MessagePayload,
-      (request) => {
-        if (request.message == Message.InsertSuccessful) {
-          setDataImportedStatus();
-          alert(request.payload);
-          return;
-        }
-        alert("Insert fail");
-      }
-    );
-  };
-
-  const seachDataFromLocalDB = (data: string[]) => {
-    chrome.runtime.sendMessage(
-      {
-        payload: data,
-        message: Message.Get,
-      } as MessagePayload,
-      (request) => {
-        if (request.payload) {
-          setDataImportedStatus();
-          setKajis(request.payload);
-          return;
-        }
-        setKajis([]);
-        showStatus("Not found Kanji");
-      }
-    );
-  };
-
   const onSearchKanji = () => {
     if (!text) {
       return;
     }
     const kanjiSearch = text.trim().split("");
-    seachDataFromLocalDB(kanjiSearch);
+    seachManyFromKanji({
+      data: kanjiSearch,
+      callback: (request) => {
+        if (request.payload) {
+          setDataImportedStatus();
+          setKajis(request.payload.data);
+          return;
+        }
+        setKajis([]);
+        showStatus("Not found Kanji");
+      },
+    });
   };
 
   return (
@@ -89,7 +71,19 @@ const Popup = () => {
             reader.onload = (e) => {
               const text = e.target?.result;
               if (text && typeof text === "string") {
-                importDataToLocalDB(text);
+                importDataToLocalDB({
+                  data: JSON.parse(text),
+                  table: KanjiTable.name,
+                  message: "ClearAndInsert",
+                  callback: (request) => {
+                    if (request.message == Message.InsertSuccessful) {
+                      setDataImportedStatus();
+                      alert(request.payload?.data);
+                      return;
+                    }
+                    alert("Insert fail");
+                  },
+                });
               }
             };
           }}

@@ -1,7 +1,21 @@
-import { TransactionOptions } from "../models/interface";
-import { DB_NAME, DB_VERSION, KanjiTable } from "../config/config";
+import { Table, TransactionOptions } from "../models/interface";
+import {
+  DB_NAME,
+  DB_VERSION,
+  KanjiApiTable,
+  KanjiTable,
+} from "../config/config";
 
 let database: IDBDatabase | null = null;
+
+const createObjectStore = (request: IDBDatabase, table: Table) => {
+  const objectKanjiStore = request.createObjectStore(table.name, {
+    keyPath: table.key,
+  });
+  objectKanjiStore.transaction.oncomplete = function (event) {
+    console.log("ObjectStore Created", table.name);
+  };
+};
 
 export function createDatabase(onConnectSuccess: () => void) {
   const request = indexedDB.open(DB_NAME, DB_VERSION);
@@ -19,12 +33,9 @@ export function createDatabase(onConnectSuccess: () => void) {
   request.onupgradeneeded = function (event) {
     const target = event.target as IDBOpenDBRequest;
     database = target.result;
-    const objectStore = target.result.createObjectStore(KanjiTable.name, {
-      keyPath: KanjiTable.key,
-    });
-    objectStore.transaction.oncomplete = function (event) {
-      console.log("ObjectStore Created.");
-    };
+
+    createObjectStore(database, KanjiTable);
+    createObjectStore(database, KanjiApiTable);
   };
 }
 

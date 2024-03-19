@@ -30,6 +30,16 @@ export interface KanjiResponse {
 }
 
 export interface MessagePayload {
-  payload: any;
   message: string;
+  payload?: Payload;
+}
+
+export interface Payload {
+  data: any;
+  table?: string;
+}
+
+export interface Table {
+  key: string;
+  name: string;
 }
