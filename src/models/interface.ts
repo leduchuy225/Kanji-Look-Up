@@ -2,10 +2,12 @@ export interface Kanji {
   kanji: string;
   meaning: string;
   radicals: string;
-  components: {
-    radical: string;
-    radical_name: string;
-  }[];
+  components: KanjiComponent[];
+}
+
+export interface KanjiComponent {
+  radical: string;
+  radical_name: string;
 }
 
 export interface TransactionOptions {
@@ -14,17 +16,17 @@ export interface TransactionOptions {
 }
 
 export interface KanjiResponse {
-  jlpt: number;
-  grade: number;
-  kanji: string;
-  notes: string[];
-  unicode: string;
-  heisig_en: string;
-  meanings: string[];
-  stroke_count: number;
-  on_readings: string[];
-  kun_readings: string[];
-  name_readings: string[];
+  jlpt?: number | null;
+  grade?: number | null;
+  kanji?: string | null;
+  notes?: string[] | null;
+  unicode?: string | null;
+  heisig_en?: string | null;
+  meanings?: string[] | null;
+  stroke_count?: number | null;
+  on_readings?: string[] | null;
+  kun_readings?: string[] | null;
+  name_readings?: string[] | null;
 }
 
 export interface MessagePayload {

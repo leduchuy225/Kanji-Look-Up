@@ -20,5 +20,7 @@ export const KanjiTable = {
 export const Message = {
   Get: "Get",
   Insert: "Insert",
+  DbReady: "DbReady",
+  GetSuccessful: "GetSuccessful",
   InsertSuccessful: "InsertSuccessful",
 };

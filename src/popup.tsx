@@ -1,11 +1,18 @@
-import React, { useEffect, useRef, useState } from "react";
 import "./styles/style.css";
+
+import React, { useRef, useState } from "react";
 import { createRoot } from "react-dom/client";
-import { MessagePayload } from "./models/interface";
+import { TextView } from "./components/text_view";
+import { isJapaneseCharacter } from "./utils/utils";
 import { LocalStorage, Message } from "./config/config";
+import { Kanji, MessagePayload } from "./models/interface";
 
 const Popup = () => {
-  const inputRef = useRef(null);
+  const inputRef = useRef<any>(null);
+
+  const [text, setText] = useState("");
+  const [kajis, setKajis] = useState<Kanji[]>([]);
+
   const [isDataImported, setIsDataImported] = useState(
     localStorage.getItem(LocalStorage.isDataImported)
   );
@@ -17,30 +24,39 @@ const Popup = () => {
     }
   };
 
-  const importDataToLocalDB = async (data: string) => {
-    const json = JSON.parse(data);
-    chrome.runtime.sendMessage({
-      payload: json,
-      message: Message.Insert,
-    } as MessagePayload);
-  };
-
-  const getKanjiData = async (data: string) => {};
-
-  useEffect(() => {
-    chrome.runtime.onMessage.addListener(
-      (request: MessagePayload, sender, sendResponse) => {
-        switch (request.message) {
-          case Message.InsertSuccessful:
-            alert(request.payload);
-            setDataImportedStatus();
-            break;
-          default:
-            break;
-        }
+  const importDataToLocalDB = (data: string) => {
+    chrome.runtime.sendMessage(
+      {
+        payload: JSON.parse(data),
+        message: Message.Insert,
+      } as MessagePayload,
+      (request) => {
+        setDataImportedStatus();
+        alert(request.payload);
       }
     );
-  }, []);
+  };
+
+  const seachDataFromLocalDB = (data: string[]) => {
+    chrome.runtime.sendMessage(
+      {
+        payload: data,
+        message: Message.Get,
+      } as MessagePayload,
+      (request) => {
+        setDataImportedStatus();
+        setKajis(request.payload ?? []);
+      }
+    );
+  };
+
+  const onSearchKanji = () => {
+    if (!text) {
+      return;
+    }
+    const kanjiSearch = text.trim().split("");
+    seachDataFromLocalDB(kanjiSearch);
+  };
 
   return (
     <div className="form">
@@ -51,46 +67,67 @@ const Popup = () => {
           onChange={(event) => {
             const reader = new FileReader();
             reader.readAsText(event.target.files![0]);
-            reader.onload = async (e) => {
+            reader.onload = (e) => {
               const text = e.target?.result;
               if (text && typeof text === "string") {
-                await importDataToLocalDB(text);
+                importDataToLocalDB(text);
               }
             };
           }}
         />
       ) : null}
-      <input
-        type="file"
-        accept=".json"
-        onChange={(event) => {
-          const reader = new FileReader();
-          reader.readAsText(event.target.files![0]);
-          reader.onload = async (e) => {
-            const text = e.target?.result;
-            if (text && typeof text === "string") {
-              await importDataToLocalDB(text);
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          whiteSpace: "nowrap",
+          flexDirection: "row",
+        }}
+      >
+        <input
+          autoFocus
+          id="kanji"
+          type="text"
+          value={text}
+          ref={inputRef}
+          name="kanjiCharacter"
+          placeholder="Your Kanji character..."
+          onChange={(event) => {
+            setText(event.target.value);
+          }}
+          onKeyDown={(event) => {
+            if (event.key === "Enter") {
+              onSearchKanji();
             }
-          };
-        }}
-      />
-      <input
-        id="kanji"
-        type="text"
-        ref={inputRef}
-        name="kanjiCharacter"
-        placeholder="Your Kanji character..."
-      />
-      <input
-        type="submit"
-        value="Submit"
-        onClick={(event) => {
-          const input = inputRef.current!["value"];
-          if (!input) {
-            return;
-          }
-        }}
-      />
+          }}
+          onFocus={() => {
+            navigator.clipboard.readText().then((text) => {
+              if (isJapaneseCharacter(text)) {
+                setText(text);
+                onSearchKanji();
+              }
+            });
+          }}
+        />
+        <img
+          width={40}
+          height={40}
+          src="button.jpeg"
+          style={{ marginLeft: 10 }}
+          onClick={() => {
+            setText("");
+            inputRef.current?.focus();
+          }}
+        />
+      </div>
+
+      <input type="submit" value="Submit" onClick={onSearchKanji} />
+      {kajis.length ? <div className="space" /> : null}
+      {kajis.map((kanji) => (kanji ? <TextView kanji={kanji} /> : null))}
+
+      <div style={{ marginTop: 10 }}>
+        <img src="background.png" width={300} />
+      </div>
     </div>
   );
 };

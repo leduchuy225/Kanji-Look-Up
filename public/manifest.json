@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Kanji Look Up",
-  "description": "Chrome Extension, TypeScript, Visual Studio Code",
+  "description": "Looking up Kanji's radical",
   "version": "1.0",
   "action": {
     "default_icon": {
@@ -14,5 +14,6 @@
   "background": {
     "service_worker": "js/background.js"
   },
-  "permissions": ["storage", "contextMenus"]
+  "permissions": ["storage", "clipboardRead"],
+  "host_permissions": ["*://kanjiapi.dev/"]
 }

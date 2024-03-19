@@ -3,16 +3,13 @@ import { DB_NAME, DB_VERSION, KanjiTable } from "../config/config";
 
 let database: IDBDatabase | null = null;
 
-createDatabase();
-
-function createDatabase() {
+export function createDatabase(onConnectSuccess: () => void) {
   const request = indexedDB.open(DB_NAME, DB_VERSION);
 
   request.onsuccess = function (event) {
-    console.log("DB OPENED.");
-
     const target = event.target as IDBOpenDBRequest;
     database = target.result;
+    onConnectSuccess();
   };
 
   request.onerror = function (event) {
@@ -85,6 +82,13 @@ export function getRecord<T>(
       resolve(target.result);
     };
   });
+}
+
+export function getManyRecord<T>(keys: string[], options: TransactionOptions) {
+  if (!database) {
+    return null;
+  }
+  return Promise.all(keys.map((key) => getRecord<T>(key, options)));
 }
 
 export function clearTable(options: TransactionOptions) {
