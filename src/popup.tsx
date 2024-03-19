@@ -4,18 +4,27 @@ import React, { useRef, useState } from "react";
 import { createRoot } from "react-dom/client";
 import { TextView } from "./components/text_view";
 import { isJapaneseCharacter } from "./utils/utils";
-import { LocalStorage, Message } from "./config/config";
+import { LocalStorage, Message, StatusTimeOut } from "./config/config";
 import { Kanji, MessagePayload } from "./models/interface";
 
 const Popup = () => {
   const inputRef = useRef<any>(null);
 
   const [text, setText] = useState("");
+  const [status, setStatus] = useState("");
   const [kajis, setKajis] = useState<Kanji[]>([]);
 
   const [isDataImported, setIsDataImported] = useState(
     localStorage.getItem(LocalStorage.isDataImported)
   );
+
+  const showStatus = (data: string) => {
+    setStatus(data);
+    const timer = setTimeout(() => {
+      setStatus("");
+      clearTimeout(timer);
+    }, StatusTimeOut);
+  };
 
   const setDataImportedStatus = () => {
     if (!isDataImported) {
@@ -31,8 +40,12 @@ const Popup = () => {
         message: Message.Insert,
       } as MessagePayload,
       (request) => {
-        setDataImportedStatus();
-        alert(request.payload);
+        if (request.message == Message.InsertSuccessful) {
+          setDataImportedStatus();
+          alert(request.payload);
+          return;
+        }
+        alert("Insert fail");
       }
     );
   };
@@ -44,8 +57,13 @@ const Popup = () => {
         message: Message.Get,
       } as MessagePayload,
       (request) => {
-        setDataImportedStatus();
-        setKajis(request.payload ?? []);
+        if (request.payload) {
+          setDataImportedStatus();
+          setKajis(request.payload);
+          return;
+        }
+        setKajis([]);
+        showStatus("Not found Kanji");
       }
     );
   };
@@ -64,6 +82,7 @@ const Popup = () => {
         <input
           type="file"
           accept=".json"
+          title="Import local database"
           onChange={(event) => {
             const reader = new FileReader();
             reader.readAsText(event.target.files![0]);
@@ -122,6 +141,9 @@ const Popup = () => {
       </div>
 
       <input type="submit" value="Submit" onClick={onSearchKanji} />
+
+      {status ? <p className="status">{status}</p> : null}
+
       {kajis.length ? <div className="space" /> : null}
       {kajis.map((kanji) => (kanji ? <TextView kanji={kanji} /> : null))}
 

@@ -33,3 +33,10 @@ input[type="submit"]:hover {
 .space {
   margin: 8px;
 }
+
+.status {
+  color: red;
+  font-size: 150%;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}

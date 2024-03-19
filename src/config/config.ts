@@ -1,6 +1,8 @@
 export const DB_VERSION = 1;
 export const DB_NAME = "NiHongoDB";
 
+export const StatusTimeOut = 2000; //ms
+
 export const LocalStorage = {
   isDataImported: "isDataImported",
 };
@@ -21,6 +23,7 @@ export const Message = {
   Get: "Get",
   Insert: "Insert",
   DbReady: "DbReady",
+  GetEmpty: "GetEmpty",
   GetSuccessful: "GetSuccessful",
   InsertSuccessful: "InsertSuccessful",
 };

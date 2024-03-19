@@ -6,6 +6,7 @@ import {
   getManyRecord,
   insertRecords,
 } from "./data/local_database";
+import { isAllElementNull } from "./utils/utils";
 
 createDatabase(() => {
   console.log("DB OPENED.");
@@ -20,6 +21,13 @@ chrome.runtime.onMessage.addListener(
           await getManyRecord(request.payload, {
             tableName: KanjiTable.name,
           })?.then((data) => {
+            if (isAllElementNull(data)) {
+              sendResponse({
+                payload: undefined,
+                message: Message.GetEmpty,
+              } as MessagePayload);
+              return;
+            }
             sendResponse({
               payload: data,
               message: Message.GetSuccessful,
