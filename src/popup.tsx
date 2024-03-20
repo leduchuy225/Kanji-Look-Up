@@ -4,7 +4,7 @@ import { Kanji } from "./models/interface";
 import { createRoot } from "react-dom/client";
 import React, { useRef, useState } from "react";
 import { TextView } from "./components/text_view";
-import { isJapaneseCharacter } from "./utils/utils";
+import { handleJsonFile, isJapaneseCharacter } from "./utils/utils";
 import {
   Message,
   KanjiTable,
@@ -71,19 +71,24 @@ const Popup = () => {
             reader.onload = (e) => {
               const text = e.target?.result;
               if (text && typeof text === "string") {
-                importDataToLocalDB({
-                  data: JSON.parse(text),
-                  table: KanjiTable.name,
-                  message: "ClearAndInsert",
-                  callback: (request) => {
-                    if (request.message == Message.InsertSuccessful) {
-                      setDataImportedStatus();
-                      alert(request.payload?.data);
-                      return;
-                    }
-                    alert("Insert fail");
-                  },
-                });
+                try {
+                  const jsonData = handleJsonFile(text);
+                  importDataToLocalDB({
+                    data: jsonData,
+                    table: KanjiTable.name,
+                    message: "ClearAndInsert",
+                    callback: (request) => {
+                      if (request.message == Message.InsertSuccessful) {
+                        setDataImportedStatus();
+                        alert(request.payload?.data);
+                        return;
+                      }
+                      alert("Insert fail");
+                    },
+                  });
+                } catch (error) {
+                  alert(error);
+                }
               }
             };
           }}

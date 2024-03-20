@@ -7,3 +7,14 @@ export const isJapaneseCharacter = (data: string) => {
 export const isAllElementNull = (data: any[]) => {
   return !data.some((item) => item != null && item != undefined);
 };
+
+export const handleJsonFile = (jsonData: string) => {
+  const data = JSON.parse(jsonData);
+  if (!Array.isArray(data)) {
+    throw "Invalid json file";
+  }
+  if (!data[0]?.kanji) {
+    throw "Invalid json file";
+  }
+  return data;
+};
