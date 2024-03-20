@@ -40,7 +40,8 @@ const Popup = () => {
   };
 
   const onSearchKanji = () => {
-    if (!text) {
+    if (!text.trim()) {
+      showStatus("Please enter your Kanji");
       return;
     }
     const kanjiSearch = text.trim().split("");
@@ -66,6 +67,8 @@ const Popup = () => {
           accept=".json"
           title="Import local database"
           onChange={(event) => {
+            event.preventDefault();
+
             const reader = new FileReader();
             reader.readAsText(event.target.files![0]);
             reader.onload = (e) => {
@@ -104,11 +107,9 @@ const Popup = () => {
       >
         <input
           autoFocus
-          id="kanji"
           type="text"
           value={text}
           ref={inputRef}
-          name="kanjiCharacter"
           placeholder="Your Kanji character..."
           onChange={(event) => {
             setText(event.target.value);
@@ -131,11 +132,8 @@ const Popup = () => {
           width={40}
           height={40}
           src="button.jpeg"
+          onClick={onSearchKanji}
           style={{ marginLeft: 10 }}
-          onClick={() => {
-            setText("");
-            inputRef.current?.focus();
-          }}
         />
       </div>
 
