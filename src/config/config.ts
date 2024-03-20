@@ -32,6 +32,7 @@ export const Message = {
   GetMany: "GetMany",
   DbReady: "DbReady",
   GetEmpty: "GetEmpty",
+  CheckDbReady: "CheckDbReady",
   GetSuccessful: "GetSuccessful",
   ClearAndInsert: "ClearAndInsert",
   InsertSuccessful: "InsertSuccessful",

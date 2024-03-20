@@ -9,42 +9,46 @@ import {
 } from "./data/local_database";
 import { isAllElementNull } from "./utils/utils";
 
-createDatabase(() => {
-  console.log("DB OPENED.");
-});
-
 chrome.runtime.onMessage.addListener(
-  (request: MessagePayload, sender, sendResponse) => {
+  (request: MessagePayload, _, sendResponse) => {
     console.log("Receive message", request.message);
     (async () => {
-      if (!request.payload?.table) {
-        return;
-      }
-      const payload = request.payload.data;
-      const tableName = request.payload?.table;
       switch (request.message) {
+        case Message.CheckDbReady:
+          createDatabase(() => {
+            sendResponse({
+              message: Message.DbReady,
+            } as MessagePayload);
+          });
+          break;
         case Message.GetMany:
-          await getManyRecord(payload, { tableName: tableName })?.then(
-            (data) => {
-              if (isAllElementNull(data)) {
-                sendResponse({
-                  payload: undefined,
-                  message: Message.GetEmpty,
-                } as MessagePayload);
-                return;
-              }
+          if (!request.payload?.table) {
+            return;
+          }
+          await getManyRecord(request.payload.data, {
+            tableName: request.payload.table,
+          })?.then((data) => {
+            if (isAllElementNull(data)) {
               sendResponse({
-                payload: { data: data },
-                message: Message.GetSuccessful,
+                message: Message.GetEmpty,
               } as MessagePayload);
+              return;
             }
-          );
+            sendResponse({
+              payload: { data: data },
+              message: Message.GetSuccessful,
+            } as MessagePayload);
+          });
           break;
         case Message.GetOne:
-          await getRecord(payload, { tableName: tableName })?.then((data) => {
+          if (!request.payload?.table) {
+            return;
+          }
+          await getRecord(request.payload.data, {
+            tableName: request.payload.table,
+          })?.then((data) => {
             if (!data) {
               sendResponse({
-                payload: undefined,
                 message: Message.GetEmpty,
               } as MessagePayload);
               return;
@@ -56,7 +60,12 @@ chrome.runtime.onMessage.addListener(
           });
           break;
         case Message.Insert:
-          await insertRecords(payload, { tableName: tableName })?.then(() => {
+          if (!request.payload?.table) {
+            return;
+          }
+          await insertRecords(request.payload.data, {
+            tableName: request.payload.table,
+          })?.then(() => {
             sendResponse({
               message: Message.InsertSuccessful,
               payload: { data: "Insert database successfully" },
@@ -64,9 +73,14 @@ chrome.runtime.onMessage.addListener(
           });
           break;
         case Message.ClearAndInsert:
-          await clearTable({ tableName: tableName })
+          if (!request.payload?.table || !request.payload.data) {
+            return;
+          }
+          await clearTable({ tableName: request.payload.table })
             ?.then(() => {
-              return insertRecords(payload, { tableName: tableName });
+              return insertRecords(request.payload!.data, {
+                tableName: request.payload!.table!,
+              });
             })
             .then(() => {
               sendResponse({

@@ -1,8 +1,8 @@
 import "./styles/style.css";
 
-import { Kanji } from "./models/interface";
+import { Kanji, MessagePayload } from "./models/interface";
 import { createRoot } from "react-dom/client";
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { TextView } from "./components/text_view";
 import { handleJsonFile, isJapaneseCharacter } from "./utils/utils";
 import {
@@ -24,12 +24,24 @@ const Popup = () => {
 
   const [text, setText] = useState("");
   const [status, setStatus] = useState("");
+  const [isReady, setIsReady] = useState(false);
   const [kajis, setKajis] = useState<Kanji[]>([]);
   const [meaning, setMeaning] = useState<JotobaRoot | undefined>(undefined);
 
   const [isDataImported, setIsDataImported] = useState(
     localStorage.getItem(LocalStorage.isDataImported)
   );
+
+  useEffect(() => {
+    chrome.runtime.sendMessage(
+      {
+        message: Message.CheckDbReady,
+      } as MessagePayload,
+      (request: MessagePayload) => {
+        request.message == Message.DbReady && setIsReady(true);
+      }
+    );
+  }, []);
 
   const showStatus = (data: string) => {
     setStatus(data);
@@ -48,16 +60,17 @@ const Popup = () => {
 
   const onSearchKanji = () => {
     const textTrim = text.trim();
+
     if (!textTrim) {
       showStatus("Please enter your Kanji");
       return;
     }
-    searchWordMeaning(textTrim, (response) => {
-      if (response) {
-        setMeaning(response);
-      }
-    });
     const kanjiSearch = textTrim.split("");
+    if (kanjiSearch.length > 1) {
+      searchWordMeaning(textTrim, (response) => {
+        response && setMeaning(response);
+      });
+    }
     seachManyFromKanji({
       data: kanjiSearch,
       callback: (request) => {
@@ -71,6 +84,10 @@ const Popup = () => {
       },
     });
   };
+
+  if (!isReady) {
+    return <></>;
+  }
 
   return (
     <div className="form">
@@ -128,9 +145,7 @@ const Popup = () => {
             setText(event.target.value);
           }}
           onKeyDown={(event) => {
-            if (event.key === "Enter") {
-              onSearchKanji();
-            }
+            event.key === "Enter" && onSearchKanji();
           }}
           onFocus={() => {
             navigator.clipboard.readText().then((text) => {

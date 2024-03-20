@@ -6,7 +6,7 @@ import {
   KanjiTable,
 } from "../config/config";
 
-let database: IDBDatabase | null = null;
+export let database: IDBDatabase | null = null;
 
 const createObjectStore = (request: IDBDatabase, table: Table) => {
   const objectKanjiStore = request.createObjectStore(table.name, {
