@@ -58,8 +58,8 @@ const Popup = () => {
     }
   };
 
-  const onSearchKanji = () => {
-    const textTrim = text.trim();
+  const onSearchKanji = (textSearch?: string) => {
+    const textTrim = (textSearch ?? text).trim();
 
     if (!textTrim) {
       showStatus("Please enter your Kanji");
@@ -147,11 +147,11 @@ const Popup = () => {
           onKeyDown={(event) => {
             event.key === "Enter" && onSearchKanji();
           }}
-          onFocus={() => {
-            navigator.clipboard.readText().then((text) => {
-              if (isJapaneseCharacter(text)) {
-                setText(text);
-                onSearchKanji();
+          onFocus={async () => {
+            await navigator.clipboard.readText().then((clipboardText) => {
+              if (isJapaneseCharacter(clipboardText)) {
+                setText(clipboardText);
+                onSearchKanji(clipboardText);
               }
             });
           }}
@@ -168,7 +168,7 @@ const Popup = () => {
         />
       </div>
 
-      <input type="submit" value="Submit" onClick={onSearchKanji} />
+      <input type="submit" value="Submit" onClick={() => onSearchKanji()} />
 
       {status ? <p className="status">{status}</p> : null}
 
