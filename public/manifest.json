@@ -15,5 +15,5 @@
     "service_worker": "js/background.js"
   },
   "permissions": ["storage", "clipboardRead"],
-  "host_permissions": ["*://kanjiapi.dev/"]
+  "host_permissions": ["*://kanjiapi.dev/", "*://*.mazii.net/"]
 }

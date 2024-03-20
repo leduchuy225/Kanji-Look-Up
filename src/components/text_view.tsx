@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { ReactNode, useEffect, useState } from "react";
 import { Kanji, KanjiResponse } from "../models/interface";
 import {
   showMeanings,
@@ -44,6 +44,16 @@ export const TextView = ({ kanji }: { kanji: Kanji }) => {
         title="Kun Reading"
         data={showKunReadings(data?.kun_readings)}
       />
+      <TextViewInformation
+        title="Stroke"
+        isVisible={!!data.unicode}
+        child={
+          <img
+            className="text-view-content"
+            src={`https://data.mazii.net/kanji/0${data.unicode?.toLowerCase()}.svg`}
+          />
+        }
+      />
       <hr className="divider" />
     </>
   );
@@ -52,18 +62,22 @@ export const TextView = ({ kanji }: { kanji: Kanji }) => {
 const TextViewInformation = ({
   data,
   title,
+  child,
+  isVisible = true,
 }: {
   title: string;
-  data: string | null | undefined;
+  isVisible?: boolean;
+  data?: string | null;
+  child?: ReactNode | null;
 }) => {
-  if (!data) {
+  if (!isVisible || (!data && !child)) {
     return null;
   }
 
   return (
     <div className="text-view-container">
       <div className="text-view-title">{title}</div>
-      <span className="text-view-content text">{data}</span>
+      {data ? <span className="text-view-content text">{data}</span> : child}
     </div>
   );
 };
