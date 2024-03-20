@@ -11,7 +11,13 @@ import {
   LocalStorage,
   StatusTimeOut,
 } from "./config/config";
-import { importDataToLocalDB, seachManyFromKanji } from "./data/data_service";
+import {
+  importDataToLocalDB,
+  seachManyFromKanji,
+  searchWordMeaning,
+} from "./data/data_service";
+import { JotobaRoot } from "./models/jotoba_dictionary";
+import { WordMeaning } from "./components/word_meaning";
 
 const Popup = () => {
   const inputRef = useRef<any>(null);
@@ -19,6 +25,7 @@ const Popup = () => {
   const [text, setText] = useState("");
   const [status, setStatus] = useState("");
   const [kajis, setKajis] = useState<Kanji[]>([]);
+  const [meaning, setMeaning] = useState<JotobaRoot | undefined>(undefined);
 
   const [isDataImported, setIsDataImported] = useState(
     localStorage.getItem(LocalStorage.isDataImported)
@@ -40,11 +47,17 @@ const Popup = () => {
   };
 
   const onSearchKanji = () => {
-    if (!text.trim()) {
+    const textTrim = text.trim();
+    if (!textTrim) {
       showStatus("Please enter your Kanji");
       return;
     }
-    const kanjiSearch = text.trim().split("");
+    searchWordMeaning(textTrim, (response) => {
+      if (response) {
+        setMeaning(response);
+      }
+    });
+    const kanjiSearch = textTrim.split("");
     seachManyFromKanji({
       data: kanjiSearch,
       callback: (request) => {
@@ -132,7 +145,10 @@ const Popup = () => {
           width={40}
           height={40}
           src="button.jpeg"
-          onClick={onSearchKanji}
+          onClick={() => {
+            setText("");
+            inputRef.current?.focus();
+          }}
           style={{ marginLeft: 10 }}
         />
       </div>
@@ -140,6 +156,11 @@ const Popup = () => {
       <input type="submit" value="Submit" onClick={onSearchKanji} />
 
       {status ? <p className="status">{status}</p> : null}
+
+      {meaning?.words.length ? <div className="space" /> : null}
+      {meaning?.words.map((word) =>
+        word ? <WordMeaning word={word} /> : null
+      )}
 
       {kajis.length ? <div className="space" /> : null}
       {kajis.map((kanji) => (kanji ? <TextView kanji={kanji} /> : null))}

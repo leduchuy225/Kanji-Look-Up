@@ -1,6 +1,7 @@
-import { KanjiApiTable, KanjiTable, Message } from "../config/config";
+import { JotobaRoot } from "../models/jotoba_dictionary";
 import { KanjiResponse, MessagePayload } from "../models/interface";
-import { getKanjiCharacter } from "./external_api";
+import { KanjiApiTable, KanjiTable, Message } from "../config/config";
+import { getKanjiCharacter, lookUpDictionary } from "./external_api";
 
 export const importDataToLocalDB = (option: {
   data: any[];
@@ -67,4 +68,11 @@ export const seachOneFromKanjiApi = (data: string) => {
       }
     );
   });
+};
+
+export const searchWordMeaning = (
+  data: string,
+  callback: (response?: JotobaRoot) => void
+) => {
+  return lookUpDictionary(data).then(callback);
 };

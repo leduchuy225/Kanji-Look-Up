@@ -1,4 +1,4 @@
-import React, { ReactNode, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Kanji, KanjiResponse } from "../models/interface";
 import {
   showMeanings,
@@ -9,6 +9,7 @@ import {
 
 import "../styles/text_view.css";
 import { seachOneFromKanjiApi } from "../data/data_service";
+import { TextViewInformation } from "./text_view_information";
 
 const convertKanjiToKanjiResponse = (data: Kanji): KanjiResponse & Kanji => {
   return { ...data };
@@ -56,28 +57,5 @@ export const TextView = ({ kanji }: { kanji: Kanji }) => {
       />
       <hr className="divider" />
     </>
-  );
-};
-
-const TextViewInformation = ({
-  data,
-  title,
-  child,
-  isVisible = true,
-}: {
-  title: string;
-  isVisible?: boolean;
-  data?: string | null;
-  child?: ReactNode | null;
-}) => {
-  if (!isVisible || (!data && !child)) {
-    return null;
-  }
-
-  return (
-    <div className="text-view-container">
-      <div className="text-view-title">{title}</div>
-      {data ? <span className="text-view-content text">{data}</span> : child}
-    </div>
   );
 };
