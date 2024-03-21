@@ -40,3 +40,16 @@ input[type="submit"]:hover {
   margin-top: 8px;
   margin-bottom: 8px;
 }
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.space-arround {
+  justify-content: space-around;
+}
+
+.pointer {
+  cursor: pointer;
+}

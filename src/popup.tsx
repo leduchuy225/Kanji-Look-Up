@@ -26,8 +26,8 @@ const Popup = () => {
   const [status, setStatus] = useState("");
   const [isReady, setIsReady] = useState(false);
   const [kajis, setKajis] = useState<Kanji[]>([]);
+  const [imageSrcs, setImageSrcs] = useState(["background.png"]);
   const [meaning, setMeaning] = useState<JotobaRoot | undefined>(undefined);
-
   const [isDataImported, setIsDataImported] = useState(
     localStorage.getItem(LocalStorage.isDataImported)
   );
@@ -128,12 +128,8 @@ const Popup = () => {
         />
       ) : null}
       <div
-        style={{
-          display: "flex",
-          alignItems: "center",
-          whiteSpace: "nowrap",
-          flexDirection: "row",
-        }}
+        className="row"
+        style={{ alignItems: "center", whiteSpace: "nowrap" }}
       >
         <input
           autoFocus
@@ -160,11 +156,13 @@ const Popup = () => {
           width={40}
           height={40}
           src="button.jpeg"
+          title="Clear input"
+          className="pointer"
+          style={{ marginLeft: 10 }}
           onClick={() => {
             setText("");
             inputRef.current?.focus();
           }}
-          style={{ marginLeft: 10 }}
         />
       </div>
 
@@ -180,9 +178,22 @@ const Popup = () => {
       {kajis.length ? <div className="space" /> : null}
       {kajis.map((kanji) => (kanji ? <TextView kanji={kanji} /> : null))}
 
-      <div style={{ marginTop: 10 }}>
-        <img src="background.png" width={300} />
-      </div>
+      {imageSrcs.map((src) => {
+        const sharedProps = { src: src, width: 300, style: { marginTop: 8 } };
+        if (src == "background.png") {
+          return (
+            <img
+              {...sharedProps}
+              className="pointer"
+              title="Click to show alphabet"
+              onClick={() => {
+                setImageSrcs(["hiragana.png", "katakana.png"]);
+              }}
+            />
+          );
+        }
+        return <img {...sharedProps} />;
+      })}
     </div>
   );
 };
