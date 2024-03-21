@@ -11,20 +11,24 @@ import "../styles/text_view.css";
 import { seachOneFromKanjiApi } from "../data/data_service";
 import { TextViewInformation } from "./text_view_information";
 
-const convertKanjiToKanjiResponse = (data: Kanji): KanjiResponse & Kanji => {
-  return { ...data };
-};
-
 export const TextView = ({ kanji }: { kanji: Kanji }) => {
-  const [data, setData] = useState<KanjiResponse & Kanji>(
-    convertKanjiToKanjiResponse(kanji)
+  const [data, setData] = useState<(KanjiResponse & Kanji) | undefined>(
+    undefined
   );
+
+  useEffect(() => {
+    setData({ ...kanji });
+  }, []);
 
   useEffect(() => {
     seachOneFromKanjiApi(kanji.kanji).then((response) => {
       setData({ ...response, ...kanji });
     });
   }, [kanji]);
+
+  if (!data) {
+    return <></>;
+  }
 
   return (
     <>
