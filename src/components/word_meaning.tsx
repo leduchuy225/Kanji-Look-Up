@@ -14,12 +14,12 @@ export const WordMeaning = ({ word }: { word: JotobaWord }) => {
       <TextViewInformation
         title="Word"
         data={word.reading.furigana}
-        titleStyle={{ backgroundColor: "#2c205f" }}
+        titleStyle={{ backgroundColor: "#29494c" }}
       />
       <TextViewInformation
         title="Meaning"
         data={showWordMeanings(word.senses)}
-        titleStyle={{ backgroundColor: "#2c205f" }}
+        titleStyle={{ backgroundColor: "#29494c" }}
       />
       <audio className="audioPlayer" controls>
         <source src={`${JotobaBaseURL}${word.audio}`} />

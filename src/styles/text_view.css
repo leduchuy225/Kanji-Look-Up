@@ -1,7 +1,7 @@
 .text-view-container {
   display: flex;
   margin-bottom: 8px;
-  word-break: break-all;
+  word-break: keep-all;
   justify-content: space-between;
 }
 
@@ -18,7 +18,7 @@
 .text-view-content {
   flex: 2;
   white-space: pre-wrap;
-  overflow-wrap: break-word;
+  overflow-wrap: normal;
 }
 
 hr.divider {

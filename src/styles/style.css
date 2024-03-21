@@ -16,11 +16,7 @@ input[type="submit"] {
   cursor: pointer;
   padding: 14px 20px;
   border-radius: 4px;
-  background-color: #29494c;
-}
-
-input[type="submit"]:hover {
-  background-color: #29494c;
+  background-color: #20262c;
 }
 
 .form {
