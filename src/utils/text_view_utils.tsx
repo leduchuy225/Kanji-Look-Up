@@ -33,9 +33,9 @@ export const showComponents = (data: KanjiComponent[]): ReactNode => {
     <span className="text-view-content">
       {data.map((item) => {
         return (
-          <p className="text">
+          <p className="text no-padding">
             {isRadicalInvalid(item.radical) ? (
-              <a href={item.radical} target="_blank">
+              <a className="highlight" href={item.radical} target="_blank">
                 ( {item.radical_name} )
               </a>
             ) : (

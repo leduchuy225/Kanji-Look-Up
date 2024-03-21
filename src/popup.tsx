@@ -1,4 +1,5 @@
 import "./styles/style.css";
+import "./styles/text_view.css";
 
 import { Kanji, MessagePayload } from "./models/interface";
 import { createRoot } from "react-dom/client";
@@ -12,7 +13,10 @@ import {
   StatusTimeOut,
 } from "./config/config";
 import {
+  getIsDataImported,
+  getLastWord,
   importDataToLocalDB,
+  saveLastWord,
   seachManyFromKanji,
   searchWordMeaning,
 } from "./data/data_service";
@@ -27,10 +31,9 @@ const Popup = () => {
   const [isReady, setIsReady] = useState(false);
   const [kajis, setKajis] = useState<Kanji[]>([]);
   const [imageSrcs, setImageSrcs] = useState(["background.png"]);
+  const [lastWord, setLastWord] = useState<string | null>(getLastWord());
   const [meaning, setMeaning] = useState<JotobaRoot | undefined>(undefined);
-  const [isDataImported, setIsDataImported] = useState(
-    localStorage.getItem(LocalStorage.isDataImported)
-  );
+  const [isDataImported, setIsDataImported] = useState(getIsDataImported());
 
   useEffect(() => {
     chrome.runtime.sendMessage(
@@ -54,17 +57,20 @@ const Popup = () => {
   const setDataImportedStatus = () => {
     if (!isDataImported) {
       setIsDataImported("1");
-      localStorage.setItem(LocalStorage.isDataImported, "1");
+      localStorage.setItem(LocalStorage.IsDataImported, "1");
     }
   };
 
   const onSearchKanji = (textSearch?: string) => {
+    if (textSearch) {
+      setText(textSearch);
+    }
     const textTrim = (textSearch ?? text).trim();
-
     if (!textTrim) {
       showStatus("Please enter your Kanji");
       return;
     }
+    updateLastWord(textTrim);
     const kanjiSearch = textTrim.split("");
     if (kanjiSearch.length > 1) {
       searchWordMeaning(textTrim, (response) => {
@@ -83,6 +89,11 @@ const Popup = () => {
         showStatus("Not found Kanji");
       },
     });
+  };
+
+  const updateLastWord = (lastWord: string) => {
+    saveLastWord(lastWord);
+    setLastWord(lastWord);
   };
 
   if (!isReady) {
@@ -146,7 +157,6 @@ const Popup = () => {
           onFocus={async () => {
             await navigator.clipboard.readText().then((clipboardText) => {
               if (isJapaneseCharacter(clipboardText)) {
-                setText(clipboardText);
                 onSearchKanji(clipboardText);
               }
             });
@@ -165,6 +175,18 @@ const Popup = () => {
           }}
         />
       </div>
+
+      {lastWord && lastWord != text ? (
+        <p
+          className="pointer no-padding"
+          onClick={() => {
+            onSearchKanji(lastWord);
+            inputRef.current?.focus();
+          }}
+        >
+          Last word: <span className="highlight text">{lastWord}</span>
+        </p>
+      ) : null}
 
       <input type="submit" value="Submit" onClick={() => onSearchKanji()} />
 

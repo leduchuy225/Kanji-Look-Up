@@ -1,6 +1,11 @@
 import { JotobaRoot } from "../models/jotoba_dictionary";
 import { KanjiResponse, MessagePayload } from "../models/interface";
-import { KanjiApiTable, KanjiTable, Message } from "../config/config";
+import {
+  KanjiApiTable,
+  KanjiTable,
+  LocalStorage,
+  Message,
+} from "../config/config";
 import { getKanjiCharacter, lookUpDictionary } from "./external_api";
 
 export const importDataToLocalDB = (option: {
@@ -75,4 +80,16 @@ export const searchWordMeaning = (
   callback: (response?: JotobaRoot) => void
 ) => {
   return lookUpDictionary(data).then(callback);
+};
+
+export const getLastWord = () => {
+  return localStorage.getItem(LocalStorage.LastWord);
+};
+
+export const getIsDataImported = () => {
+  return localStorage.getItem(LocalStorage.IsDataImported) ?? false;
+};
+
+export const saveLastWord = (data: string) => {
+  localStorage.setItem(LocalStorage.LastWord, data);
 };

@@ -6,7 +6,8 @@ export const DB_NAME = "NiHongoDB";
 export const StatusTimeOut = 2000; // ms
 
 export const LocalStorage = {
-  isDataImported: "isDataImported",
+  LastWord: "LastWord",
+  IsDataImported: "IsDataImported",
 };
 
 export const KanjiTable: Table = {
