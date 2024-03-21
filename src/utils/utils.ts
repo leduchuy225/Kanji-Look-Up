@@ -18,3 +18,7 @@ export const handleJsonFile = (jsonData: string) => {
   }
   return data;
 };
+
+export const isRadicalInvalid = (data: string) => {
+  return data.includes("wanikani");
+};

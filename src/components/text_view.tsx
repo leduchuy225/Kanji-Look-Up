@@ -35,7 +35,7 @@ export const TextView = ({ kanji }: { kanji: Kanji }) => {
       <TextViewInformation title="Kanji" data={data.kanji} />
       <TextViewInformation
         title="Components"
-        data={showComponents(data.components)}
+        child={showComponents(data.components)}
       />
       <TextViewInformation
         title="Meaning"

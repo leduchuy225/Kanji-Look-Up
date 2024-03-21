@@ -30,3 +30,13 @@ hr.divider {
 .text {
   font-size: 135%;
 }
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #333974;
+  text-decoration: none;
+}
