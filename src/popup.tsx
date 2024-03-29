@@ -70,6 +70,7 @@ const Popup = () => {
       showStatus("Please enter your Kanji");
       return;
     }
+    setMeaning(undefined);
     updateLastWord(textTrim);
     const kanjiSearch = textTrim.split("");
     if (kanjiSearch.length > 1) {
@@ -156,6 +157,9 @@ const Popup = () => {
           }}
           onFocus={async () => {
             await navigator.clipboard.readText().then((clipboardText) => {
+              if (!clipboardText) {
+                return;
+              }
               if (isJapaneseCharacter(clipboardText)) {
                 onSearchKanji(clipboardText);
               }

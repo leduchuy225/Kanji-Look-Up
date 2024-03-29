@@ -21,9 +21,11 @@ export const WordMeaning = ({ word }: { word: JotobaWord }) => {
         data={showWordMeanings(word.senses)}
         titleStyle={{ backgroundColor: "#29494c" }}
       />
-      <audio className="audioPlayer" controls>
-        <source src={`${JotobaBaseURL}${word.audio}`} />
-      </audio>
+      {word.audio ? (
+        <audio className="audioPlayer" controls>
+          <source src={`${JotobaBaseURL}${word.audio}`} />
+        </audio>
+      ) : undefined}
       <hr className="divider" />
     </>
   );
