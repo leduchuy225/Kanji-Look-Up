@@ -18,13 +18,10 @@ export const TextView = ({ kanji }: { kanji: Kanji }) => {
 
   useEffect(() => {
     setData({ ...kanji });
-  }, []);
-
-  useEffect(() => {
     seachOneFromKanjiApi(kanji.kanji).then((response) => {
       setData({ ...response, ...kanji });
     });
-  }, [kanji]);
+  }, [kanji.kanji]);
 
   if (!data) {
     return <></>;
