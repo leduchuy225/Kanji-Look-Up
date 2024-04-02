@@ -90,6 +90,7 @@ export function getRecord<T>(
     const request = objectStore.get(key);
     request.onsuccess = function (event) {
       const target = event.target as IDBRequest<T>;
+      console.log("GET Resolve", target.result);
       resolve(target.result);
     };
   });
