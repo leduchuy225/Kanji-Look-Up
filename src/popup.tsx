@@ -83,7 +83,7 @@ const Popup = () => {
       callback: (request) => {
         if (request.payload) {
           setDataImportedStatus();
-          setKajis(request.payload.data);
+          setKajis([...request.payload.data]);
           return;
         }
         setKajis([]);
