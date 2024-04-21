@@ -70,14 +70,19 @@ const Popup = () => {
       showStatus("Please enter your Kanji");
       return;
     }
+
+    setKajis([]);
     setMeaning(undefined);
     updateLastWord(textTrim);
+
     const kanjiSearch = textTrim.split("");
+
     if (kanjiSearch.length > 1) {
       searchWordMeaning(textTrim, (response) => {
         response && setMeaning(response);
       });
     }
+
     seachManyFromKanji({
       data: kanjiSearch,
       callback: (request) => {
@@ -86,7 +91,6 @@ const Popup = () => {
           setKajis([...request.payload.data]);
           return;
         }
-        setKajis([]);
         showStatus("Not found Kanji");
       },
     });
