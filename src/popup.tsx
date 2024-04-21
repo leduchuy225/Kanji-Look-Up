@@ -160,8 +160,12 @@ const Popup = () => {
             event.key === "Enter" && onSearchKanji();
           }}
           onFocus={async () => {
-            await navigator.clipboard.readText().then((clipboardText) => {
+            await navigator.clipboard.readText().then(async (clipboardText) => {
               if (!clipboardText) {
+                return;
+              }
+              if (clipboardText == lastWord) {
+                await navigator.clipboard.writeText("");
                 return;
               }
               if (isJapaneseCharacter(clipboardText)) {
