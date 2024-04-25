@@ -22,6 +22,7 @@ import {
 } from "./data/data_service";
 import { JotobaRoot } from "./models/jotoba_dictionary";
 import { WordMeaning } from "./components/word_meaning";
+import { sendMessageToDB } from "./popup_fn";
 
 const Popup = () => {
   const inputRef = useRef<any>(null);
@@ -36,14 +37,16 @@ const Popup = () => {
   const [isDataImported, setIsDataImported] = useState(getIsDataImported());
 
   useEffect(() => {
-    chrome.runtime.sendMessage(
-      {
-        message: Message.CheckDbReady,
-      } as MessagePayload,
-      (request: MessagePayload) => {
-        request.message == Message.DbReady && setIsReady(true);
-      }
-    );
+    const fetchData = async () => {
+      await sendMessageToDB(
+        { message: Message.CheckDbReady },
+        (request: MessagePayload) => {
+          request.message == Message.DbReady && setIsReady(true);
+        }
+      );
+    };
+
+    fetchData();
   }, []);
 
   const showStatus = (data: string) => {
@@ -61,7 +64,7 @@ const Popup = () => {
     }
   };
 
-  const onSearchKanji = (textSearch?: string) => {
+  const onSearchKanji = async (textSearch?: string) => {
     if (textSearch) {
       setText(textSearch);
     }
@@ -77,13 +80,7 @@ const Popup = () => {
 
     const kanjiSearch = textTrim.split("");
 
-    if (kanjiSearch.length > 1) {
-      searchWordMeaning(textTrim, (response) => {
-        response && setMeaning(response);
-      });
-    }
-
-    seachManyFromKanji({
+    await seachManyFromKanji({
       data: kanjiSearch,
       callback: (request) => {
         if (request.payload) {
@@ -94,6 +91,12 @@ const Popup = () => {
         showStatus("Not found Kanji");
       },
     });
+
+    if (kanjiSearch.length > 1) {
+      await searchWordMeaning(textTrim, (response) => {
+        response && setMeaning(response);
+      });
+    }
   };
 
   const updateLastWord = (lastWord: string) => {
@@ -117,12 +120,12 @@ const Popup = () => {
 
             const reader = new FileReader();
             reader.readAsText(event.target.files![0]);
-            reader.onload = (e) => {
+            reader.onload = async (e) => {
               const text = e.target?.result;
               if (text && typeof text === "string") {
                 try {
                   const jsonData = handleJsonFile(text);
-                  importDataToLocalDB({
+                  await importDataToLocalDB({
                     data: jsonData,
                     table: KanjiTable.name,
                     message: "ClearAndInsert",
@@ -156,8 +159,8 @@ const Popup = () => {
           onChange={(event) => {
             setText(event.target.value);
           }}
-          onKeyDown={(event) => {
-            event.key === "Enter" && onSearchKanji();
+          onKeyDown={async (event) => {
+            event.key === "Enter" && (await onSearchKanji());
           }}
           onFocus={async () => {
             await navigator.clipboard.readText().then(async (clipboardText) => {
@@ -169,7 +172,7 @@ const Popup = () => {
                 return;
               }
               if (isJapaneseCharacter(clipboardText)) {
-                onSearchKanji(clipboardText);
+                await onSearchKanji(clipboardText);
               }
             });
           }}
@@ -191,8 +194,8 @@ const Popup = () => {
       {lastWord && lastWord != text ? (
         <p
           className="pointer no-padding"
-          onClick={() => {
-            onSearchKanji(lastWord);
+          onClick={async () => {
+            await onSearchKanji(lastWord);
             inputRef.current?.focus();
           }}
         >
@@ -200,7 +203,11 @@ const Popup = () => {
         </p>
       ) : null}
 
-      <input type="submit" value="Submit" onClick={() => onSearchKanji()} />
+      <input
+        type="submit"
+        value="Submit"
+        onClick={async () => await onSearchKanji()}
+      />
 
       {status ? <p className="status">{status}</p> : null}
 
