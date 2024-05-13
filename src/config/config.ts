@@ -39,3 +39,6 @@ export const Message = {
   InsertSuccessful: "InsertSuccessful",
   ClearAndInsertSucessful: "ClearAndInsertSuccessful",
 };
+
+export const CanvasWidth = 350;
+export const CanvasHeight = 400;

@@ -43,3 +43,9 @@ export interface Table {
   key: string;
   name: string;
 }
+
+export interface CanvasDrawLine {
+  brushColor: string;
+  brushRadius: number;
+  points: { x: number; y: number }[];
+}
