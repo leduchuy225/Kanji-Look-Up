@@ -179,7 +179,10 @@ const Popup = () => {
                 await navigator.clipboard.writeText("");
                 return;
               }
-              if (isJapaneseCharacter(clipboardText)) {
+              if (
+                isJapaneseCharacter(clipboardText) &&
+                !clipboardText.includes(" ")
+              ) {
                 await onSearchKanji(clipboardText);
               }
             });
