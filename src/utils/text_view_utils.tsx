@@ -2,7 +2,7 @@ import "../styles/text_view.css";
 import React, { ReactNode } from "react";
 import { KanjiComponent } from "../models/interface";
 import { JotobaSense } from "../models/jotoba_dictionary";
-import { isRadicalInvalid } from "./utils";
+import { handleStringContent, isRadicalInvalid } from "./utils";
 
 export const showMeanings = (
   tempData: string,
@@ -11,21 +11,25 @@ export const showMeanings = (
   if (!data) {
     return tempData;
   }
-  return data.join("\n");
+  return handleStringContent(data);
 };
 
 export const showKunReadings = (data?: string[] | null): string => {
   if (!data) {
     return "";
   }
-  return data.join("\n");
+  return handleStringContent(data);
 };
 
 export const showOnReadings = (data?: string[] | null): string => {
   if (!data) {
     return "";
   }
-  return data.join("\n");
+  return handleStringContent(data);
+};
+
+export const showWordMeanings = (data: JotobaSense[]): string => {
+  return handleStringContent(data.map((item) => item.glosses.join(" - ")));
 };
 
 export const showComponents = (data: KanjiComponent[]): ReactNode => {
@@ -48,8 +52,4 @@ export const showComponents = (data: KanjiComponent[]): ReactNode => {
       })}
     </span>
   );
-};
-
-export const showWordMeanings = (data: JotobaSense[]): string => {
-  return data.map((item) => item.glosses.join(" - ")).join("\n");
 };

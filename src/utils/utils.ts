@@ -36,3 +36,7 @@ export const getInkPositionFromCanvasLines = (lines: CanvasDrawLine[]) => {
     return [x, y];
   });
 };
+
+export const handleStringContent = (data: any[]) => {
+  return data.map((word) => `• ${word}`).join("\n");
+};
