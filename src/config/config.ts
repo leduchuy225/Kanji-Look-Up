@@ -3,6 +3,8 @@ import { Table } from "../models/interface";
 export const DB_VERSION = 2;
 export const DB_NAME = "NiHongoDB";
 
+export const HistoryWordLength = 10;
+
 export const StatusTimeOut = 2000; // ms
 
 export const LocalStorage = {

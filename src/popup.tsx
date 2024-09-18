@@ -10,7 +10,6 @@ import {
   Message,
   KanjiTable,
   LocalStorage,
-  StatusTimeOut,
   CanvasWidth,
   CanvasHeight,
 } from "./config/config";
@@ -33,11 +32,11 @@ const Popup = () => {
   const canvasRef = useRef<any>(null);
 
   const [text, setText] = useState("");
-  const [status, setStatus] = useState("");
+  // const [status, setStatus] = useState("");
   const [isReady, setIsReady] = useState(false);
   const [kajis, setKajis] = useState<Kanji[]>([]);
   const [imageSrcs, setImageSrcs] = useState(["background.png"]);
-  const [lastWord, setLastWord] = useState<string | null>(getLastWord());
+  const [lastWords, setLastWords] = useState<string[]>(getLastWord());
   const [meaning, setMeaning] = useState<JotobaRoot | undefined>(undefined);
   const [isDataImported, setIsDataImported] = useState(getIsDataImported());
 
@@ -57,13 +56,13 @@ const Popup = () => {
     fetchData();
   }, []);
 
-  const showStatus = (data: string) => {
-    setStatus(data);
-    const timer = setTimeout(() => {
-      setStatus("");
-      clearTimeout(timer);
-    }, StatusTimeOut);
-  };
+  // const showStatus = (data: string) => {
+  //   setStatus(data);
+  //   const timer = setTimeout(() => {
+  //     setStatus("");
+  //     clearTimeout(timer);
+  //   }, StatusTimeOut);
+  // };
 
   const setDataImportedStatus = () => {
     if (!isDataImported) {
@@ -78,7 +77,7 @@ const Popup = () => {
     }
     const textTrim = (textSearch ?? text).trim();
     if (!textTrim) {
-      showStatus("Please enter your Kanji");
+      // showStatus("Please enter your Kanji");
       return;
     }
 
@@ -96,7 +95,7 @@ const Popup = () => {
           setKajis([...request.payload.data]);
           return;
         }
-        showStatus("Not found Kanji");
+        // showStatus("Not found Kanji");
       },
     });
 
@@ -109,7 +108,7 @@ const Popup = () => {
 
   const updateLastWord = (lastWord: string) => {
     saveLastWord(lastWord);
-    setLastWord(lastWord);
+    setLastWords(getLastWord());
   };
 
   if (!isReady) {
@@ -175,7 +174,7 @@ const Popup = () => {
               if (!clipboardText) {
                 return;
               }
-              if (clipboardText == lastWord) {
+              if (clipboardText == lastWords[0]) {
                 await navigator.clipboard.writeText("");
                 return;
               }
@@ -183,6 +182,7 @@ const Popup = () => {
                 isJapaneseCharacter(clipboardText) &&
                 !clipboardText.includes(" ")
               ) {
+                await navigator.clipboard.writeText("");
                 await onSearchKanji(clipboardText);
               }
             });
@@ -201,19 +201,25 @@ const Popup = () => {
         />
       </div>
 
-      {lastWord && lastWord != text ? (
-        <p
-          className="pointer no-padding"
-          onClick={async () => {
-            await onSearchKanji(lastWord);
-            inputRef.current?.focus();
-          }}
-        >
-          Last word: <span className="highlight text">{lastWord}</span>
-        </p>
+      {lastWords.length ? (
+        <div>
+          Last words{" "}
+          {lastWords.map((word) => (
+            <span
+              className="pointer highlight text"
+              onClick={async () => {
+                await onSearchKanji(word);
+                inputRef.current?.focus();
+              }}
+            >
+              {word}
+              {"  |  "}
+            </span>
+          ))}
+        </div>
       ) : null}
 
-      {status ? <p className="status">{status}</p> : null}
+      {/* {status ? <p className="status">{status}</p> : null} */}
 
       {meaning?.words.length ? <div className="space" /> : null}
       {meaning?.words.map((word) =>

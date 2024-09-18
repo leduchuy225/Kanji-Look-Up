@@ -1,6 +1,7 @@
 import { JotobaRoot } from "../models/jotoba_dictionary";
 import { KanjiResponse, MessagePayload } from "../models/interface";
 import {
+  HistoryWordLength,
   KanjiApiTable,
   KanjiTable,
   LocalStorage,
@@ -85,7 +86,8 @@ export const searchWordMeaning = (
 };
 
 export const getLastWord = () => {
-  return localStorage.getItem(LocalStorage.LastWord);
+  const wordString = localStorage.getItem(LocalStorage.LastWord);
+  return wordString?.split(" ") ?? [];
 };
 
 export const getIsDataImported = () => {
@@ -93,5 +95,16 @@ export const getIsDataImported = () => {
 };
 
 export const saveLastWord = (data: string) => {
-  localStorage.setItem(LocalStorage.LastWord, data);
+  const newWord = data.trim();
+
+  const wordString = localStorage.getItem(LocalStorage.LastWord);
+  var wordArray = wordString?.split(" ") ?? [];
+
+  wordArray = wordArray.filter((word) => word != newWord);
+
+  const newWordArray = [newWord].concat(wordArray);
+
+  const slicedArray = newWordArray.slice(0, HistoryWordLength);
+
+  localStorage.setItem(LocalStorage.LastWord, slicedArray.join(" "));
 };
