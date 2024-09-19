@@ -40,3 +40,16 @@ export const getInkPositionFromCanvasLines = (lines: CanvasDrawLine[]) => {
 export const handleStringContent = (data: any[]) => {
   return data.map((word) => `• ${word}`).join("\n");
 };
+
+export const convertObjectToString = <T extends object>(data: T[]) => {
+  return data
+    .map((item) => {
+      if (typeof item == "string" || item instanceof String) {
+        return item;
+      }
+      return Object.keys(item)
+        .map((key) => `${key}: ${JSON.stringify((item as any)[key])}`)
+        .join(",");
+    })
+    .join(" | ");
+};

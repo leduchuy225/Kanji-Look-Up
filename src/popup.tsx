@@ -98,11 +98,14 @@ const Popup = () => {
     if (kanjiSearch.length > 1) {
       const wordInHistory = lastWords.find((word) => word.word == textTrim);
       if (wordInHistory != null && wordInHistory.meaning != null) {
+        wordSaved.meaning = wordInHistory.meaning;
         setMeaning(wordInHistory.meaning);
       } else {
         await searchWordMeaning(textTrim, (response) => {
-          response && setMeaning(response);
-          wordSaved.meaning = response;
+          if (response) {
+            wordSaved.meaning = response;
+            setMeaning(response);
+          }
         });
       }
     }

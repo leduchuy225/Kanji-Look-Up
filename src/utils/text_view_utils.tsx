@@ -1,4 +1,3 @@
-import { JotobaSense } from "../models/jotoba_dictionary";
 import { handleStringContent } from "./utils";
 
 export const showMeanings = (
@@ -23,8 +22,4 @@ export const showOnReadings = (data?: string[] | null): string => {
     return "";
   }
   return handleStringContent(data);
-};
-
-export const showWordMeanings = (data: JotobaSense[]): string => {
-  return handleStringContent(data.map((item) => item.glosses.join(" - ")));
 };

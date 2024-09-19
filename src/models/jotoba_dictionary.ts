@@ -25,7 +25,7 @@ export interface JotobaWord {
   common: boolean;
   senses: JotobaSense[];
   audio: string;
-  pitch: JotobaPitch[];
+  pitch?: JotobaPitch[];
 }
 
 export interface JotobaReading {
@@ -41,7 +41,8 @@ export interface JotobaSense {
 }
 
 export interface JotobaPo {
-  Noun: string;
+  Noun?: string;
+  Verb?: string;
 }
 
 export interface JotobaPitch {

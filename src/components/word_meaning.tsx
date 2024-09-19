@@ -1,25 +1,49 @@
 import React from "react";
 import "../styles/text_view.css";
 import { TextViewInformation } from "./text_view_information";
-import { JotobaWord } from "../models/jotoba_dictionary";
+import {
+  JotobaPitch,
+  JotobaSense,
+  JotobaWord,
+} from "../models/jotoba_dictionary";
 import { JotobaBaseURL } from "../data/external_api";
-import { showWordMeanings } from "../utils/text_view_utils";
+import { convertObjectToString } from "../utils/utils";
 
 export const WordMeaning = ({ word }: { word: JotobaWord }) => {
+  const commonStyle = { backgroundColor: "#29494c" };
+
   if (!word) {
     return <></>;
   }
+
   return (
     <>
       <TextViewInformation
-        title="Word"
-        data={word.reading.furigana}
-        titleStyle={{ backgroundColor: "#29494c" }}
+        title="Kanji"
+        titleStyle={commonStyle}
+        child={
+          <div className="text-view-content text">
+            {word.reading.kanji}{" "}
+            <span className="subtitle">{word.reading.kana}</span>
+          </div>
+        }
       />
       <TextViewInformation
+        title="Furigana"
+        titleStyle={commonStyle}
+        data={word.reading.furigana}
+      />
+      {word.pitch ? (
+        <TextViewInformation
+          title="Pitch"
+          titleStyle={commonStyle}
+          child={<JotobaWordPitchWrapper data={word.pitch} />}
+        />
+      ) : null}
+      <TextViewInformation
         title="Meaning"
-        data={showWordMeanings(word.senses)}
-        titleStyle={{ backgroundColor: "#29494c" }}
+        titleStyle={commonStyle}
+        child={<JotobaWordMeaningWrapper data={word.senses} />}
       />
       {word.audio ? (
         <audio className="audioPlayer" controls>
@@ -28,5 +52,34 @@ export const WordMeaning = ({ word }: { word: JotobaWord }) => {
       ) : undefined}
       <hr className="divider" />
     </>
+  );
+};
+
+export const JotobaWordMeaningWrapper = ({ data }: { data: JotobaSense[] }) => {
+  return (
+    <div className="text-view-content text">
+      {data.map((item) => {
+        const information = convertObjectToString(item.pos);
+        return (
+          <div>
+            <span className="subtitle">{`• ${information}`}</span>
+            <div>{item.glosses.join(" - ")}</div>
+            <br />
+          </div>
+        );
+      })}
+    </div>
+  );
+};
+
+export const JotobaWordPitchWrapper = ({ data }: { data: JotobaPitch[] }) => {
+  return (
+    <div className="text-view-content text">
+      {data.map((item) => (
+        <span {...(!item.high ? { className: "subtitle" } : {})}>
+          {item.part}
+        </span>
+      ))}
+    </div>
   );
 };
