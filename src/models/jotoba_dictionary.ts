@@ -48,3 +48,9 @@ export interface JotobaPitch {
   part: string;
   high: boolean;
 }
+
+// My interface
+export interface LocalJotobaWord {
+  word: string;
+  meaning?: JotobaRoot | null;
+}

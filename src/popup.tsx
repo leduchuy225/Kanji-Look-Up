@@ -14,14 +14,14 @@ import {
   CanvasHeight,
 } from "./config/config";
 import {
+  addLastWordToStorage,
   getIsDataImported,
-  getLastWord,
+  getLastWordsFromStorage,
   importDataToLocalDB,
-  saveLastWord,
   seachManyFromKanji,
   searchWordMeaning,
 } from "./data/data_service";
-import { JotobaRoot } from "./models/jotoba_dictionary";
+import { JotobaRoot, LocalJotobaWord } from "./models/jotoba_dictionary";
 import { WordMeaning } from "./components/word_meaning";
 import { sendMessageToDB } from "./popup_fn";
 import CanvasDraw from "react-canvas-draw";
@@ -36,11 +36,12 @@ const Popup = () => {
   const canvasRef = useRef<any>(null);
 
   const [text, setText] = useState("");
-  // const [status, setStatus] = useState("");
   const [isReady, setIsReady] = useState(false);
   const [kajis, setKajis] = useState<Kanji[]>([]);
   const [imageSrcs, setImageSrcs] = useState(["background.png"]);
-  const [lastWords, setLastWords] = useState<string[]>(getLastWord());
+  const [lastWords, setLastWords] = useState<LocalJotobaWord[]>(
+    getLastWordsFromStorage()
+  );
   const [meaning, setMeaning] = useState<JotobaRoot | undefined>(undefined);
   const [isDataImported, setIsDataImported] = useState(getIsDataImported());
 
@@ -60,14 +61,6 @@ const Popup = () => {
     fetchData();
   }, []);
 
-  // const showStatus = (data: string) => {
-  //   setStatus(data);
-  //   const timer = setTimeout(() => {
-  //     setStatus("");
-  //     clearTimeout(timer);
-  //   }, StatusTimeOut);
-  // };
-
   const setDataImportedStatus = () => {
     if (!isDataImported) {
       setIsDataImported("1");
@@ -81,13 +74,13 @@ const Popup = () => {
     }
     const textTrim = (textSearch ?? text).trim();
     if (!textTrim) {
-      // showStatus("Please enter your Kanji");
       return;
     }
 
+    const wordSaved: LocalJotobaWord = { word: textTrim, meaning: undefined };
+
     setKajis([]);
     setMeaning(undefined);
-    updateLastWord(textTrim);
 
     const kanjiSearch = textTrim.split("");
 
@@ -99,20 +92,27 @@ const Popup = () => {
           setKajis([...request.payload.data]);
           return;
         }
-        // showStatus("Not found Kanji");
       },
     });
 
     if (kanjiSearch.length > 1) {
-      await searchWordMeaning(textTrim, (response) => {
-        response && setMeaning(response);
-      });
+      const wordInHistory = lastWords.find((word) => word.word == textTrim);
+      if (wordInHistory != null && wordInHistory.meaning != null) {
+        setMeaning(wordInHistory.meaning);
+      } else {
+        await searchWordMeaning(textTrim, (response) => {
+          response && setMeaning(response);
+          wordSaved.meaning = response;
+        });
+      }
     }
+
+    updateLastWord(wordSaved);
   };
 
-  const updateLastWord = (lastWord: string) => {
-    saveLastWord(lastWord);
-    setLastWords(getLastWord());
+  const updateLastWord = (lastWord: LocalJotobaWord) => {
+    addLastWordToStorage(lastWord);
+    setLastWords(getLastWordsFromStorage());
   };
 
   if (!isReady) {
@@ -181,7 +181,7 @@ const Popup = () => {
                   if (!clipboardText) {
                     return;
                   }
-                  if (clipboardText == lastWords[0]) {
+                  if (clipboardText == lastWords[0]?.word) {
                     await navigator.clipboard.writeText("");
                     return;
                   }
@@ -215,11 +215,11 @@ const Popup = () => {
               <span
                 className="pointer highlight text"
                 onClick={async () => {
-                  await onSearchKanji(word);
+                  await onSearchKanji(word.word);
                   inputRef.current?.focus();
                 }}
               >
-                {word}
+                {word.word}
                 {"  |  "}
               </span>
             ))}

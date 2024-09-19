@@ -1,4 +1,4 @@
-import { JotobaRoot } from "../models/jotoba_dictionary";
+import { JotobaRoot, LocalJotobaWord } from "../models/jotoba_dictionary";
 import { KanjiResponse, MessagePayload } from "../models/interface";
 import {
   HistoryWordLength,
@@ -78,33 +78,37 @@ export const seachOneFromKanjiApi = async (
   );
 };
 
-export const searchWordMeaning = (
+export const searchWordMeaning = async (
   data: string,
   callback: (response?: JotobaRoot) => void
 ) => {
   return lookUpDictionary(data).then(callback);
 };
 
-export const getLastWord = () => {
-  const wordString = localStorage.getItem(LocalStorage.LastWord);
-  return wordString?.split(" ") ?? [];
+export const getLastWordsFromStorage = (): LocalJotobaWord[] => {
+  const wordArray = localStorage.getItem(LocalStorage.LastWord) ?? "[]";
+  try {
+    return JSON.parse(wordArray);
+  } catch (error) {
+    localStorage.removeItem(LocalStorage.LastWord);
+    return [];
+  }
 };
 
 export const getIsDataImported = () => {
   return localStorage.getItem(LocalStorage.IsDataImported) ?? false;
 };
 
-export const saveLastWord = (data: string) => {
-  const newWord = data.trim();
+export const addLastWordToStorage = (data: LocalJotobaWord) => {
+  const newWord = data.word.trim();
 
-  const wordString = localStorage.getItem(LocalStorage.LastWord);
-  var wordArray = wordString?.split(" ") ?? [];
+  var wordArray = getLastWordsFromStorage();
 
-  wordArray = wordArray.filter((word) => word != newWord);
+  wordArray = wordArray.filter((word) => word.word != newWord);
 
-  const newWordArray = [newWord].concat(wordArray);
+  const newWordArray = [data].concat(wordArray);
 
   const slicedArray = newWordArray.slice(0, HistoryWordLength);
 
-  localStorage.setItem(LocalStorage.LastWord, slicedArray.join(" "));
+  localStorage.setItem(LocalStorage.LastWord, JSON.stringify(slicedArray));
 };
