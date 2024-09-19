@@ -8,6 +8,7 @@ export interface Kanji {
 export interface KanjiComponent {
   radical: string;
   radical_name: string;
+  kanji_words: string[];
 }
 
 export interface TransactionOptions {

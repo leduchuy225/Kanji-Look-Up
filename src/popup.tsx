@@ -3,7 +3,7 @@ import "./styles/text_view.css";
 
 import { Kanji, MessagePayload } from "./models/interface";
 import { createRoot } from "react-dom/client";
-import React, { useEffect, useRef, useState } from "react";
+import React, { createContext, useEffect, useRef, useState } from "react";
 import { TextView } from "./components/text_view";
 import { handleJsonFile, isJapaneseCharacter } from "./utils/utils";
 import {
@@ -26,6 +26,10 @@ import { WordMeaning } from "./components/word_meaning";
 import { sendMessageToDB } from "./popup_fn";
 import CanvasDraw from "react-canvas-draw";
 import { lookUpByDrawInput } from "./data/external_api";
+
+export const AppContext = createContext({
+  onSearchKanji: async (textSearch?: string) => {},
+});
 
 const Popup = () => {
   const inputRef = useRef<any>(null);
@@ -116,197 +120,201 @@ const Popup = () => {
   }
 
   return (
-    <div className="form">
-      {!isDataImported ? (
-        <input
-          type="file"
-          accept=".json"
-          title="Import local database"
-          onChange={(event) => {
-            event.preventDefault();
+    <AppContext.Provider value={{ onSearchKanji: onSearchKanji }}>
+      <div className="form">
+        {!isDataImported ? (
+          <input
+            type="file"
+            accept=".json"
+            title="Import local database"
+            onChange={(event) => {
+              event.preventDefault();
 
-            const reader = new FileReader();
-            reader.readAsText(event.target.files![0]);
-            reader.onload = async (e) => {
-              const text = e.target?.result;
-              if (text && typeof text === "string") {
-                try {
-                  const jsonData = handleJsonFile(text);
-                  await importDataToLocalDB({
-                    data: jsonData,
-                    table: KanjiTable.name,
-                    message: "ClearAndInsert",
-                    callback: (request) => {
-                      if (request.message == Message.InsertSuccessful) {
-                        setDataImportedStatus();
-                        alert(request.payload?.data);
-                        return;
-                      }
-                      alert("Insert fail");
-                    },
-                  });
-                } catch (error) {
-                  alert(error);
+              const reader = new FileReader();
+              reader.readAsText(event.target.files![0]);
+              reader.onload = async (e) => {
+                const text = e.target?.result;
+                if (text && typeof text === "string") {
+                  try {
+                    const jsonData = handleJsonFile(text);
+                    await importDataToLocalDB({
+                      data: jsonData,
+                      table: KanjiTable.name,
+                      message: "ClearAndInsert",
+                      callback: (request) => {
+                        if (request.message == Message.InsertSuccessful) {
+                          setDataImportedStatus();
+                          alert(request.payload?.data);
+                          return;
+                        }
+                        alert("Insert fail");
+                      },
+                    });
+                  } catch (error) {
+                    alert(error);
+                  }
                 }
-              }
-            };
-          }}
-        />
-      ) : null}
-      <div
-        className="row"
-        style={{ alignItems: "center", whiteSpace: "nowrap" }}
-      >
-        <input
-          autoFocus
-          type="text"
-          value={text}
-          ref={inputRef}
-          placeholder="Your Kanji character..."
-          onChange={(event) => {
-            setText(event.target.value);
-          }}
-          onKeyDown={async (event) => {
-            event.key === "Enter" && (await onSearchKanji());
-          }}
-          onFocus={async () => {
-            await navigator.clipboard.readText().then(async (clipboardText) => {
-              if (!clipboardText) {
-                return;
-              }
-              if (clipboardText == lastWords[0]) {
-                await navigator.clipboard.writeText("");
-                return;
-              }
-              if (
-                isJapaneseCharacter(clipboardText) &&
-                !clipboardText.includes(" ")
-              ) {
-                await navigator.clipboard.writeText("");
-                await onSearchKanji(clipboardText);
-              }
-            });
-          }}
-        />
-        <img
-          width={40}
-          height={40}
-          src="button.jpeg"
-          title="Draw input"
-          className="pointer"
-          style={{ marginLeft: 10 }}
-          onClick={() => {
-            setIsShowCanvas(!isShowCanvas);
-          }}
-        />
-      </div>
-
-      {lastWords.length ? (
-        <div>
-          Last words{" "}
-          {lastWords.map((word) => (
-            <span
-              className="pointer highlight text"
-              onClick={async () => {
-                await onSearchKanji(word);
-                inputRef.current?.focus();
-              }}
-            >
-              {word}
-              {"  |  "}
-            </span>
-          ))}
-        </div>
-      ) : null}
-
-      {/* {status ? <p className="status">{status}</p> : null} */}
-
-      {meaning?.words.length ? <div className="space" /> : null}
-      {meaning?.words.map((word) =>
-        word ? <WordMeaning word={word} /> : null
-      )}
-
-      {kajis.length ? <div className="space" /> : null}
-      {kajis.map((kanji) => (kanji ? <TextView kanji={kanji} /> : null))}
-
-      {isShowCanvas ? (
-        <div style={{ marginTop: 10 }}>
-          <CanvasDraw
-            brushRadius={4}
-            ref={canvasRef}
-            canvasWidth={CanvasWidth}
-            canvasHeight={CanvasHeight}
-            onChange={async (data: any) => {
-              const lines = data?.lines ?? [];
-              const response = await lookUpByDrawInput(lines);
-
-              Array.isArray(response) && setRecommendedWords(response);
+              };
             }}
           />
-          <div
-            className="row"
-            style={{
-              alignItems: "center",
-              whiteSpace: "nowrap",
-              justifyContent: "space-around",
+        ) : null}
+        <div
+          className="row"
+          style={{ alignItems: "center", whiteSpace: "nowrap" }}
+        >
+          <input
+            autoFocus
+            type="text"
+            value={text}
+            ref={inputRef}
+            placeholder="Your Kanji character..."
+            onChange={(event) => {
+              setText(event.target.value);
             }}
-          >
-            <p
-              className="pointer highlight text"
-              onClick={() => {
-                canvasRef.current?.eraseAll();
-              }}
-            >
-              Erase
-            </p>
-            <p
-              className="pointer highlight text"
-              onClick={() => {
-                canvasRef.current?.undo();
-              }}
-            >
-              Undo
-            </p>
-          </div>
-          <div
-            className="row"
-            style={{
-              flexWrap: "wrap",
-              alignItems: "center",
+            onKeyDown={async (event) => {
+              event.key === "Enter" && (await onSearchKanji());
             }}
-          >
-            {recommendedWords.map((word) => (
-              <div
-                className="pointer box"
+            onFocus={async () => {
+              await navigator.clipboard
+                .readText()
+                .then(async (clipboardText) => {
+                  if (!clipboardText) {
+                    return;
+                  }
+                  if (clipboardText == lastWords[0]) {
+                    await navigator.clipboard.writeText("");
+                    return;
+                  }
+                  if (
+                    isJapaneseCharacter(clipboardText) &&
+                    !clipboardText.includes(" ")
+                  ) {
+                    await navigator.clipboard.writeText("");
+                    await onSearchKanji(clipboardText);
+                  }
+                });
+            }}
+          />
+          <img
+            width={40}
+            height={40}
+            src="button.jpeg"
+            title="Draw input"
+            className="pointer"
+            style={{ marginLeft: 10 }}
+            onClick={() => {
+              setIsShowCanvas(!isShowCanvas);
+            }}
+          />
+        </div>
+
+        {lastWords.length ? (
+          <div>
+            Last words{" "}
+            {lastWords.map((word) => (
+              <span
+                className="pointer highlight text"
                 onClick={async () => {
                   await onSearchKanji(word);
-                  window.scrollTo(0, 0);
+                  inputRef.current?.focus();
                 }}
               >
-                <span className="no-padding highlight text">{word}</span>
-              </div>
+                {word}
+                {"  |  "}
+              </span>
             ))}
           </div>
-        </div>
-      ) : null}
+        ) : null}
 
-      {imageSrcs.map((src) => {
-        const sharedProps = { src: src, width: 350, style: { marginTop: 8 } };
-        if (src == "background.png") {
-          return (
-            <img
-              {...sharedProps}
-              className="pointer"
-              title="Click to show alphabet"
-              onClick={() => {
-                setImageSrcs(["hiragana.png", "katakana.png"]);
+        {/* {status ? <p className="status">{status}</p> : null} */}
+
+        {meaning?.words.length ? <div className="space" /> : null}
+        {meaning?.words.map((word) =>
+          word ? <WordMeaning word={word} /> : null
+        )}
+
+        {kajis.length ? <div className="space" /> : null}
+        {kajis.map((kanji) => (kanji ? <TextView kanji={kanji} /> : null))}
+
+        {isShowCanvas ? (
+          <div style={{ marginTop: 10 }}>
+            <CanvasDraw
+              brushRadius={4}
+              ref={canvasRef}
+              canvasWidth={CanvasWidth}
+              canvasHeight={CanvasHeight}
+              onChange={async (data: any) => {
+                const lines = data?.lines ?? [];
+                const response = await lookUpByDrawInput(lines);
+
+                Array.isArray(response) && setRecommendedWords(response);
               }}
             />
-          );
-        }
-        return <img {...sharedProps} />;
-      })}
-    </div>
+            <div
+              className="row"
+              style={{
+                alignItems: "center",
+                whiteSpace: "nowrap",
+                justifyContent: "space-around",
+              }}
+            >
+              <p
+                className="pointer highlight text"
+                onClick={() => {
+                  canvasRef.current?.eraseAll();
+                }}
+              >
+                Erase
+              </p>
+              <p
+                className="pointer highlight text"
+                onClick={() => {
+                  canvasRef.current?.undo();
+                }}
+              >
+                Undo
+              </p>
+            </div>
+            <div
+              className="row"
+              style={{
+                flexWrap: "wrap",
+                alignItems: "center",
+              }}
+            >
+              {recommendedWords.map((word) => (
+                <div
+                  className="pointer box"
+                  onClick={async () => {
+                    await onSearchKanji(word);
+                    window.scrollTo(0, 0);
+                  }}
+                >
+                  <span className="no-padding highlight text">{word}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        ) : null}
+
+        {imageSrcs.map((src) => {
+          const sharedProps = { src: src, width: 350, style: { marginTop: 8 } };
+          if (src == "background.png") {
+            return (
+              <img
+                {...sharedProps}
+                className="pointer"
+                title="Click to show alphabet"
+                onClick={() => {
+                  setImageSrcs(["hiragana.png", "katakana.png"]);
+                }}
+              />
+            );
+          }
+          return <img {...sharedProps} />;
+        })}
+      </div>
+    </AppContext.Provider>
   );
 };
 

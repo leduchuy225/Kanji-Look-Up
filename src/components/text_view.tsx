@@ -4,12 +4,12 @@ import {
   showMeanings,
   showOnReadings,
   showKunReadings,
-  showComponents,
 } from "../utils/text_view_utils";
 
 import "../styles/text_view.css";
 import { seachOneFromKanjiApi } from "../data/data_service";
 import { TextViewInformation } from "./text_view_information";
+import { KanjiComponentWrapper } from "./kanji_component_wrapper";
 
 export const TextView = ({ kanji }: { kanji: Kanji }) => {
   const [data, setData] = useState<(KanjiResponse & Kanji) | undefined>(
@@ -37,7 +37,7 @@ export const TextView = ({ kanji }: { kanji: Kanji }) => {
       <TextViewInformation title="Kanji" data={data.kanji} />
       <TextViewInformation
         title="Components"
-        child={showComponents(data.components)}
+        child={<KanjiComponentWrapper data={data.components} />}
       />
       <TextViewInformation
         title="Meaning"
