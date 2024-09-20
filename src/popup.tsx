@@ -87,7 +87,7 @@ const Popup = () => {
       },
     });
 
-    if (kanjiSearch.length > 1) {
+    if (kanjiSearch.length > 1 || kajis.length == 0) {
       const wordInHistory = lastWords.find((word) => word.word == textTrim);
       if (wordInHistory != null && wordInHistory.meaning != null) {
         wordSaved.meaning = wordInHistory.meaning;
