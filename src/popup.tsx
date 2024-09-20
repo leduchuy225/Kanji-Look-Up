@@ -5,40 +5,33 @@ import { Kanji, MessagePayload } from "./models/interface";
 import { createRoot } from "react-dom/client";
 import React, { createContext, useEffect, useRef, useState } from "react";
 import { TextView } from "./components/text_view";
-import { handleJsonFile, isJapaneseCharacter } from "./utils/utils";
-import {
-  Message,
-  KanjiTable,
-  LocalStorage,
-  CanvasWidth,
-  CanvasHeight,
-} from "./config/config";
+import { isJapaneseCharacter } from "./utils/utils";
+import { Message, LocalStorage } from "./config/config";
 import {
   addLastWordToStorage,
   getIsDataImported,
   getLastWordsFromStorage,
-  importDataToLocalDB,
   seachManyFromKanji,
   searchWordMeaning,
 } from "./data/data_service";
 import { JotobaRoot, LocalJotobaWord } from "./models/jotoba_dictionary";
 import { WordMeaning } from "./components/word_meaning";
 import { sendMessageToDB } from "./popup_fn";
-import CanvasDraw from "react-canvas-draw";
-import { lookUpByDrawInput } from "./data/external_api";
+import { CanvasInput } from "./components/canvas_input";
+import { BackgroundImage } from "./components/background_image";
+import { ImportDataBox } from "./components/import_data_box";
 
 export const AppContext = createContext({
+  setDataImportedStatus: () => {},
   onSearchKanji: async (textSearch?: string) => {},
 });
 
 const Popup = () => {
   const inputRef = useRef<any>(null);
-  const canvasRef = useRef<any>(null);
 
   const [text, setText] = useState("");
   const [isReady, setIsReady] = useState(false);
   const [kajis, setKajis] = useState<Kanji[]>([]);
-  const [imageSrcs, setImageSrcs] = useState(["background.png"]);
   const [lastWords, setLastWords] = useState<LocalJotobaWord[]>(
     getLastWordsFromStorage()
   );
@@ -46,7 +39,6 @@ const Popup = () => {
   const [isDataImported, setIsDataImported] = useState(getIsDataImported());
 
   const [isShowCanvas, setIsShowCanvas] = useState(false);
-  const [recommendedWords, setRecommendedWords] = useState<string[]>([]);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -123,44 +115,14 @@ const Popup = () => {
   }
 
   return (
-    <AppContext.Provider value={{ onSearchKanji: onSearchKanji }}>
+    <AppContext.Provider
+      value={{
+        onSearchKanji: onSearchKanji,
+        setDataImportedStatus: setDataImportedStatus,
+      }}
+    >
       <div className="form">
-        {!isDataImported ? (
-          <input
-            type="file"
-            accept=".json"
-            title="Import local database"
-            onChange={(event) => {
-              event.preventDefault();
-
-              const reader = new FileReader();
-              reader.readAsText(event.target.files![0]);
-              reader.onload = async (e) => {
-                const text = e.target?.result;
-                if (text && typeof text === "string") {
-                  try {
-                    const jsonData = handleJsonFile(text);
-                    await importDataToLocalDB({
-                      data: jsonData,
-                      table: KanjiTable.name,
-                      message: "ClearAndInsert",
-                      callback: (request) => {
-                        if (request.message == Message.InsertSuccessful) {
-                          setDataImportedStatus();
-                          alert(request.payload?.data);
-                          return;
-                        }
-                        alert("Insert fail");
-                      },
-                    });
-                  } catch (error) {
-                    alert(error);
-                  }
-                }
-              };
-            }}
-          />
-        ) : null}
+        {!isDataImported ? <ImportDataBox /> : null}
         <div
           className="row"
           style={{ alignItems: "center", whiteSpace: "nowrap" }}
@@ -170,7 +132,7 @@ const Popup = () => {
             type="text"
             value={text}
             ref={inputRef}
-            placeholder="Your Kanji character..."
+            placeholder="Your Kanji characters..."
             onChange={(event) => {
               setText(event.target.value);
             }}
@@ -229,8 +191,6 @@ const Popup = () => {
           </div>
         ) : null}
 
-        {/* {status ? <p className="status">{status}</p> : null} */}
-
         {meaning?.words.length ? <div className="space" /> : null}
         {meaning?.words.map((word) =>
           word ? <WordMeaning word={word} /> : null
@@ -241,81 +201,11 @@ const Popup = () => {
 
         {isShowCanvas ? (
           <div style={{ marginTop: 10 }}>
-            <CanvasDraw
-              brushRadius={4}
-              ref={canvasRef}
-              canvasWidth={CanvasWidth}
-              canvasHeight={CanvasHeight}
-              onChange={async (data: any) => {
-                const lines = data?.lines ?? [];
-                const response = await lookUpByDrawInput(lines);
-
-                Array.isArray(response) && setRecommendedWords(response);
-              }}
-            />
-            <div
-              className="row"
-              style={{
-                alignItems: "center",
-                whiteSpace: "nowrap",
-                justifyContent: "space-around",
-              }}
-            >
-              <p
-                className="pointer highlight text"
-                onClick={() => {
-                  canvasRef.current?.eraseAll();
-                }}
-              >
-                Erase
-              </p>
-              <p
-                className="pointer highlight text"
-                onClick={() => {
-                  canvasRef.current?.undo();
-                }}
-              >
-                Undo
-              </p>
-            </div>
-            <div
-              className="row"
-              style={{
-                flexWrap: "wrap",
-                alignItems: "center",
-              }}
-            >
-              {recommendedWords.map((word) => (
-                <div
-                  className="pointer box"
-                  onClick={async () => {
-                    await onSearchKanji(word);
-                    window.scrollTo(0, 0);
-                  }}
-                >
-                  <span className="no-padding highlight text">{word}</span>
-                </div>
-              ))}
-            </div>
+            <CanvasInput />
           </div>
         ) : null}
 
-        {imageSrcs.map((src) => {
-          const sharedProps = { src: src, width: 350, style: { marginTop: 8 } };
-          if (src == "background.png") {
-            return (
-              <img
-                {...sharedProps}
-                className="pointer"
-                title="Click to show alphabet"
-                onClick={() => {
-                  setImageSrcs(["hiragana.png", "katakana.png"]);
-                }}
-              />
-            );
-          }
-          return <img {...sharedProps} />;
-        })}
+        <BackgroundImage />
       </div>
     </AppContext.Provider>
   );
