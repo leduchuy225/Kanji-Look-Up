@@ -41,7 +41,7 @@ export const TextView = ({ kanji }: { kanji: Kanji }) => {
           child={<KanjiComponentWrapper data={data.components} />}
         />
       ) : null}
-      {data.meaning ? (
+      {data.meaning || data?.meanings ? (
         <TextViewInformation
           title="Meaning"
           data={showMeanings(data.meaning, data?.meanings)}

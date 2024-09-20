@@ -74,13 +74,12 @@ const Popup = () => {
     setKajis([]);
     setMeaning(undefined);
 
-    const kanjiSearch = textTrim
-      .split("")
-      .filter((charater) => isKanji(charater));
+    const wordSearch = textTrim.split("");
+    const kanjiSearch = wordSearch.filter((charater) => isKanji(charater));
 
     await seachManyFromKanji<Kanji[]>({
       data: kanjiSearch,
-      callback: (request) => {
+      callback: async (request) => {
         if (request.payload?.data) {
           setDataImportedStatus();
         }
@@ -91,25 +90,25 @@ const Popup = () => {
           .map((kanji) => ({ kanji: kanji } as Kanji));
 
         setKajis([...searchResult, ...notFoundCharacters]);
+
+        if (wordSearch.length > 1 || notFoundCharacters.length > 0) {
+          const wordInHistory = lastWords.find((word) => word.word == textTrim);
+          if (wordInHistory != null && wordInHistory.meaning != null) {
+            wordSaved.meaning = wordInHistory.meaning;
+            setMeaning(wordInHistory.meaning);
+          } else {
+            await searchWordMeaning(textTrim, (response) => {
+              if (response) {
+                wordSaved.meaning = response;
+                setMeaning(response);
+              }
+            });
+          }
+        }
+
+        updateLastWord(wordSaved);
       },
     });
-
-    if (kanjiSearch.length > 1 || kajis.length == 0) {
-      const wordInHistory = lastWords.find((word) => word.word == textTrim);
-      if (wordInHistory != null && wordInHistory.meaning != null) {
-        wordSaved.meaning = wordInHistory.meaning;
-        setMeaning(wordInHistory.meaning);
-      } else {
-        await searchWordMeaning(textTrim, (response) => {
-          if (response) {
-            wordSaved.meaning = response;
-            setMeaning(response);
-          }
-        });
-      }
-    }
-
-    updateLastWord(wordSaved);
   };
 
   const updateLastWord = (lastWord: LocalJotobaWord) => {

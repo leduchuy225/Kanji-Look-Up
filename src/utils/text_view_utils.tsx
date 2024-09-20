@@ -1,11 +1,11 @@
 import { handleStringContent } from "./utils";
 
 export const showMeanings = (
-  tempData: string,
+  tempData?: string,
   data?: string[] | null
 ): string => {
   if (!data) {
-    return tempData;
+    return tempData ?? "";
   }
   return handleStringContent(data);
 };
