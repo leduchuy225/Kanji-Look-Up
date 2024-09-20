@@ -31,9 +31,9 @@ export const importDataToLocalDB = async (option: {
   );
 };
 
-export const seachManyFromKanji = async (options: {
+export const seachManyFromKanji = async <T>(options: {
   data: string[];
-  callback: (request: MessagePayload) => void;
+  callback: (request: MessagePayload<T>) => void;
 }) => {
   await sendMessageToDB(
     {

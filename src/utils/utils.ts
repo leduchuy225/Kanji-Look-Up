@@ -53,3 +53,9 @@ export const convertObjectToString = <T extends object>(data: T[]) => {
     })
     .join(" | ");
 };
+
+export const isKanji = (character: string) => {
+  const code = character.charCodeAt(0);
+  // Kanji Unicode range: U+4E00 to U+9FBF
+  return code >= 0x4e00 && code <= 0x9fbf;
+};

@@ -1,8 +1,8 @@
 export interface Kanji {
   kanji: string;
-  meaning: string;
-  radicals: string;
-  components: KanjiComponent[];
+  meaning?: string;
+  radicals?: string;
+  components?: KanjiComponent[];
 }
 
 export interface KanjiComponent {
@@ -30,13 +30,13 @@ export interface KanjiResponse {
   name_readings?: string[] | null;
 }
 
-export interface MessagePayload {
+export interface MessagePayload<T = any> {
   message: string;
-  payload?: Payload;
+  payload?: Payload<T>;
 }
 
-export interface Payload {
-  data: any;
+export interface Payload<T> {
+  data?: T;
   table?: string;
 }
 

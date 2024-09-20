@@ -5,7 +5,7 @@ import { Kanji, MessagePayload } from "./models/interface";
 import { createRoot } from "react-dom/client";
 import React, { createContext, useEffect, useRef, useState } from "react";
 import { TextView } from "./components/text_view";
-import { isJapaneseCharacter } from "./utils/utils";
+import { isJapaneseCharacter, isKanji } from "./utils/utils";
 import { Message, LocalStorage } from "./config/config";
 import {
   addLastWordToStorage,
@@ -74,16 +74,23 @@ const Popup = () => {
     setKajis([]);
     setMeaning(undefined);
 
-    const kanjiSearch = textTrim.split("");
+    const kanjiSearch = textTrim
+      .split("")
+      .filter((charater) => isKanji(charater));
 
-    await seachManyFromKanji({
+    await seachManyFromKanji<Kanji[]>({
       data: kanjiSearch,
       callback: (request) => {
-        if (request.payload) {
+        if (request.payload?.data) {
           setDataImportedStatus();
-          setKajis([...request.payload.data]);
-          return;
         }
+        const searchResult = request.payload?.data ?? [];
+
+        const notFoundCharacters = kanjiSearch
+          .filter((kanji) => !searchResult.find((item) => item.kanji == kanji))
+          .map((kanji) => ({ kanji: kanji } as Kanji));
+
+        setKajis([...searchResult, ...notFoundCharacters]);
       },
     });
 

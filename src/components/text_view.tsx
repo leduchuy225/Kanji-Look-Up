@@ -35,14 +35,18 @@ export const TextView = ({ kanji }: { kanji: Kanji }) => {
   return (
     <>
       <TextViewInformation title="Kanji" data={data.kanji} />
-      <TextViewInformation
-        title="Components"
-        child={<KanjiComponentWrapper data={data.components} />}
-      />
-      <TextViewInformation
-        title="Meaning"
-        data={showMeanings(data.meaning, data?.meanings)}
-      />
+      {data.components ? (
+        <TextViewInformation
+          title="Components"
+          child={<KanjiComponentWrapper data={data.components} />}
+        />
+      ) : null}
+      {data.meaning ? (
+        <TextViewInformation
+          title="Meaning"
+          data={showMeanings(data.meaning, data?.meanings)}
+        />
+      ) : null}
       <TextViewInformation
         title="On Reading"
         data={showOnReadings(data?.on_readings)}
