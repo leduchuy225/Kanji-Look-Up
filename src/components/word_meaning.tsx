@@ -8,6 +8,7 @@ import {
 } from "../models/jotoba_dictionary";
 import { JotobaBaseURL } from "../data/external_api";
 import { convertObjectToString } from "../utils/utils";
+import { sendTelegramMessage } from "../utils/telegram_utils";
 
 export const WordMeaning = ({ word }: { word: JotobaWord }) => {
   const commonStyle = { backgroundColor: "#29494c" };
@@ -21,6 +22,8 @@ export const WordMeaning = ({ word }: { word: JotobaWord }) => {
       <TextViewInformation
         title="Kanji"
         titleStyle={commonStyle}
+        onClickTitle={() => sendTelegramMessage(word)}
+        tooltip="Click to send this kanji to Kanji-Look-Up group"
         child={
           <div className="text-view-content text">
             {word.reading.kanji}{" "}

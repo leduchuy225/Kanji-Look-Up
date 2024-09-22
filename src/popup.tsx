@@ -158,10 +158,6 @@ const Popup = () => {
                   if (!clipboardText) {
                     return;
                   }
-                  if (clipboardText == lastWords[0]?.word) {
-                    await navigator.clipboard.writeText("");
-                    return;
-                  }
                   if (
                     isJapaneseCharacter(clipboardText) &&
                     !clipboardText.includes(" ")
