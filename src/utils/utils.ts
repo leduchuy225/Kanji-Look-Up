@@ -59,3 +59,27 @@ export const isKanji = (character: string) => {
   // Kanji Unicode range: U+4E00 to U+9FBF
   return code >= 0x4e00 && code <= 0x9fbf;
 };
+
+export const showMeanings = (
+  tempData?: string,
+  data?: string[] | null
+): string => {
+  if (!data) {
+    return tempData ?? "";
+  }
+  return handleStringContent(data);
+};
+
+export const showKunReadings = (data?: string[] | null): string => {
+  if (!data) {
+    return "";
+  }
+  return handleStringContent(data);
+};
+
+export const showOnReadings = (data?: string[] | null): string => {
+  if (!data) {
+    return "";
+  }
+  return handleStringContent(data);
+};

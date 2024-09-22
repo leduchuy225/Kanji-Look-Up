@@ -5,6 +5,8 @@ export const DB_NAME = "NiHongoDB";
 
 export const HistoryWordLength = 10;
 
+export const SearchWordLength = 8;
+
 export const StatusTimeOut = 2000; // ms
 
 export const LocalStorage = {

@@ -6,7 +6,7 @@ import { createRoot } from "react-dom/client";
 import React, { createContext, useEffect, useRef, useState } from "react";
 import { TextView } from "./components/text_view";
 import { isJapaneseCharacter, isKanji } from "./utils/utils";
-import { Message, LocalStorage } from "./config/config";
+import { Message, LocalStorage, SearchWordLength } from "./config/config";
 import {
   addLastWordToStorage,
   getIsDataImported,
@@ -65,6 +65,7 @@ const Popup = () => {
       setText(textSearch);
     }
     const textTrim = (textSearch ?? text).trim();
+
     if (!textTrim) {
       return;
     }
@@ -75,6 +76,11 @@ const Popup = () => {
     setMeaning(undefined);
 
     const wordSearch = textTrim.split("");
+
+    if (wordSearch.length >= SearchWordLength) {
+      return;
+    }
+
     const kanjiSearch = wordSearch.filter((charater) => isKanji(charater));
 
     await seachManyFromKanji<Kanji[]>({

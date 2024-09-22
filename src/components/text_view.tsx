@@ -1,15 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { Kanji, KanjiResponse } from "../models/interface";
-import {
-  showMeanings,
-  showOnReadings,
-  showKunReadings,
-} from "../utils/text_view_utils";
 
 import "../styles/text_view.css";
 import { seachOneFromKanjiApi } from "../data/data_service";
 import { TextViewInformation } from "./text_view_information";
 import { KanjiComponentWrapper } from "./kanji_component_wrapper";
+import { showKunReadings, showMeanings, showOnReadings } from "../utils/utils";
 
 export const TextView = ({ kanji }: { kanji: Kanji }) => {
   const [data, setData] = useState<(KanjiResponse & Kanji) | undefined>(
