@@ -55,5 +55,6 @@ ${word.senses
     })
     .catch((error) => {
       console.error("Error sending message:", error);
+      alert(JSON.stringify(error));
     });
 };

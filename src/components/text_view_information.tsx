@@ -28,9 +28,9 @@ export const TextViewInformation = ({
         title={tooltip}
         style={titleStyle}
         onClick={() => onClickTitle && onClickTitle()}
-        className={`text-view-title ${onClickTitle ? "pointer" : ""}`}
+        className={`text-view-title ${!!onClickTitle ? "pointer button" : ""}`}
       >
-        {title}
+        <span>{title}</span>
       </div>
       {data ? <span className="text-view-content text">{data}</span> : child}
     </div>

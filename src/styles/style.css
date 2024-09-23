@@ -57,3 +57,28 @@ input[type="submit"] {
   padding-right: 12px;
   border-right: 1px dashed #19252f;
 }
+
+.button span {
+  cursor: pointer;
+  transition: 0.5s;
+  position: relative;
+  display: inline-block;
+}
+
+.button span:after {
+  top: 0;
+  opacity: 0;
+  right: -20px;
+  content: "\00bb";
+  transition: 0.5s;
+  position: absolute;
+}
+
+.button:hover span {
+  padding-right: 15px;
+}
+
+.button:hover span:after {
+  right: 0;
+  opacity: 1;
+}
