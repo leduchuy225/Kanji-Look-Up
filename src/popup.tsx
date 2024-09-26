@@ -58,11 +58,22 @@ const Popup = () => {
     fetchData();
   }, []);
 
+  useEffect(() => {
+    if (isShowCanvas) {
+      scrollToId("canvas");
+    }
+  }, [isShowCanvas]);
+
   const setDataImportedStatus = () => {
     if (!isDataImported) {
       setIsDataImported("1");
       localStorage.setItem(LocalStorage.IsDataImported, "1");
     }
+  };
+
+  const scrollToId = (id: string) => {
+    const section = document.querySelector(`#${id}`);
+    section?.scrollIntoView({ behavior: "smooth", block: "start" });
   };
 
   const onSearchKanji = async (textSearch?: string) => {
@@ -208,11 +219,13 @@ const Popup = () => {
         {kajis.length ? <div className="space" /> : null}
         {kajis.map((kanji) => (kanji ? <TextView kanji={kanji} /> : null))}
 
-        {isShowCanvas ? (
-          <div style={{ marginTop: 10 }}>
-            <CanvasInput />
-          </div>
-        ) : null}
+        <div id="canvas" style={{ scrollMarginTop: 16 }}>
+          {isShowCanvas ? (
+            <div style={{ marginTop: 10 }}>
+              <CanvasInput />
+            </div>
+          ) : null}
+        </div>
 
         <BackgroundImage />
       </div>
