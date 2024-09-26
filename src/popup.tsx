@@ -6,7 +6,12 @@ import { createRoot } from "react-dom/client";
 import React, { createContext, useEffect, useRef, useState } from "react";
 import { TextView } from "./components/text_view";
 import { isJapaneseCharacter, isKanji } from "./utils/utils";
-import { Message, LocalStorage, SearchWordLength } from "./config/config";
+import {
+  Message,
+  LocalStorage,
+  SearchWordLength,
+  SeparatorElement,
+} from "./config/config";
 import {
   addLastWordToStorage,
   getIsDataImported,
@@ -195,7 +200,6 @@ const Popup = () => {
 
         {lastWords.length ? (
           <div>
-            Last words{" "}
             {lastWords.map((word) => (
               <span
                 className="pointer highlight text"
@@ -204,8 +208,7 @@ const Popup = () => {
                   inputRef.current?.focus();
                 }}
               >
-                {word.word}
-                {"  |  "}
+                {word.word} {SeparatorElement}{" "}
               </span>
             ))}
           </div>

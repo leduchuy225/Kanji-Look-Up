@@ -1,3 +1,4 @@
+import { SeparatorElement } from "../config/config";
 import { CanvasDrawLine } from "../models/interface";
 
 export const isJapaneseCharacter = (data: string) => {
@@ -51,7 +52,7 @@ export const convertObjectToString = <T extends object>(data: T[]) => {
         .map((key) => `${key}: ${JSON.stringify((item as any)[key])}`)
         .join(",");
     })
-    .join(" | ");
+    .join(` ${SeparatorElement} `);
 };
 
 export const isKanji = (character: string) => {

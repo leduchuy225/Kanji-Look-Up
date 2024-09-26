@@ -1,3 +1,4 @@
+import { SeparatorElement } from "../config/config";
 import { JotobaWord } from "../models/jotoba_dictionary";
 import { convertObjectToString } from "./utils";
 
@@ -23,7 +24,7 @@ export const sendTelegramMessage = (word: JotobaWord) => {
 🏮 ${word.reading.kana}
 
 <strong>Furigana</strong>  
-🏮 ${word.reading.furigana}
+🏮 ${word.reading.furigana.replace(/\|/g, ` ${SeparatorElement} `)}
 
 <strong>Meaning</strong>
 ${word.senses

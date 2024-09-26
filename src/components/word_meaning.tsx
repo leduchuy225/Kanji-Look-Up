@@ -9,6 +9,7 @@ import {
 import { JotobaBaseURL } from "../data/external_api";
 import { convertObjectToString } from "../utils/utils";
 import { sendTelegramMessage } from "../utils/telegram_utils";
+import { SeparatorElement } from "../config/config";
 
 export const WordMeaning = ({ word }: { word: JotobaWord }) => {
   const commonStyle = { backgroundColor: "#29494c" };
@@ -34,7 +35,7 @@ export const WordMeaning = ({ word }: { word: JotobaWord }) => {
       <TextViewInformation
         title="Furigana"
         titleStyle={commonStyle}
-        data={word.reading.furigana}
+        data={word.reading.furigana.replace(/\|/g, ` ${SeparatorElement} `)}
       />
       {word.pitch ? (
         <TextViewInformation
