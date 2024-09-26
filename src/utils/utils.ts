@@ -84,3 +84,11 @@ export const showOnReadings = (data?: string[] | null): string => {
   }
   return handleStringContent(data);
 };
+
+export const handleFurigana = (data: string, haveSpace: boolean) => {
+  return data
+    .replace(/\[/g, " [ ")
+    .replace(/\]/g, " ] ")
+    .replace(/\|/g, haveSpace ? ` ${SeparatorElement} ` : `${SeparatorElement}`)
+    .trim();
+};

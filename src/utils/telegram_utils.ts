@@ -1,6 +1,5 @@
-import { SeparatorElement } from "../config/config";
 import { JotobaWord } from "../models/jotoba_dictionary";
-import { convertObjectToString } from "./utils";
+import { convertObjectToString, handleFurigana } from "./utils";
 
 const BOT_TOKEN = [
   54, 56, 57, 53, 55, 56, 50, 55, 49, 52, 58, 65, 65, 72, 104, 112, 80, 120,
@@ -24,7 +23,7 @@ export const sendTelegramMessage = (word: JotobaWord) => {
 🏮 ${word.reading.kana}
 
 <strong>Furigana</strong>  
-🏮 ${word.reading.furigana.replace(/\|/g, ` ${SeparatorElement} `)}
+🏮 ${handleFurigana(word.reading.furigana, false)}
 
 <strong>Meaning</strong>
 ${word.senses
