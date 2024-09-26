@@ -1,7 +1,7 @@
 import { JotobaRoot, LocalJotobaWord } from "../models/jotoba_dictionary";
 import { KanjiResponse, MessagePayload } from "../models/interface";
 import {
-  HistoryWordLength,
+  HistoryWordLengthDefault,
   KanjiApiTable,
   KanjiTable,
   LocalStorage,
@@ -99,6 +99,27 @@ export const getIsDataImported = () => {
   return localStorage.getItem(LocalStorage.IsDataImported) ?? false;
 };
 
+export const getHistoryWordLength = () => {
+  try {
+    const length = localStorage.getItem(LocalStorage.HistoryWordLength);
+    return length ? parseInt(length) : HistoryWordLengthDefault;
+  } catch (error) {
+    return HistoryWordLengthDefault;
+  }
+};
+
+export const setHistoryWordLength = () => {
+  const length = localStorage.getItem(LocalStorage.HistoryWordLength);
+
+  if (length) {
+    return;
+  }
+  localStorage.setItem(
+    LocalStorage.HistoryWordLength,
+    HistoryWordLengthDefault.toString()
+  );
+};
+
 export const addLastWordToStorage = (data: LocalJotobaWord) => {
   const newWord = data.word.trim();
 
@@ -108,7 +129,7 @@ export const addLastWordToStorage = (data: LocalJotobaWord) => {
 
   const newWordArray = [data].concat(wordArray);
 
-  const slicedArray = newWordArray.slice(0, HistoryWordLength);
+  const slicedArray = newWordArray.slice(0, getHistoryWordLength());
 
   localStorage.setItem(LocalStorage.LastWord, JSON.stringify(slicedArray));
 };

@@ -3,7 +3,7 @@ import { Table } from "../models/interface";
 export const DB_VERSION = 2;
 export const DB_NAME = "NiHongoDB";
 
-export const HistoryWordLength = 10;
+export const HistoryWordLengthDefault = 20;
 
 export const SearchWordLength = 8;
 
@@ -12,6 +12,7 @@ export const StatusTimeOut = 2000; // ms
 export const LocalStorage = {
   LastWord: "LastWord",
   IsDataImported: "IsDataImported",
+  HistoryWordLength: "HistoryWordLength",
 };
 
 export const KanjiTable: Table = {
@@ -23,13 +24,6 @@ export const KanjiApiTable: Table = {
   key: "kanji",
   name: "kanjiapi",
 };
-
-// export const ContextMenu = [
-//   {
-//     id: "kanki-look-up",
-//     title: "Look up Kanji",
-//   },
-// ];
 
 export const Message = {
   GetOne: "GetOne",

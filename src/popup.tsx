@@ -13,6 +13,7 @@ import {
   getLastWordsFromStorage,
   seachManyFromKanji,
   searchWordMeaning,
+  setHistoryWordLength,
 } from "./data/data_service";
 import { JotobaRoot, LocalJotobaWord } from "./models/jotoba_dictionary";
 import { WordMeaning } from "./components/word_meaning";
@@ -23,7 +24,9 @@ import { ImportDataBox } from "./components/import_data_box";
 
 export const AppContext = createContext({
   setDataImportedStatus: () => {},
-  onSearchKanji: async (textSearch?: string) => {},
+  onSearchKanji: async (textSearch?: string) => {
+    console.log(textSearch);
+  },
 });
 
 const Popup = () => {
@@ -41,6 +44,8 @@ const Popup = () => {
   const [isShowCanvas, setIsShowCanvas] = useState(false);
 
   useEffect(() => {
+    setHistoryWordLength();
+
     const fetchData = async () => {
       await sendMessageToDB(
         { message: Message.CheckDbReady },
@@ -112,14 +117,10 @@ const Popup = () => {
           }
         }
 
-        updateLastWord(wordSaved);
+        addLastWordToStorage(wordSaved);
+        setLastWords(getLastWordsFromStorage());
       },
     });
-  };
-
-  const updateLastWord = (lastWord: LocalJotobaWord) => {
-    addLastWordToStorage(lastWord);
-    setLastWords(getLastWordsFromStorage());
   };
 
   if (!isReady) {

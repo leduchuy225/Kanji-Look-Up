@@ -46,6 +46,10 @@ input[type="submit"] {
   justify-content: space-around;
 }
 
+.space-between {
+  justify-content: space-between;
+}
+
 .pointer {
   cursor: pointer;
 }
@@ -81,4 +85,13 @@ input[type="submit"] {
 .button:hover span:after {
   right: 0;
   opacity: 1;
+}
+
+input[type="file"]::file-selector-button {
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 10px 20px;
+  background-color: #4caf50;
 }
