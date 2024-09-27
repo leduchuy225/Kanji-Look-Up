@@ -31,7 +31,7 @@ export interface JotobaWord {
 export interface JotobaReading {
   kana: string;
   kanji: string;
-  furigana: string;
+  furigana?: string;
 }
 
 export interface JotobaSense {
