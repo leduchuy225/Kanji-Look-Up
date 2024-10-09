@@ -1,12 +1,11 @@
-import React, { useContext, useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 import CanvasDraw from "react-canvas-draw";
 import { CanvasHeight, CanvasWidth } from "../config/config";
 import { lookUpByDrawInput } from "../data/external_api";
-import { AppContext } from "../popup";
 
 export const CanvasInput = () => {
   const canvasRef = useRef<any>(null);
-  const { onSearchKanji } = useContext(AppContext);
+  // const { onSearchKanji } = useContext(AppContext);
 
   const [recommendedWords, setRecommendedWords] = useState<string[]>([]);
 
@@ -60,7 +59,7 @@ export const CanvasInput = () => {
           <div
             className="pointer box"
             onClick={async () => {
-              await onSearchKanji(word);
+              await navigator.clipboard.writeText(word.trim());
               window.scrollTo(0, 0);
             }}
           >

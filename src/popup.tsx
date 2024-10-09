@@ -169,6 +169,9 @@ const Popup = () => {
               event.key === "Enter" && (await onSearchKanji());
             }}
             onFocus={async () => {
+              if (text.trim() && isShowCanvas) {
+                return;
+              }
               await navigator.clipboard
                 .readText()
                 .then(async (clipboardText) => {
