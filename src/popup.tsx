@@ -29,6 +29,9 @@ import { ImportDataBox } from "./components/import_data_box";
 
 export const AppContext = createContext({
   setDataImportedStatus: () => {},
+  getIsEmptySearch: (): boolean => {
+    return true;
+  },
   onSearchKanji: async (textSearch?: string) => {
     console.log(textSearch);
   },
@@ -80,6 +83,8 @@ const Popup = () => {
     const section = document.querySelector(`#${id}`);
     section?.scrollIntoView({ behavior: "smooth", block: "start" });
   };
+
+  const getIsEmptySearch = () => !text;
 
   const onSearchKanji = async (textSearch?: string) => {
     if (textSearch) {
@@ -147,6 +152,7 @@ const Popup = () => {
     <AppContext.Provider
       value={{
         onSearchKanji: onSearchKanji,
+        getIsEmptySearch: getIsEmptySearch,
         setDataImportedStatus: setDataImportedStatus,
       }}
     >
