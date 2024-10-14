@@ -17,13 +17,13 @@ export const sendTelegramMessage = (word: JotobaWord) => {
   const dictionaryURL = `https://www.japandict.com/${word.reading.kanji}`;
 
   const formattedMessage = `
-🌸 <code>${word.reading.kanji}</code>
+🌸 <code>${word.reading.kanji ?? word.reading.kana}</code>
 
 <strong>Hiragana</strong>
 🏮 ${word.reading.kana}
 
 <strong>Furigana</strong>  
-🏮 ${handleFurigana(word.reading.furigana, false)}
+🏮 ${handleFurigana(word.reading.furigana, false) ?? word.reading.kana}
 
 <strong>Meaning</strong>
 ${word.senses
