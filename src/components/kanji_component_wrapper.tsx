@@ -34,7 +34,14 @@ const KanjiComponentShow = ({ item }: { item: KanjiComponent }) => {
             className="pointer"
             onClick={() => setIsShowKanjiWord(!isShowKanjiWords)}
           >
-            {item.radical} ( {item.radical_name} )
+            {item.radical}{" "}
+            <a
+              target="_blank"
+              className="highlight"
+              href={`https://www.wanikani.com/radicals/${item.radical_name}`}
+            >
+              ( {item.radical_name} )
+            </a>
           </span>
 
           {isShowKanjiWords ? (
