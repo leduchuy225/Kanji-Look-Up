@@ -29,6 +29,7 @@ import { ImportDataBox } from "./components/import_data_box";
 
 export const AppContext = createContext({
   setDataImportedStatus: () => {},
+  addSearchText: (text: string) => {},
   getIsEmptySearch: (): boolean => {
     return true;
   },
@@ -144,6 +145,10 @@ const Popup = () => {
     });
   };
 
+  const addSearchText = (newText: string) => {
+    setText(text + newText);
+  };
+
   if (!isReady) {
     return <></>;
   }
@@ -152,6 +157,7 @@ const Popup = () => {
     <AppContext.Provider
       value={{
         onSearchKanji: onSearchKanji,
+        addSearchText: addSearchText,
         getIsEmptySearch: getIsEmptySearch,
         setDataImportedStatus: setDataImportedStatus,
       }}

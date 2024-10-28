@@ -6,7 +6,8 @@ import { AppContext } from "../popup";
 
 export const CanvasInput = () => {
   const canvasRef = useRef<any>(null);
-  const { onSearchKanji, getIsEmptySearch } = useContext(AppContext);
+  const { onSearchKanji, getIsEmptySearch, addSearchText } =
+    useContext(AppContext);
 
   const [recommendedWords, setRecommendedWords] = useState<string[]>([]);
 
@@ -63,7 +64,7 @@ export const CanvasInput = () => {
               if (getIsEmptySearch()) {
                 onSearchKanji(word.trim());
               } else {
-                await navigator.clipboard.writeText(word.trim());
+                addSearchText(word.trim());
               }
               window.scrollTo(0, 0);
             }}
