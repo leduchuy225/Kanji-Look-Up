@@ -52,7 +52,7 @@ export const convertObjectToString = <T extends object>(data: T[]) => {
         .map((key) => `${key}: ${JSON.stringify((item as any)[key])}`)
         .join(",");
     })
-    .join(` ${SeparatorElement} `);
+    .join(`${SeparatorElement}`);
 };
 
 export const isKanji = (character: string) => {
@@ -85,10 +85,10 @@ export const showOnReadings = (data?: string[] | null): string => {
   return handleStringContent(data);
 };
 
-export const handleFurigana = (data?: string, haveSpace: boolean = true) => {
+export const handleFurigana = (data?: string) => {
   return data
     ?.replace(/\[/g, " [ ")
     .replace(/\]/g, " ] ")
-    .replace(/\|/g, haveSpace ? ` ${SeparatorElement} ` : `${SeparatorElement}`)
+    .replace(/\|/g, `${SeparatorElement}`)
     .trim();
 };

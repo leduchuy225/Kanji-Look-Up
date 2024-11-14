@@ -46,7 +46,7 @@ const KanjiComponentShow = ({ item }: { item: KanjiComponent }) => {
 
           {isShowKanjiWords ? (
             <div className="subtitle">
-              {item.kanji_words.map((word) => {
+              {(item.kanji_words ?? []).map((word) => {
                 const [wordSearch, ...rest] = word.split(" ");
                 return (
                   <div>

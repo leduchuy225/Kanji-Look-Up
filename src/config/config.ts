@@ -41,4 +41,4 @@ export const Message = {
 export const CanvasWidth = 350;
 export const CanvasHeight = 400;
 
-export const SeparatorElement = "▪️";
+export const SeparatorElement = " - ";

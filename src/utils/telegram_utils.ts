@@ -23,7 +23,7 @@ export const sendTelegramMessage = (word: JotobaWord) => {
 🏮 ${word.reading.kana}
 
 <strong>Furigana</strong>  
-🏮 ${handleFurigana(word.reading.furigana, false) ?? word.reading.kana}
+🏮 ${handleFurigana(word.reading.furigana) ?? word.reading.kana}
 
 <strong>Meaning</strong>
 ${word.senses

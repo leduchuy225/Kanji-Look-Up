@@ -34,7 +34,7 @@ export const WordMeaning = ({ word }: { word: JotobaWord }) => {
       <TextViewInformation
         title="Furigana"
         titleStyle={commonStyle}
-        data={handleFurigana(word.reading.furigana, true)}
+        data={handleFurigana(word.reading.furigana)}
       />
       {word.pitch ? (
         <TextViewInformation
@@ -62,10 +62,14 @@ export const JotobaWordMeaningWrapper = ({ data }: { data: JotobaSense[] }) => {
   return (
     <div className="text-view-content text">
       {data.map((item) => {
-        const information = convertObjectToString(item.pos);
+        const information = convertObjectToString(item.pos ?? []);
         return (
           <div>
-            <span className="subtitle">{`• ${information}`}</span>
+            {information ? (
+              <span className="subtitle">{`• ${information}`}</span>
+            ) : (
+              <></>
+            )}
             <div>{item.glosses.join(" - ")}</div>
             <br />
           </div>

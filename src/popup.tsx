@@ -223,7 +223,8 @@ const Popup = () => {
                   inputRef.current?.focus();
                 }}
               >
-                {word.word} {SeparatorElement}{" "}
+                {word.word}
+                {SeparatorElement}
               </span>
             ))}
           </div>
