@@ -1,5 +1,13 @@
+import { MyKanjiWord } from "../models/interface";
 import { JotobaWord } from "../models/jotoba_dictionary";
-import { convertObjectToString, handleFurigana } from "./utils";
+import {
+  convertObjectToString,
+  handleFurigana,
+  isRadicalInvalid,
+  showKunReadings,
+  showMeanings,
+  showOnReadings,
+} from "./utils";
 
 const BOT_TOKEN = [
   54, 56, 57, 53, 55, 56, 50, 55, 49, 52, 58, 65, 65, 72, 104, 112, 80, 120,
@@ -9,11 +17,7 @@ const BOT_TOKEN = [
 
 const CHAT_ID = [45, 49, 48, 48, 50, 51, 50, 48, 50, 56, 50, 55, 49, 57];
 
-export const sendTelegramMessage = (word: JotobaWord) => {
-  const token = String.fromCharCode(...BOT_TOKEN);
-
-  const url = `https://api.telegram.org/bot${token}/sendMessage`;
-
+export const handleJotobaWordToText = (word: JotobaWord): string => {
   const dictionaryURL = `https://www.japandict.com/${word.reading.kanji}`;
 
   const formattedMessage = `
@@ -35,6 +39,67 @@ ${word.senses
   
 <strong>URL</strong>
 🏮 <a href="${dictionaryURL}">${dictionaryURL}</a>`;
+
+  return formattedMessage;
+};
+
+export const handleKanjiToText = (data: MyKanjiWord): string => {
+  const strokeURL = `https://data.mazii.net/kanji/0${data?.unicode?.toLowerCase()}.svg`;
+
+  const formattedMessage = `
+🌸 <code>${data?.kanji}</code>
+${
+  data?.components
+    ? `
+<strong>Components</strong>
+${data?.components
+  ?.map((item) =>
+    isRadicalInvalid(item.radical)
+      ? `• ${item.radical_name}`
+      : `• ${item.radical} ${item.radical_name}`
+  )
+  .join("\n")}
+  `
+    : ""
+} 
+<strong>Meaning</strong>  
+${showMeanings(data?.meaning, data?.meanings)}
+
+<strong>On Reading</strong>  
+${showOnReadings(data?.on_readings)}
+
+<strong>Kun Reading</strong>  
+${showKunReadings(data?.kun_readings)}
+
+${
+  data?.unicode
+    ? `<strong>Stroke</strong>
+🏮 <a href="${strokeURL}">${strokeURL}</a>`
+    : ""
+}
+`;
+
+  return formattedMessage;
+};
+
+export const sendTelegramMessage = ({
+  word,
+  kanji,
+}: {
+  word?: JotobaWord;
+  kanji?: MyKanjiWord;
+}) => {
+  const token = String.fromCharCode(...BOT_TOKEN);
+
+  const url = `https://api.telegram.org/bot${token}/sendMessage`;
+
+  let formattedMessage = "";
+
+  if (word) {
+    formattedMessage = handleJotobaWordToText(word);
+  } else if (kanji) {
+    formattedMessage = handleKanjiToText(kanji);
+  }
 
   const data = {
     parse_mode: "HTML",

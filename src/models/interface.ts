@@ -50,3 +50,5 @@ export interface CanvasDrawLine {
   brushRadius: number;
   points: { x: number; y: number }[];
 }
+
+export type MyKanjiWord = (KanjiResponse & Kanji) | undefined;

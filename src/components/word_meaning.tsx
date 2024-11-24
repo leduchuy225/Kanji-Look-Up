@@ -22,7 +22,7 @@ export const WordMeaning = ({ word }: { word: JotobaWord }) => {
       <TextViewInformation
         title="Kanji"
         titleStyle={commonStyle}
-        onClickTitle={() => sendTelegramMessage(word)}
+        onClickTitle={() => sendTelegramMessage({ word: word })}
         tooltip="Click to send this kanji to Kanji-Look-Up group"
         child={
           <div className="text-view-content text">
