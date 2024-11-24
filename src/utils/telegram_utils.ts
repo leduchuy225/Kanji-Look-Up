@@ -44,7 +44,7 @@ ${word.senses
 };
 
 export const handleKanjiToText = (data: MyKanjiWord): string => {
-  const strokeURL = `https://data.mazii.net/kanji/0${data?.unicode?.toLowerCase()}.svg`;
+  const kanjiURL = `https://jisho.org/search/${data?.kanji}%20%23kanji`;
 
   const formattedMessage = `
 🌸 <code>${data?.kanji}</code>
@@ -71,13 +71,8 @@ ${showOnReadings(data?.on_readings)}
 <strong>Kun Reading</strong>  
 ${showKunReadings(data?.kun_readings)}
 
-${
-  data?.unicode
-    ? `<strong>Stroke</strong>
-🏮 <a href="${strokeURL}">${strokeURL}</a>`
-    : ""
-}
-`;
+<strong>URL</strong>
+🏮 <a href="${kanjiURL}">${kanjiURL}</a>`;
 
   return formattedMessage;
 };
